@@ -1,19 +1,15 @@
-import * as React from 'react'
-import ListItem from './ListItem'
-import { User } from '../interfaces'
+import React from "react";
 
 type Props = {
-  items: User[]
-}
+  items: any[];
+};
 
 const List = ({ items }: Props) => (
   <ul>
     {items.map((item) => (
-      <li key={item.id}>
-        <ListItem data={item} />
-      </li>
+      <li key={item.id}>kk </li>
     ))}
   </ul>
-)
+);
 
-export default List
+export default List;

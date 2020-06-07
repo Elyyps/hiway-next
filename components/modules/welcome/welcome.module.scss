@@ -1,0 +1,28 @@
+.welcome {
+  display: flex;
+  max-height: 950px;
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+  > div {
+    width: 50%;
+    height: auto;
+    &:last-child {
+      border-left: 1px solid white;
+    }
+    @media (max-width: 960px) {
+      //  height: 480px;
+      width: 100%;
+    }
+    @media (max-width: 640px) {
+      height: 50%;
+      width: 100%;
+    }
+  }
+  .primary {
+    border-bottom: 5px solid var(--primary-color);
+  }
+  .secondary {
+    border-bottom: 5px solid var(--secondary-color);
+  }
+}

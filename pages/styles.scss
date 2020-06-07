@@ -1,0 +1,54 @@
+@import "~uikit/src/scss/mixins.scss";
+@import "~uikit/src/scss/variables.scss";
+@import "~uikit/src/scss/components/base.scss";
+
+@import "~uikit/src/scss/components/container.scss";
+@import "~uikit/src/scss/components/grid.scss";
+@import "~uikit/src/scss/components/width.scss";
+@import "~uikit/src/scss/components/visibility.scss";
+
+@font-face {
+  font-family: "Apercu";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Apercu-Regular"), local("Apercu-Regular"),
+    url(/fonts/Apercu-Regular.otf) format("opentype");
+}
+:root {
+  --primary-color: #c9002a;
+  --secondary-color: #00009d;
+  --primary-color-dark: #c9002cb2;
+  --secondary-color-dark: #00009d8f;
+}
+.divider {
+  margin: 3% 0;
+  width: 8%;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+> * {
+  font-family: "Apercu";
+}
+.container {
+  width: 90%;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+h2,
+h4 {
+  margin-bottom: 0;
+  line-height: unset;
+  font-family: "Apercu";
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
+  @media (max-width: 960px) {
+    font-size: 24px;
+  }
+  @media (max-width: 639px) {
+    font-size: 20px;
+  }
+}

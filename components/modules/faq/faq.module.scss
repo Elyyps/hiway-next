@@ -1,0 +1,28 @@
+.faq {
+  height: 100%;
+  &-content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // height: 80%;
+    // @media (max-width: 639px) {
+    //   justify-content: unset;
+    // }
+    button {
+      font-weight: 500;
+    }
+    p {
+      padding-top: 35px;
+      line-height: 1.75;
+      letter-spacing: -0.1px;
+    }
+    list-style: none;
+    // @media (max-width: 639px) {
+    li:not(:last-child) {
+      margin-bottom: 13px;
+    }
+    // }
+  }
+}

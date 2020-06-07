@@ -1,0 +1,51 @@
+.medium-card {
+  height: 100%;
+  display: block;
+
+  &-image {
+    height: 45%;
+    width: 100%;
+
+    @media (max-width: 960px) {
+      height: 40%;
+    }
+    @media (max-width: 639px) {
+      height: 60%;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-content {
+    height: calc(55% - 24px);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 960px) {
+      height: calc(60% - 16px);
+      padding: 8px;
+    }
+    @media (max-width: 639px) {
+      height: calc(40% - 32px);
+      padding: 16px;
+      > a {
+        font-size: 14px;
+        width: fit-content;
+      }
+    }
+    > span {
+      font-size: 20px;
+      color: #292c30;
+      @media (max-width: 960px) {
+        font-size: 16px;
+      }
+      @media (max-width: 639px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

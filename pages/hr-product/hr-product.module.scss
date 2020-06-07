@@ -1,0 +1,26 @@
+.header {
+  > div {
+    height: 544px;
+    @media (max-width: 639px) {
+      height: 178px;
+    }
+  }
+}
+.parts {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  > div {
+    width: 48%;
+    min-height: 100%;
+  }
+  @media (max-width: 639px) {
+    flex-direction: column;
+    > div {
+      width: 100%;
+    }
+  }
+}

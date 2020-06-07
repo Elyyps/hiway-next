@@ -1,0 +1,28 @@
+.newsletter-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  &-content {
+    padding: 35px;
+    @media (max-width: 639px) {
+      padding: 24px;
+    }
+  }
+  &-title {
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+  input {
+    margin: 12px 0;
+    width: 100%;
+    border-radius: 30.5px;
+    border: solid 1px #f3f5f6;
+    background-color: #ffffff;
+    padding: 8px;
+  }
+  button {
+    margin: 0 auto;
+  }
+}

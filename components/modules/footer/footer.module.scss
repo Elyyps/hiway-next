@@ -1,0 +1,148 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 62px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    li {
+      color: black;
+      display: flex;
+    }
+  }
+
+  &-top {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 56px;
+    justify-content: space-between;
+    h2 {
+      margin-bottom: 0;
+      margin-top: 0;
+      font-size: 24px;
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+  }
+
+  &-left {
+    width: 48%;
+    @media (max-width: 960px) and (min-width: 639px) {
+      width: 39%;
+    }
+    @media (max-width: 960px) {
+      ul {
+        flex-direction: column;
+      }
+    }
+
+    li {
+      width: 34%;
+      @media (max-width: 960px) {
+        width: 100%;
+        margin-bottom: 9px;
+      }
+      @media (min-width: 960px) {
+        &:not(:first-child) {
+          justify-content: center;
+        }
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid #979797;
+        @media (max-width: 960px) {
+          border: 0;
+        }
+      }
+    }
+  }
+  &-right {
+    width: 48%;
+
+    @media (max-width: 639px) {
+      ul {
+        flex-direction: column;
+        li {
+          width: 100%;
+          margin-bottom: 9px;
+          div {
+            width: 16px;
+            height: 17px;
+            svg {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 960px) and (min-width: 639px) {
+      width: 59%;
+    }
+    li {
+      width: 25%;
+      @media (max-width: 960px) and (min-width: 639px) {
+        flex-direction: column;
+        div {
+          height: 25px;
+        }
+      }
+
+      > a {
+        color: black;
+        font-size: 16px;
+        margin-left: 7px;
+        text-decoration: none;
+        @media (max-width: 960px) and (min-width: 639px) {
+          margin-left: 0;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    height: 20%;
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    span {
+      color: #202020;
+      opacity: 0.4;
+    }
+    > div {
+      svg {
+        width: 10px;
+        height: 5px;
+      }
+      > span {
+        margin-right: 8px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 8px;
+      margin: 0;
+      border: 1px solid #dfdfdf;
+
+      li {
+        border-bottom: 1px solid #dfdfdf;
+        cursor: pointer;
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}

@@ -1,15 +1,28 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import React from "react";
+import Layout from "../components/Layout";
+import DescriptionSliderComponent from "../components/modules/description-slider/description-slider";
+import { descriptionSliderData } from "../api/modules/description-slider/dummy-data";
+import { welcomeData } from "../api/modules/welcome/dummy-data";
+import WelcomeComponent from "../components/modules/welcome/welcome";
+import { moreAboutData } from "../api/modules/more-about/dummy-data";
+import MoreAboutComponent from "../components/modules/more-about/more-about";
+import RouteContext from "../context/route";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
-
-export default IndexPage
+const HomePage = () => {
+  const { selectRoute, route } = React.useContext(RouteContext);
+  React.useEffect(() => {
+    selectRoute("Home");
+  }, []);
+  return (
+    <div>
+      <Layout>
+        <WelcomeComponent sections={welcomeData()} />
+        <DescriptionSliderComponent
+          descriptionSlider={descriptionSliderData()}
+        />
+        <MoreAboutComponent moreAbout={moreAboutData()} />
+      </Layout>
+    </div>
+  );
+};
+export default HomePage;

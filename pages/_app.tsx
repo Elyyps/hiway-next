@@ -1,0 +1,10 @@
+// import "./styles.scss";
+import "react-circular-progressbar/dist/styles.css";
+
+import { AppProps } from "next/app";
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;

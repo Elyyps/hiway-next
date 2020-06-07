@@ -1,0 +1,115 @@
+.button {
+  cursor: pointer;
+  padding: 13px 20px;
+  border-radius: 36.5px;
+  background-color: #eaeaea;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Apercu";
+  display: flex;
+  white-space: nowrap;
+  @media (max-width: 960px) {
+    padding: 8px 15px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 0;
+  }
+  svg {
+    line-height: 0.5;
+    width: 5px;
+    height: 10px;
+    @media (max-width: 639px) {
+      width: 4px;
+      height: 7px;
+    }
+    path {
+      fill: currentColor;
+    }
+  }
+  &-dropdown {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+  }
+  &-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid transparent;
+    svg {
+      fill: white;
+    }
+    &:hover {
+      background-color: white;
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+      svg {
+        fill: var(--primary-color);
+      }
+    }
+  }
+  &-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 2px solid transparent;
+    svg {
+      fill: white;
+    }
+    &:hover {
+      background-color: white;
+      color: var(--secondary-color);
+      border: 2px solid var(--secondary-color);
+      svg {
+        fill: var(--secondary-color);
+      }
+    }
+  }
+  &-tertiary {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid transparent;
+    svg {
+      fill: var(--primary-color);
+    }
+    &:hover {
+      background-color: var(--primary-color);
+      color: white;
+      border: 2px solid white;
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+  .icon-svg {
+    display: flex;
+    align-items: center;
+  }
+  .icon-left {
+    margin-right: 8px;
+    @media (max-width: 639px) {
+      margin-right: 6px;
+    }
+    display: inherit;
+    svg {
+      path {
+        fill: inherit;
+      }
+    }
+  }
+
+  .icon-right {
+    margin-left: 8px;
+    @media (max-width: 639px) {
+      margin-left: 6px;
+    }
+    display: inherit;
+    svg {
+      path {
+        fill: inherit;
+      }
+    }
+  }
+}
