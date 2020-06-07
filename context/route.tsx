@@ -5,7 +5,9 @@ interface IRouteContextProvider {
 }
 
 const route: string = "";
-const selectRoute = (route: string) => {};
+const selectRoute = (route: string) => {
+  console.log(route);
+};
 
 const RouteContext = React.createContext({
   route,

@@ -9,7 +9,7 @@ import MoreAboutComponent from "../components/modules/more-about/more-about";
 import RouteContext from "../context/route";
 
 const HomePage = () => {
-  const { selectRoute, route } = React.useContext(RouteContext);
+  const { selectRoute } = React.useContext(RouteContext);
   React.useEffect(() => {
     selectRoute("Home");
   }, []);

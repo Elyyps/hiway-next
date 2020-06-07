@@ -5,7 +5,9 @@ interface ILanguageContextProvider {
 }
 
 const language: string = "";
-const selectLanguage = (user: string) => {};
+const selectLanguage = (user: string) => {
+  console.log(user);
+};
 
 export const LanguageContext = React.createContext({
   language,

@@ -3,7 +3,6 @@ import style from "./section.module.scss";
 import ButtonComponent from "../button/button";
 import LinkComponent from "../link/link";
 import { ILink } from "../../../api/cores/link";
-import RouteContext from "../../../context/route";
 
 interface ISectionComponentProps {
   postion: "center" | "left" | "bottom";
