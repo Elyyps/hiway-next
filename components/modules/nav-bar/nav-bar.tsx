@@ -22,6 +22,7 @@ const NavBarComponent = (props: INavBarComponentProps) => {
     setIsClosed(!isClosed);
     selectLanguage(text);
   };
+
   return (
     <div className={` ${style["nav-bar"]} container`}>
       <div className={style["nav-bar-logo"]}>

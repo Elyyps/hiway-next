@@ -23,34 +23,30 @@ const HrProduct = () => {
   }, []);
   return (
     <div>
-      <LanguageContextProvider>
-        <RouteContextProvider>
-          <Layout>
-            <div className={style["header"]}>
-              <SectionComponent
-                backgroundImage={welcomeData()[0].backgroundImage}
-                title={welcomeData()[0].title}
-                button={welcomeData()[0].button}
-                content={welcomeData()[0].content}
-                postion="center"
-                variant="primary"
-                isHeader
-              />
-            </div>
-            <DescriptionSliderComponent
-              descriptionSlider={descriptionSliderData()}
-              isHr
-            />
-            <FunctionalitiesComponent functionalities={functionalitiesData()} />
-            <br />
-            <PresentationComponent presentation={presentationData()} />
-            <div className={`${style["parts"]} `}>
-              <DevelopmentComponent development={developmentData()} />
-              <FAQComponent faq={faqData()} />
-            </div>
-          </Layout>
-        </RouteContextProvider>
-      </LanguageContextProvider>
+      <Layout>
+        <div className={style["header"]}>
+          <SectionComponent
+            backgroundImage={welcomeData()[0].backgroundImage}
+            title={welcomeData()[0].title}
+            button={welcomeData()[0].button}
+            content={welcomeData()[0].content}
+            postion="center"
+            variant="primary"
+            isHeader
+          />
+        </div>
+        <DescriptionSliderComponent
+          descriptionSlider={descriptionSliderData()}
+          isHr
+        />
+        <FunctionalitiesComponent functionalities={functionalitiesData()} />
+        <br />
+        <PresentationComponent presentation={presentationData()} />
+        <div className={`${style["parts"]} `}>
+          <DevelopmentComponent development={developmentData()} />
+          <FAQComponent faq={faqData()} />
+        </div>
+      </Layout>
     </div>
   );
 };

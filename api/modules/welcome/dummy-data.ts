@@ -2,7 +2,7 @@ import { ISection } from "../../cores/section";
 
 export const welcomeData = (): ISection[] => [
   {
-    backgroundImage: "/img/section1.jpg",
+    backgroundImage: "/img/optimized/section1.jpg",
     title: "HR platform",
     subTitle: "i want to go to ",
     content:
@@ -12,7 +12,7 @@ export const welcomeData = (): ISection[] => [
     button: { text: "Go to HR platform" },
   },
   {
-    backgroundImage: "/img/section2.jpg",
+    backgroundImage: "/img/optimized/section2.jpg",
     title: "Freelance platform",
     subTitle: "i want to go to ",
     content:

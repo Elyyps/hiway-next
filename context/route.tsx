@@ -15,7 +15,7 @@ const RouteContext = React.createContext({
 });
 
 export const RouteContextProvider = ({ children }: IRouteContextProvider) => {
-  const [selectedRoute, setSelectedRoute] = React.useState<string>("");
+  const [selectedRoute, setSelectedRoute] = React.useState("");
 
   return (
     <RouteContext.Provider
