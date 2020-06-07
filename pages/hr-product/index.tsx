@@ -13,8 +13,7 @@ import { developmentData } from "../../api/modules/development/dummy-data";
 import FAQComponent from "../../components/modules/faq/faq";
 import { faqData } from "../../api/modules/faq/dummy-data";
 import Layout from "../../components/Layout";
-import RouteContext, { RouteContextProvider } from "../../context/route";
-import { LanguageContextProvider } from "../../context/language";
+import RouteContext from "../../context/route";
 
 const HrProduct = () => {
   const { selectRoute } = React.useContext(RouteContext);

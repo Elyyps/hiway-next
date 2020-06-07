@@ -6,8 +6,6 @@ import NavBarComponent from "./modules/nav-bar/nav-bar";
 import { navBarData } from "../api/modules/nav-bar/dummy-data";
 import NewsletterComponent from "./modules/newsletter/newsletter";
 import { newsletterData } from "../api/modules/newsletter/dummy-data";
-import { LanguageContextProvider } from "../context/language";
-import { RouteContextProvider } from "../context/route";
 
 type Props = {
   children?: ReactNode;
