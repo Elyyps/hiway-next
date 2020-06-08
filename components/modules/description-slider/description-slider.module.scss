@@ -130,7 +130,7 @@
     }
     .description-slider-image {
       position: absolute;
-      box-shadow: 10px 15px rgba($color: gray, $alpha: 0.1);
+      box-shadow: 10px 15px 40px 2px rgba(214, 213, 213, 0.5);
       @media (min-width: 960px) {
         max-height: 230px;
         max-width: 402px;

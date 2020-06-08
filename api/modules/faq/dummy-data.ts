@@ -2,7 +2,7 @@ import { IFAQ } from "./faq";
 
 export const faqData = (): IFAQ => ({
   title: "Frequently asked questions",
-  description: "Didn’t find your answer here? Contact us here.",
+  description: "Didn’t find your answer here? Contact us ",
   items: [
     {
       title: "Omne animal simul atque haec ratio late patet?",

@@ -2,6 +2,7 @@ import React from "react";
 import style from "./faq.module.scss";
 import { IFAQ } from "../../../api/modules/faq/faq";
 import ExpandablePanelComponent from "../../cores/expandable-panel/expandable-panel";
+import LinkComponent from "../../cores/link/link";
 
 interface IFAQComponentProps {
   faq: IFAQ;
@@ -23,6 +24,12 @@ const FAQComponent = (props: IFAQComponentProps) => {
           </li>
         ))}
       </ul>
+      <span className={style["faq-description"]}>
+        {props.faq.description}
+        <LinkComponent to="" underlined>
+          here
+        </LinkComponent>
+      </span>
     </div>
   );
 };

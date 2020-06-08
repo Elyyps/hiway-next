@@ -6,9 +6,9 @@ export const descriptionSliderData = (): IDescriptionSlider[] => [
       "Tailored towards small business and recruitment agencies, this software suite enables any company in their search and contracting of flexible employees. A simple tool that enables digital contract signing and automatical payments from the employer side. And an easy to use platform for employees to submit hours and expenses. An all-compassing easy to use workforce tool.",
     link: { text: "More information" },
     pictures: [
-      "/img/optimized/hr1.png",
-      "/img/optimized/hr2.png",
-      "/img/optimized/hr3.png",
+      "/img/optimized/hr1.jpg",
+      "/img/optimized/hr2.jpg",
+      "/img/optimized/hr3.jpg",
     ],
     variant: "primary",
     descriptionCards: [

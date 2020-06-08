@@ -31,11 +31,11 @@ const PresentationComponent = (props: IPresentationComponentProps) => {
           className={style["presentation-video"]}
           style={{
             height:
-              windowSize < 639
-                ? windowSize / 1.63
-                : windowSize > 639 && windowSize < 800
-                ? "310px"
-                : windowSize / 3.26,
+              windowSize > 960
+                ? windowSize / 3.26
+                : windowSize > 639 && windowSize < 960
+                ? windowSize / 2.5
+                : windowSize / 1.63,
           }}
         >
           <img src={props.presentation.video} alt="close zoom on laptop" />

@@ -32,7 +32,7 @@ const MoreAboutComponent = ({ moreAbout }: IMoreAboutComponent) => {
         </div>
         <div className={"divider"} />
         <div className={style["more-about-content"]}>
-          <div className={` ${style["more-about-big-card"]} uk-visible@s`}>
+          <div className={` ${style["more-about-big-card"]} uk-visible@m`}>
             <SectionComponent
               title={moreAbout.cards[0].title}
               backgroundImage={moreAbout.cards[0].image}

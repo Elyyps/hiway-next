@@ -2,7 +2,8 @@
   height: 100%;
   &-content {
     margin: 0;
-    padding: 0;
+    padding-bottom: 63px;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     // justify-content: space-between;
@@ -19,10 +20,11 @@
       letter-spacing: -0.1px;
     }
     list-style: none;
-    // @media (max-width: 639px) {
     li:not(:last-child) {
       margin-bottom: 13px;
     }
-    // }
+  }
+  &-description {
+    color: #292c30;
   }
 }
