@@ -16,7 +16,7 @@ interface INavBarComponentProps {
 const NavBarComponent = (props: INavBarComponentProps) => {
   const [isClosed, setIsClosed] = React.useState(false);
   const { selectLanguage, language } = React.useContext(LanguageContext);
-  const { selectRoute, route } = React.useContext(RouteContext);
+  const { route } = React.useContext(RouteContext);
 
   const onLanguageSelected = (text: string) => {
     setIsClosed(!isClosed);
