@@ -33,7 +33,6 @@ const NavBarComponent = (props: INavBarComponentProps) => {
           {props.navBarModule.items.map((item, key) => (
             <li
               key={key}
-              onClick={() => selectRoute(item.title.text)}
               className={style[route === item.title.text ? "selected" : ""]}
             >
               {item.dropdownLink ? (
