@@ -32,7 +32,7 @@ const DescriptionCardComponent = (props: IDescriptionCardComponentProps) => {
       >
         <img src={props.icon} alt="icon illustrating this section" />
       </div>
-      <div className={style["horizontal"]}>
+      <div className={style[props.isHorizonal ? "horizontal" : ""]}>
         <h4 style={{ color: `var(--${props.variant}-color)` }}>
           {props.title}
         </h4>

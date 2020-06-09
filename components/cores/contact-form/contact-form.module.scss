@@ -1,0 +1,21 @@
+.contact-form {
+  > div {
+    @media (min-width: 639px) {
+      display: flex;
+      justify-content: space-between;
+      > div {
+        width: 48%;
+        input {
+          margin-bottom: 0;
+        }
+      }
+      margin-bottom: 32px;
+    }
+    input {
+      margin-bottom: 24px;
+    }
+  }
+  &-bottom {
+    margin-top: 42px;
+  }
+}

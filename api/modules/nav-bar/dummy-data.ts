@@ -30,6 +30,6 @@ export const navBarData = (): INavBar => ({
       ],
     },
     { title: { text: "About", url: "/about" } },
-    { title: { text: "Contact", url: "/" } },
+    { title: { text: "Contact", url: "/contact" } },
   ],
 });

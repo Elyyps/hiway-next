@@ -39,7 +39,9 @@ const ButtonComponent = (props: IButtonProps) => {
             className={`${style[`button-${variant}`]} ${style["button"]}`}
             target={target}
           >
-            <span className={style["icon-svg"]}>{returnIconPosition}</span>
+            <span className={` ${style["icon-svg"]} `}>
+              {returnIconPosition}
+            </span>
           </a>
         </Link>
       ) : (

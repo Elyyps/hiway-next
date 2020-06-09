@@ -4,6 +4,7 @@ import { IDescriptionSlider } from "../../../api/modules/description-slider/desc
 import LinkComponent from "../../cores/link/link";
 import DescriptionCardComponent from "../../cores/description-card/description-card";
 import ReactSVG from "react-svg";
+import ScreenWidthContext from "../../../context/screen-width";
 
 interface IDescriptionSliderComponentProps {
   descriptionSlider: IDescriptionSlider[];
@@ -19,22 +20,7 @@ const DescriptionSliderComponent = ({
   const [selectedTab, setSelectedTab] = React.useState<number>(
     isHr ? 0 : isFreelance ? 1 : 0
   );
-  const [windowSize, setWindowSize] = React.useState(0);
-
-  const handleResize = () => {
-    setWindowSize(window.innerWidth);
-  };
-  React.useEffect(() => {
-    handleResize();
-  }, [windowSize]);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const { windowSize } = React.useContext(ScreenWidthContext);
 
   const displayCards = () => {
     return (

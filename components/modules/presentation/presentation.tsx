@@ -2,28 +2,15 @@ import React from "react";
 import style from "./presentation.module.scss";
 import { IPresentation } from "../../../api/modules/presentation/presentation";
 import ReactSVG from "react-svg";
+import ScreenWidthContext from "../../../context/screen-width";
 //import ReactPlayer from "react-player";
 
 interface IPresentationComponentProps {
   presentation: IPresentation;
 }
 const PresentationComponent = (props: IPresentationComponentProps) => {
-  const [windowSize, setWindowSize] = React.useState(0);
+  const { windowSize } = React.useContext(ScreenWidthContext);
 
-  const handleResize = () => {
-    setWindowSize(window.innerWidth);
-  };
-  React.useEffect(() => {
-    handleResize();
-  }, [windowSize]);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <div className={style["presentation"]}>
       <div className="container">

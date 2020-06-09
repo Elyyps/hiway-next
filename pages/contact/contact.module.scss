@@ -1,0 +1,14 @@
+.contact {
+  &-header {
+    button {
+      width: 50%;
+      span {
+        width: 10px;
+        height: 5px;
+      }
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

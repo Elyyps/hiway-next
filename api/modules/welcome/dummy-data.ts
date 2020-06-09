@@ -31,3 +31,12 @@ export const headerAboutData = (): ISection => ({
   variant: "primary",
   button: { text: "Go to HR platform" },
 });
+export const headerContactData = (): ISection => ({
+  backgroundImage: "/img/optimized/contact.jpg",
+  title: "Get in touch",
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ante at erat consequat congue.",
+  postion: "center",
+  variant: "primary",
+  button: { text: "Contact" },
+});

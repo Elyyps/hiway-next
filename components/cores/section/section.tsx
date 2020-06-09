@@ -3,6 +3,7 @@ import style from "./section.module.scss";
 import ButtonComponent from "../button/button";
 import LinkComponent from "../link/link";
 import { ILink } from "../../../api/cores/link";
+import ScreenWidthContext from "../../../context/screen-width";
 
 interface ISectionComponentProps {
   postion: "center" | "left" | "bottom";
@@ -16,24 +17,11 @@ interface ISectionComponentProps {
   textFullLength?: boolean;
   isHeader?: boolean;
   leftPosition?: number;
+  onButtonClick?: () => void;
 }
 const SectionComponent = (props: ISectionComponentProps) => {
-  const [windowSize, setWindowSize] = React.useState(0);
+  const { windowSize } = React.useContext(ScreenWidthContext);
 
-  const handleResize = () => {
-    setWindowSize(window.innerWidth);
-  };
-  React.useEffect(() => {
-    handleResize();
-  }, [windowSize]);
-
-  React.useEffect(() => {
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   const leftPosition = (windowSize - 1290) / 2;
   return (
     <div
@@ -79,12 +67,15 @@ const SectionComponent = (props: ISectionComponentProps) => {
             {props.content}
           </p>
 
-          <div className={style["section-button"]}>
+          <div className={` ${style["section-button"]} `}>
             {props.button && (
               <ButtonComponent
                 title={props.button.text}
                 variant={props.variant}
                 icon={"/icons/chevron-right.svg"}
+                onClick={
+                  props.onButtonClick ? props.onButtonClick : console.log
+                }
               />
             )}
             {props.link && (
