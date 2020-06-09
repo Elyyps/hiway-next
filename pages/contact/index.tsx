@@ -4,7 +4,6 @@ import style from "./contact.module.scss";
 import Layout from "../../components/Layout";
 import RouteContext from "../../context/route";
 import SectionComponent from "../../components/cores/section/section";
-import { ContactFormComponent } from "../../components/cores/contact-form/contact-form";
 import ContactComponent from "../../components/modules/contact/contact";
 import { contactData } from "../../api/modules/contact/dummy-data";
 
