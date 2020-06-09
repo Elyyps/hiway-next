@@ -1,0 +1,19 @@
+.vacancies {
+  padding-top: 122px;
+  padding-bottom: 212px;
+  @media (max-width: 960px) {
+    padding-top: 60px;
+    padding-bottom: 105px;
+  }
+  h2 {
+    > span {
+      color: #dfdfdf;
+    }
+  }
+  &-jobs {
+    > div {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+}

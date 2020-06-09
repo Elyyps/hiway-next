@@ -13,7 +13,7 @@ export const navBarData = (): INavBar => ({
       dropdownTitle: "Our products",
       dropdownLink: [
         {
-          link: { text: "Freelance platform" },
+          link: { text: "Freelance platform", url: "/freelance-product" },
           content:
             "Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex. ",
         },
@@ -29,7 +29,7 @@ export const navBarData = (): INavBar => ({
         },
       ],
     },
-    { title: { text: "About", url: "/" } },
+    { title: { text: "About", url: "/about" } },
     { title: { text: "Contact", url: "/" } },
   ],
 });

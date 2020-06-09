@@ -27,7 +27,7 @@
   background-color: var(--secondary-color);
 }
 
-> * {
+* {
   font-family: "Apercu";
 }
 .container {
@@ -44,11 +44,39 @@ h4 {
 .title {
   font-size: 30px;
   font-weight: bold;
+  width: 100%;
   color: var(--primary-color);
   @media (max-width: 960px) {
     font-size: 24px;
   }
   @media (max-width: 639px) {
     font-size: 20px;
+  }
+}
+.button {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  transition: opacity 0.3s;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 960px) {
+    width: 32px;
+    height: 32px;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  svg {
+    width: 6px;
+    height: 11px;
+    fill: white;
+    margin: auto;
   }
 }

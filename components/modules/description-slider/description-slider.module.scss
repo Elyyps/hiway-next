@@ -86,30 +86,6 @@
       span {
         position: absolute;
         top: 0;
-        width: 36px;
-        height: 36px;
-        cursor: pointer;
-        transition: opacity 0.3s;
-        border-radius: 50%;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @media (max-width: 960px) {
-          width: 32px;
-          height: 32px;
-        }
-        div {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        svg {
-          width: 6px;
-          height: 11px;
-          fill: white;
-          margin: auto;
-        }
 
         &:first-child {
           background-color: var(--primary-color);

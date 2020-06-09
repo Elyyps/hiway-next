@@ -7,10 +7,14 @@ interface IDescriptionCardComponentProps {
   content?: string;
   variant: "primary" | "secondary";
   iconSize?: number;
+  isHorizonal?: boolean;
 }
 const DescriptionCardComponent = (props: IDescriptionCardComponentProps) => {
   return (
-    <div className={style["description-card"]}>
+    <div
+      className={style["description-card"]}
+      style={props.isHorizonal ? { flexDirection: "row" } : {}}
+    >
       <div
         style={
           props.iconSize
@@ -28,7 +32,7 @@ const DescriptionCardComponent = (props: IDescriptionCardComponentProps) => {
       >
         <img src={props.icon} alt="icon illustrating this section" />
       </div>
-      <div>
+      <div className={style["horizontal"]}>
         <h4 style={{ color: `var(--${props.variant}-color)` }}>
           {props.title}
         </h4>

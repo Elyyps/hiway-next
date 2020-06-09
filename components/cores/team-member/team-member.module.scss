@@ -1,0 +1,25 @@
+.team-member {
+  padding: 20px 7%;
+
+  @media (max-width: 639px) {
+    padding: 10px 14px;
+  }
+  font-weight: 500;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  > span:first-child {
+    color: #292c30;
+    font-size: 16px;
+    @media (min-width: 1300px) {
+      font-size: 20px;
+    }
+  }
+  &-position {
+    color: var(--primary-color);
+    padding-top: 4px;
+    @media (max-width: 639px) {
+      font-size: 12px;
+    }
+  }
+}

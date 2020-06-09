@@ -1,0 +1,52 @@
+.job-offer {
+  display: flex;
+  justify-content: space-between;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    @media (max-width: 960px) {
+      flex-direction: column;
+    }
+
+    > div {
+      width: 75%;
+      @media (max-width: 960px) {
+        width: 100%;
+      }
+      opacity: 0.74;
+      display: flex;
+      @media (max-width: 639px) {
+        font-size: 12px;
+      }
+      justify-content: space-between;
+      > span {
+        width: 33%;
+        @media (max-width: 960px) {
+          &:not(:last-child) {
+            width: 24%;
+          }
+          &:last-child {
+            width: 49%;
+          }
+        }
+      }
+    }
+
+    > span {
+      font-weight: 500;
+      width: 24%;
+      @media (max-width: 960px) {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      @media (max-width: 639px) {
+        font-size: 14px;
+      }
+    }
+  }
+  &-button {
+    margin: auto 0;
+  }
+}

@@ -4,6 +4,11 @@
   @media (min-width: 639px) {
     flex-direction: column;
   }
+  .horizontal {
+    @media (min-width: 639px) {
+      padding: 10px 0 0 30px;
+    }
+  }
   div:first-child {
     max-width: 55px;
     max-height: 58px;

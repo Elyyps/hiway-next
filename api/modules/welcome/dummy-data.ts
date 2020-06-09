@@ -22,3 +22,12 @@ export const welcomeData = (): ISection[] => [
     button: { text: "Go to Freelance platform" },
   },
 ];
+export const headerAboutData = (): ISection => ({
+  backgroundImage: "/img/optimized/about.jpg",
+  title: "Simplifying Work",
+  content:
+    "Creating the employment environment of the future by utilising technological advancements",
+  postion: "center",
+  variant: "primary",
+  button: { text: "Go to HR platform" },
+});

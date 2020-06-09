@@ -119,12 +119,14 @@ const DescriptionSliderComponent = ({
         {!isFreelance && !isHr && (
           <div className={style["arrows"]}>
             <span
+              className="button"
               onClick={() => setSelectedTab(0)}
               style={{ opacity: selectedTab === 0 ? "0.2" : "" }}
             >
               <ReactSVG src={"/icons/chevron-right.svg"} />
             </span>
             <span
+              className="button"
               onClick={() => setSelectedTab(1)}
               style={{ opacity: selectedTab === 1 ? "0.2" : "" }}
             >
