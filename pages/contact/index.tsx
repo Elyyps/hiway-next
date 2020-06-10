@@ -9,6 +9,11 @@ import { contactData } from "../../api/modules/contact/dummy-data";
 
 const ContactPage = () => {
   const { selectRoute } = React.useContext(RouteContext);
+  const myRef = React.useRef(null);
+  const scrollToRef = (ref: any) =>
+    window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" });
+  const executeScroll = () => scrollToRef(myRef);
+
   React.useEffect(() => {
     selectRoute("Contact");
   }, []);
@@ -24,9 +29,12 @@ const ContactPage = () => {
             postion="center"
             variant="primary"
             isHeader
+            onButtonClick={executeScroll}
           />
         </div>
-        <ContactComponent contact={contactData()} />
+        <div ref={myRef}>
+          <ContactComponent contact={contactData()} />
+        </div>
       </Layout>
     </div>
   );
