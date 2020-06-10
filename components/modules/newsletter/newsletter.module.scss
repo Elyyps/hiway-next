@@ -15,6 +15,9 @@
       font-size: 30px;
       font-weight: bold;
       color: white;
+      @media (max-width: 639px) {
+        font-size: 20px;
+      }
     }
     > div {
       display: flex;
@@ -28,13 +31,11 @@
           margin-right: 24px;
         }
       }
-      // // @media (max-width: 960px) {
-      // //   width: 70%;
-      // // }
       @media (max-width: 639px) {
         flex-direction: column;
         > span {
           margin-top: 15px;
+          font-size: 12px;
         }
       }
     }

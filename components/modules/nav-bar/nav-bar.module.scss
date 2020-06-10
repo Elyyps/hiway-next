@@ -62,7 +62,7 @@
     justify-content: flex-end;
     width: 60%;
     @media (max-width: 639px) {
-      width: calc(100% - 201px);
+      width: calc(100% - 170px);
     }
     ul {
       padding: 8px;
@@ -89,9 +89,6 @@
   &-menu {
     width: calc(85% - 78px);
 
-    @media (max-width: 639px) {
-      width: calc(100% - 170px);
-    }
     ul {
       color: black;
       height: 100%;
@@ -163,6 +160,8 @@
     display: flex;
     align-items: center;
     > div {
+      padding-top: 10px;
+
       display: flex;
       justify-content: space-between;
       @media (max-width: 960px) {

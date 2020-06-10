@@ -17,7 +17,7 @@ const FAQComponent = (props: IFAQComponentProps) => {
           <li key={key}>
             <ExpandablePanelComponent
               title={item.title}
-              backgroundColor="#f3f5f6"
+              backgroundColor="var(--gray-color)"
             >
               <p>{item.content}</p>
             </ExpandablePanelComponent>

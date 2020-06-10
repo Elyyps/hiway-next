@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./newsletter-card.module.scss";
 import ButtonComponent from "../button/button";
+import { NewsletterCardFormComponent } from "./newsletter-card-form";
 
 interface INewletterCardComponentProps {
   title: string;
@@ -16,13 +17,7 @@ const NewsletterCardComponent = (props: INewletterCardComponentProps) => {
           {props.description}
         </div>
         <div className={style["newsletter-card-form"]}>
-          <input type="text" placeholder="Your first & last name" />
-          <input type="text" placeholder="Your e-mail adress" />
-          <ButtonComponent
-            title={props.button}
-            variant="primary"
-            icon={"/icons/chevron-right.svg"}
-          />
+          <NewsletterCardFormComponent onSubmit={() => alert("submited")} />
         </div>
       </div>
     </div>

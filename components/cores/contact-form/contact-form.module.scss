@@ -11,8 +11,10 @@
       }
       margin-bottom: 32px;
     }
-    input {
-      margin-bottom: 24px;
+    @media (max-width: 639px) {
+      > div {
+        margin-bottom: 24px;
+      }
     }
   }
   &-bottom {

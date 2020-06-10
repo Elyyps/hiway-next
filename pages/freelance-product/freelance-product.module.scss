@@ -13,12 +13,18 @@
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 140px;
+  padding-top: 108px;
+  @media (max-width: 960px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   > div {
     width: 48%;
     min-height: 100%;
   }
   @media (max-width: 639px) {
     flex-direction: column;
+
     > div {
       width: 100%;
     }

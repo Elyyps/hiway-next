@@ -14,15 +14,22 @@
     font-size: 20px;
     color: var(--primary-color);
   }
+}
+.newsletter-form {
   input {
-    margin: 12px 0;
-    width: 100%;
+    &::placeholder {
+      opacity: 0.38;
+    }
     border-radius: 30.5px;
-    border: solid 1px #f3f5f6;
-    background-color: #ffffff;
-    padding: 8px;
+    border: 1px solid var(--gray-color);
+    margin-top: 16px;
+    padding-left: 19px;
   }
-  button {
-    margin: 0 auto;
+
+  &-bottom {
+    margin-top: 24px;
+    button {
+      margin: 0 auto;
+    }
   }
 }

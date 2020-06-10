@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   padding-top: 62px;
-
+  @media (max-width: 960px) {
+    padding-top: 40px;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -24,6 +26,9 @@
     width: 100%;
     display: flex;
     margin-bottom: 56px;
+    @media (max-width: 960px) {
+      margin-bottom: 18px;
+    }
     justify-content: space-between;
     h2 {
       margin-bottom: 0;
@@ -116,11 +121,16 @@
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    span {
-      color: #202020;
+    > span {
       opacity: 0.4;
+      color: #202020;
     }
     > div {
+      > span,
+      button {
+        opacity: 0.4;
+        color: #202020;
+      }
       svg {
         width: 10px;
         height: 5px;

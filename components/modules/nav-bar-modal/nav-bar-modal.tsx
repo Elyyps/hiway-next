@@ -48,11 +48,7 @@ const NavBarModalComponent = (props: INavBarModalComponentProps) => {
             style[`nav-bar-modal__holder__menu__close`]
           } ${isOpen ? style[`nav-bar-modal__holder__menu__open`] : ""} `}
         >
-          <div
-            className={`${style["nav-bar-modal__container"]} ${
-              style[`nav-bar-modal__container__menu`]
-            }`}
-          >
+          <div className={`${"container"} ${style[`nav-bar-modal__menu`]}`}>
             {/* <div
               className={style["nav-bar-modal__close"]}
               onClick={toggleOpened}

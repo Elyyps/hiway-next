@@ -32,9 +32,8 @@ const HamburgerMenuComponent = (props: IHamburgerMenuComponentProps) => (
           <li key={key}>
             <LinkComponent to={item.title.url ? item.title.url : ""}>
               {item.title.text}
-              <span>
-                <ReactSVG src={"/icons/chevron-right.svg"} />
-              </span>
+
+              <ReactSVG src={"/icons/chevron-right.svg"} />
             </LinkComponent>
           </li>
         )

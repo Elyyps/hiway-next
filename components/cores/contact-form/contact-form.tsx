@@ -3,6 +3,7 @@ import style from "./contact-form.module.scss";
 import { withFormik, FormikProps, FormikErrors, Form } from "formik";
 import ButtonComponent from "../button/button";
 import { InputComponent } from "../input/input";
+import { validateEmail } from "../../../utils/validate-email";
 
 interface IContactFormErrorMessages {
   firstName: string;
@@ -112,11 +113,6 @@ const InnerForm = (props: FormikProps<IContactFormValues>) => {
 interface IFormProps {
   onSubmit: (values: IContactFormValues) => void;
 }
-const validateEmail = (email: string) => {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-  return re.test(String(email).toLowerCase());
-};
 
 export const ContactFormComponent = withFormik<IFormProps, IContactFormValues>({
   mapPropsToValues: () => ({

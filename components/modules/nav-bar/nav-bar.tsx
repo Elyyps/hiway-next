@@ -9,6 +9,7 @@ import HamburgerMenuComponent from "../../cores/hamburger-menu/hamburger-menu";
 import { LanguageContext } from "../../../context/language";
 import DropdownLinkComponent from "../../cores/dropdown-link/dropdown-link";
 import RouteContext from "../../../context/route";
+import { useRouter } from "next/router";
 
 interface INavBarComponentProps {
   navBarModule: INavBar;
@@ -17,15 +18,20 @@ const NavBarComponent = (props: INavBarComponentProps) => {
   const [isClosed, setIsClosed] = React.useState(false);
   const { selectLanguage, language } = React.useContext(LanguageContext);
   const { route } = React.useContext(RouteContext);
-
+  const router = useRouter();
   const onLanguageSelected = (text: string) => {
     setIsClosed(!isClosed);
     selectLanguage(text);
   };
 
+  const handleLogoClick = (e: any) => {
+    e.preventDefault();
+    router.push("/");
+  };
+
   return (
     <div className={` ${style["nav-bar"]} container`}>
-      <div className={style["nav-bar-logo"]}>
+      <div className={style["nav-bar-logo"]} onClick={handleLogoClick}>
         <img src={props.navBarModule.logo} alt="hiway logo" />
       </div>
       <div className={` ${style["nav-bar-menu"]} ${"uk-visible@s"} `}>

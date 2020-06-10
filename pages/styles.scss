@@ -17,14 +17,19 @@
 :root {
   --primary-color: #c9002a;
   --secondary-color: #00009d;
-  --primary-color-dark: #c9002cb2;
-  --secondary-color-dark: #00009d8f;
+  --gray-color: #f3f5f6;
+  --mobile-size: 639px;
+  --tablet-size: 960px;
 }
 .divider {
   margin: 3% 0;
-  width: 8%;
+  width: 58px;
   height: 2px;
   background-color: var(--secondary-color);
+  @media (max-width: 639px) {
+    width: 20px;
+    margin-bottom: 24px;
+  }
 }
 
 * {
@@ -84,9 +89,8 @@ input,
 textarea {
   width: 100%;
   font-size: 16px;
-  padding: 10px 16px 10px 16px;
+  padding: 10px 4px 10px 6px;
   box-sizing: border-box;
-  border-radius: 4px;
   border: 0;
   border-bottom: 1px solid lightgrey;
   font-family: 16px;
