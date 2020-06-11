@@ -1,6 +1,5 @@
 import React from "react";
 import { headerAboutData } from "../../api/modules/welcome/dummy-data";
-
 import Layout from "../../components/Layout";
 import RouteContext from "../../context/route";
 import SectionComponent from "../../components/cores/section/section";

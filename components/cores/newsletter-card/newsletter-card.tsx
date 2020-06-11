@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./newsletter-card.module.scss";
-import ButtonComponent from "../button/button";
 import { NewsletterCardFormComponent } from "./newsletter-card-form";
 
 interface INewletterCardComponentProps {

@@ -1,9 +1,6 @@
 import React from "react";
 import SectionComponent from "../../components/cores/section/section";
-import {
-  welcomeData,
-  headerFreelanceData,
-} from "../../api/modules/welcome/dummy-data";
+import { headerFreelanceData } from "../../api/modules/welcome/dummy-data";
 import style from "./freelance-product.module.scss";
 import DescriptionSliderComponent from "../../components/modules/description-slider/description-slider";
 import { descriptionSliderData } from "../../api/modules/description-slider/dummy-data";
