@@ -22,34 +22,32 @@
   }
   &-animated {
     &:hover {
-      color: black;
       svg {
         transform: translateX(4px);
-        stroke: black;
       }
     }
   }
   &-primary {
     color: var(--primary-color);
     svg {
-      stroke: var(--primary-color);
+      fill: var(--primary-color);
     }
     &:hover {
       color: var(--primary-color-dark);
       svg {
-        stroke: var(--primary-color-dark);
+        fill: var(--primary-color-dark);
       }
     }
   }
   &-secondary {
     color: var(--secondary-color);
     svg {
-      stroke: var(--secondary-color);
+      fill: var(--secondary-color);
     }
     &:hover {
       color: var(--secondary-color-dark);
       svg {
-        stroke: var(--secondary-color-dark);
+        fill: var(--secondary-color-dark);
       }
     }
   }

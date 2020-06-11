@@ -7,6 +7,8 @@
 @import "~uikit/src/scss/components/width.scss";
 @import "~uikit/src/scss/components/visibility.scss";
 
+$mobile-size: 639px;
+$tablet-size: 960px;
 @font-face {
   font-family: "Apercu";
   font-style: normal;
@@ -17,9 +19,9 @@
 :root {
   --primary-color: #c9002a;
   --secondary-color: #00009d;
+  --primary-color-dark: #c9002cb2;
+  --secondary-color-dark: #00009d8f;
   --gray-color: #f3f5f6;
-  --mobile-size: 639px;
-  --tablet-size: 960px;
 }
 .divider {
   margin: 3% 0;
@@ -95,7 +97,9 @@ textarea {
   border-bottom: 1px solid lightgrey;
   font-family: 16px;
   background-color: transparent;
-
+  @media (max-width: 960px) {
+    font-size: 14px;
+  }
   &:focus {
     outline: none;
     border-color: var(--primary-color);

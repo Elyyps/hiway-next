@@ -3,7 +3,7 @@
   display: block;
 
   &-image {
-    height: 45%;
+    height: 40%;
     width: 100%;
 
     @media (max-width: 960px) {
@@ -17,7 +17,7 @@
   }
 
   &-content {
-    height: calc(55% - 24px);
+    height: calc(60% - 24px);
     padding: 12px;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
       }
     }
     > span {
-      font-size: 20px;
+      font-size: 18px;
       color: #292c30;
       @media (max-width: 960px) {
         font-size: 16px;

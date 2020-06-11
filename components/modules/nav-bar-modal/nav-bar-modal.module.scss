@@ -17,19 +17,39 @@
     overflow-y: hidden;
   }
 
-  &__open {
+  &__button {
     padding: 0;
     border: 0;
     background: none;
     margin: 0;
     cursor: pointer;
-    svg {
-      width: 20px;
-      height: 20px;
-      path {
-        stroke: var(--primary-color);
+    width: 100%;
+    > div {
+      width: 26px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        path {
+          stroke: var(--primary-color);
+        }
       }
     }
+    &__open {
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__close {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
     &:focus {
       outline: 0;
     }

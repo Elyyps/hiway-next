@@ -22,6 +22,30 @@ export const welcomeData = (): ISection[] => [
     button: { text: "Go to Freelance platform" },
   },
 ];
+
+export const headerHRData = (): ISection => ({
+  backgroundImage: "/img/optimized/hr-header.jpg",
+  backgroundMobileImage: "/img/optimized/section1.jpg",
+  title: "HR platform",
+  subTitle: "i want to go to ",
+  content:
+    "The perfect HR solution for flexible workforces. Let employees track their hours, sign contracts, and let payments settled automatically.",
+  postion: "center",
+  variant: "primary",
+  button: { text: "Go to HR platform" },
+});
+export const headerFreelanceData = (): ISection => ({
+  backgroundImage: "/img/optimized/freelance-header.jpg",
+  backgroundMobileImage: "/img/optimized/section2.jpg",
+  title: "Freelance platform",
+  subTitle: "i want to go to ",
+  content:
+    "Find the perfect job for you — a platform aimed at freelancers. Take on jobs from anywhere in the world!",
+  postion: "left",
+  variant: "secondary",
+  button: { text: "Go to Freelance platform" },
+});
+
 export const headerAboutData = (): ISection => ({
   backgroundImage: "/img/optimized/about.jpg",
   title: "Simplifying Work",

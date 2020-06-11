@@ -1,7 +1,10 @@
 .contact {
   &-header {
     button {
-      width: 50%;
+      width: 165px;
+      @media (max-width: 960px) {
+        width: 130px;
+      }
       span {
         width: 10px;
         height: 5px;

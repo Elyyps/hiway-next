@@ -30,6 +30,7 @@ const ContactPage = () => {
             variant="primary"
             isHeader
             onButtonClick={executeScroll}
+            buttonIsHidden
           />
         </div>
         <div ref={myRef}>

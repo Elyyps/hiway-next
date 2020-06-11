@@ -27,6 +27,7 @@ const AboutPage = () => {
           postion="center"
           variant="primary"
           isHeader
+          buttonIsHidden
         />
         <OurFocusComponent ourFocus={ourFocusData()} />
         <OurTeamComponent ourTeam={ourTeamData()} />

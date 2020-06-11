@@ -8,6 +8,7 @@ import ScreenWidthContext from "../../../context/screen-width";
 interface ISectionComponentProps {
   postion: "center" | "left" | "bottom";
   backgroundImage: string;
+  backgroundMobileImage?: string;
   title: string;
   content?: string;
   button?: ILink;
@@ -18,6 +19,7 @@ interface ISectionComponentProps {
   isHeader?: boolean;
   leftPosition?: number;
   onButtonClick?: () => void;
+  buttonIsHidden?: boolean;
 }
 const SectionComponent = (props: ISectionComponentProps) => {
   const { windowSize } = React.useContext(ScreenWidthContext);
@@ -27,18 +29,26 @@ const SectionComponent = (props: ISectionComponentProps) => {
     <div
       className={` ${style["section"]} `}
       style={
-        props.postion !== "bottom"
-          ? windowSize > 640
-            ? { height: `${windowSize / 3.3}px` }
-            : { height: `${windowSize / 2.1}px` }
-          : {}
+        windowSize > 640
+          ? {
+              height: `${windowSize / 3.3}px`,
+            }
+          : { height: `${windowSize / 2.1}px` }
       }
     >
       <div className={style["section-background"]}>
         <img
-          src={props.backgroundImage}
+          src={
+            windowSize < 640 && props.backgroundMobileImage
+              ? props.backgroundMobileImage
+              : props.backgroundImage
+          }
           alt="man working in an office"
-          style={props.isHeader ? { objectFit: "cover" } : {}}
+          // style={
+          //   props.isHeader
+          //     ? { objectFit: windowSize > 640 ? "cover" : "fill" }
+          //     : {}
+          // }
         />
       </div>
 
@@ -67,7 +77,11 @@ const SectionComponent = (props: ISectionComponentProps) => {
             {props.content}
           </p>
 
-          <div className={` ${style["section-button"]} `}>
+          <div
+            className={` ${style["section-button"]} ${
+              props.buttonIsHidden ? "uk-visible@s" : ""
+            } `}
+          >
             {props.button && (
               <ButtonComponent
                 title={props.button.text}

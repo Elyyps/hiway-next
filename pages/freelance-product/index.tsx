@@ -1,6 +1,9 @@
 import React from "react";
 import SectionComponent from "../../components/cores/section/section";
-import { welcomeData } from "../../api/modules/welcome/dummy-data";
+import {
+  welcomeData,
+  headerFreelanceData,
+} from "../../api/modules/welcome/dummy-data";
 import style from "./freelance-product.module.scss";
 import DescriptionSliderComponent from "../../components/modules/description-slider/description-slider";
 import { descriptionSliderData } from "../../api/modules/description-slider/dummy-data";
@@ -26,10 +29,7 @@ const FreelanceProduct = () => {
       <Layout>
         <div className={style["header"]}>
           <SectionComponent
-            backgroundImage={welcomeData()[1].backgroundImage}
-            title={welcomeData()[1].title}
-            button={welcomeData()[1].button}
-            content={welcomeData()[1].content}
+            {...headerFreelanceData()}
             postion="center"
             variant="secondary"
             isHeader

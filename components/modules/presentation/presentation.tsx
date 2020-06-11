@@ -27,22 +27,15 @@ const PresentationComponent = (props: IPresentationComponentProps) => {
         >
           <img src={props.presentation.video} alt="close zoom on laptop" />
           <div>
-            <ReactSVG src={props.presentation.icon} />
-            <span>{props.presentation.videoTitle}</span>
+            <a
+              href={props.presentation.videoTitle.url}
+              target="__blank"
+              rel="nofollow"
+            >
+              <ReactSVG src={props.presentation.icon} />
+              <span>{props.presentation.videoTitle.text}</span>
+            </a>
           </div>
-
-          {/* <ReactPlayer
-            url={props.presentation.video}
-            width={"100%"}
-            height={
-              windowSize < 639
-                ? windowSize / 1.63
-                : windowSize > 639 && windowSize < 800
-                ? "290px"
-                : windowSize / 3.26
-            }
-            controls
-          /> */}
         </div>
         <div className={style["presentation-content"]}>
           <h2 className="title">{props.presentation.title}</h2>

@@ -28,13 +28,17 @@ const NavBarModalComponent = (props: INavBarModalComponentProps) => {
     <div className={style["nav-bar-modal__toggle"]}>
       <button
         type="button"
-        className={style["nav-bar-modal__open"]}
         onClick={() => setIsMenuOpened(!isOpen)}
+        className={style["nav-bar-modal__button"]}
       >
         {isOpen ? (
-          <ReactSVG src={"/icons/cross.svg"} />
+          <div className={style["nav-bar-modal__button__close"]}>
+            <ReactSVG src={"/icons/cross.svg"} />
+          </div>
         ) : (
-          <ReactSVG src={props.icon} />
+          <div className={style["nav-bar-modal__button__open"]}>
+            <ReactSVG src={props.icon} />
+          </div>
         )}
       </button>
 
@@ -49,12 +53,6 @@ const NavBarModalComponent = (props: INavBarModalComponentProps) => {
           } ${isOpen ? style[`nav-bar-modal__holder__menu__open`] : ""} `}
         >
           <div className={`${"container"} ${style[`nav-bar-modal__menu`]}`}>
-            {/* <div
-              className={style["nav-bar-modal__close"]}
-              onClick={toggleOpened}
-            >
-              <ReactSVG src={cross} />
-            </div> */}
             <div className={style["nav-bar-modal__items"]}>
               {props.children}
             </div>

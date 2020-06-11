@@ -48,6 +48,7 @@
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
+
     > div {
       width: 49%;
     }
@@ -61,6 +62,7 @@
     .images {
       display: flex;
       justify-content: space-between;
+
       @media (max-width: 960px) {
         margin-bottom: 24px;
       }

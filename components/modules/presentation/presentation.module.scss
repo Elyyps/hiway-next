@@ -30,40 +30,35 @@
     }
     > div {
       position: absolute;
-      display: flex;
-      margin: auto;
       width: 60%;
-      color: white;
-
       bottom: 30px;
       left: 35px;
       font-size: 20px;
+      > a {
+        color: white;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        width: 100%;
+        > div {
+          width: 25%;
+          min-width: 50px;
+          min-height: 50px;
+          margin-right: 16px;
+          @media (max-width: 960px) {
+            max-width: 60px;
+            max-height: 60px;
+          }
+        }
+      }
       @media (max-width: 960px) {
         font-size: 16px;
         bottom: 17px;
         left: 19px;
+        width: 220px;
       }
       @media (max-width: 639px) {
-        width: 57%;
         font-size: 14px;
-      }
-      > div {
-        width: 35%;
-        min-width: 50px;
-        min-height: 50px;
-        @media (min-width: 1200px) {
-          width: 32%;
-        }
-        @media (max-width: 960px) {
-          max-width: 60px;
-          max-height: 60px;
-        }
-      }
-      span {
-        margin: auto 0;
-      }
-      svg {
-        margin-right: 17px;
       }
     }
     img {

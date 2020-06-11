@@ -1,6 +1,9 @@
 import React from "react";
 import SectionComponent from "../../components/cores/section/section";
-import { welcomeData } from "../../api/modules/welcome/dummy-data";
+import {
+  welcomeData,
+  headerHRData,
+} from "../../api/modules/welcome/dummy-data";
 import style from "./hr-product.module.scss";
 import DescriptionSliderComponent from "../../components/modules/description-slider/description-slider";
 import { descriptionSliderData } from "../../api/modules/description-slider/dummy-data";
@@ -25,10 +28,7 @@ const HrProduct = () => {
       <Layout>
         <div className={style["header"]}>
           <SectionComponent
-            backgroundImage={welcomeData()[0].backgroundImage}
-            title={welcomeData()[0].title}
-            button={welcomeData()[0].button}
-            content={welcomeData()[0].content}
+            {...headerHRData()}
             postion="center"
             variant="primary"
             isHeader

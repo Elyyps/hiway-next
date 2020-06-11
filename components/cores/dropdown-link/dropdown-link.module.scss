@@ -1,6 +1,14 @@
 .dropdown-link {
   span {
     font-size: 18px;
+
+    div {
+      height: 100%;
+      > a svg {
+        width: 5px;
+        height: 10px;
+      }
+    }
   }
   > div {
     font-size: 14px;

@@ -120,7 +120,7 @@
       }
       li {
         button,
-        a {
+        > a {
           font-family: "Apercu";
           font-size: 16px;
           font-weight: normal;
@@ -135,17 +135,16 @@
             height: 100%;
             display: flex;
             align-items: center;
+            svg {
+              width: 10px;
+              height: 5px;
+            }
           }
         }
         display: flex;
         align-items: center;
         height: 100%;
         border-bottom: 2px solid transparent;
-
-        svg {
-          width: 10px;
-          height: 5px;
-        }
       }
       li:hover {
         cursor: pointer;

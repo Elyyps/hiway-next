@@ -3,6 +3,7 @@ import { ILink } from "./link";
 export type ISection = {
   postion: "center" | "left" | "bottom";
   backgroundImage: string;
+  backgroundMobileImage?: string;
   title: string;
   content?: string;
   button?: ILink;
