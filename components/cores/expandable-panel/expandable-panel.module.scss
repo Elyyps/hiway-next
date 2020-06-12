@@ -37,6 +37,21 @@
       visibility: visible;
       opacity: 1;
       height: fit-content;
+      > ul {
+        margin-top: 16px;
+        list-style: none;
+        margin-bottom: 0;
+        > li {
+          width: 80%;
+          > div div {
+            font-size: 10px;
+          }
+        }
+
+        > li:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
     }
     button {
       svg {

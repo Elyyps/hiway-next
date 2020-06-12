@@ -19,10 +19,7 @@ const AboutPage = () => {
     <div>
       <Layout>
         <SectionComponent
-          backgroundImage={headerAboutData().backgroundImage}
-          title={headerAboutData().title}
-          button={headerAboutData().button}
-          content={headerAboutData().content}
+          {...headerAboutData()}
           postion="center"
           variant="primary"
           isHeader

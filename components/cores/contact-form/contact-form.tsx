@@ -1,9 +1,9 @@
 import * as React from "react";
 import style from "./contact-form.module.scss";
 import { withFormik, FormikProps, FormikErrors, Form } from "formik";
-import ButtonComponent from "../button/button";
 import { InputComponent } from "../input/input";
 import { validateEmail } from "../../../utils/validate-email";
+import ButtonComponent from "../button/button";
 
 interface IContactFormErrorMessages {
   firstName: string;
@@ -144,7 +144,7 @@ export const ContactFormComponent = withFormik<IFormProps, IContactFormValues>({
     return errors;
   },
 
-  handleSubmit: (values, bag) => {
+  handleSubmit: (values: IContactFormValues, bag: any) => {
     bag.props.onSubmit(values);
   },
 })(InnerForm);

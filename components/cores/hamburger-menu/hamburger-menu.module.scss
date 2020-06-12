@@ -1,32 +1,18 @@
 .hamburger-menu {
   height: 100%;
-  overflow: auto;
 
   &-navigation {
-    list-style-type: none;
     padding: 0;
-
-    ul {
-      margin-top: 12px;
-      list-style: none;
-      li {
-        display: flex;
-        color: var(--secondary-color);
-        margin-top: 8px;
-        svg {
-          width: 4px;
-          height: 7px;
-          margin-right: 8px;
-          fill: var(--secondary-color);
-        }
-      }
-    }
+    margin: 0;
+    list-style: none;
     > li {
-      margin-bottom: 20px;
+      min-height: 27px;
       width: 100%;
       color: black;
-      border-bottom: 1px solid var(--gray-color);
-      padding: 19.5px 0;
+      padding: 24px 0;
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--gray-color);
+      }
       button {
         font-size: 18px;
         svg {
@@ -38,11 +24,14 @@
           color: var(--primary-color);
         }
       }
-      a {
+      > a {
         display: flex;
         justify-content: space-between;
         text-decoration: none;
         font-size: 18px;
+        svg {
+          fill: var(--primary-color);
+        }
         &:hover {
           color: var(--primary-color);
         }

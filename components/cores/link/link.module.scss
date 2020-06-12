@@ -13,9 +13,20 @@
   }
   svg {
     width: 5px;
-    height: 9px;
-    margin-left: 8px;
+    height: 10px;
     transition: transform 150ms ease-in-out;
+  }
+  &-right-icon {
+    svg {
+      margin-left: 8px;
+    }
+  }
+  &-left-icon {
+    height: 100%;
+    svg {
+      margin: auto 0;
+      margin-right: 8px;
+    }
   }
   &-underlined {
     text-decoration: underline !important;

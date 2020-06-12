@@ -3,6 +3,7 @@ import { ISection } from "../../cores/section";
 export const welcomeData = (): ISection[] => [
   {
     backgroundImage: "/img/optimized/section1.jpg",
+    backgroundMobileImage: "/img/optimized/mobile-hr.jpg",
     title: "HR platform",
     subTitle: "i want to go to ",
     content:
@@ -13,6 +14,7 @@ export const welcomeData = (): ISection[] => [
   },
   {
     backgroundImage: "/img/optimized/section2.jpg",
+    backgroundMobileImage: "/img/optimized/mobile-freelance.jpg",
     title: "Freelance platform",
     subTitle: "i want to go to ",
     content:
@@ -25,7 +27,7 @@ export const welcomeData = (): ISection[] => [
 
 export const headerHRData = (): ISection => ({
   backgroundImage: "/img/optimized/hr-header.jpg",
-  backgroundMobileImage: "/img/optimized/section1.jpg",
+  backgroundMobileImage: "/img/optimized/mobile-hr.jpg",
   title: "HR platform",
   subTitle: "i want to go to ",
   content:
@@ -36,7 +38,7 @@ export const headerHRData = (): ISection => ({
 });
 export const headerFreelanceData = (): ISection => ({
   backgroundImage: "/img/optimized/freelance-header.jpg",
-  backgroundMobileImage: "/img/optimized/section2.jpg",
+  backgroundMobileImage: "/img/optimized/mobile-freelance.jpg",
   title: "Freelance platform",
   subTitle: "i want to go to ",
   content:
@@ -48,6 +50,7 @@ export const headerFreelanceData = (): ISection => ({
 
 export const headerAboutData = (): ISection => ({
   backgroundImage: "/img/optimized/about.jpg",
+  backgroundMobileImage: "/img/optimized/about-mobile.jpg",
   title: "Simplifying Work",
   content:
     "Creating the employment environment of the future by utilising technological advancements",
@@ -57,6 +60,7 @@ export const headerAboutData = (): ISection => ({
 });
 export const headerContactData = (): ISection => ({
   backgroundImage: "/img/optimized/contact.jpg",
+  backgroundMobileImage: "/img/optimized/contact-mobile.jpg",
   title: "Get in touch",
   content:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ante at erat consequat congue.",

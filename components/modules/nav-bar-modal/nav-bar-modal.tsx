@@ -1,6 +1,7 @@
 import * as React from "react";
 import style from "./nav-bar-modal.module.scss";
 import ReactSVG from "react-svg";
+import ReactDOM from "react-dom";
 
 export interface INavBarModalComponentProps {
   children?: any;
@@ -10,13 +11,18 @@ export interface INavBarModalComponentProps {
 const NavBarModalComponent = (props: INavBarModalComponentProps) => {
   const [isOpen, setIsMenuOpened] = React.useState(false);
 
+  const modalRef = React.createRef<HTMLDivElement>();
+  const onClickAway = (e: any) => {
+    if (modalRef.current && modalRef.current.contains(e.target)) return;
+    setIsMenuOpened(false);
+  };
+
   React.useEffect(() => {
     if (isOpen) {
       if (typeof document !== "undefined") {
         document.documentElement.style.overflow = "hidden";
       }
     }
-
     return () => {
       if (typeof document !== "undefined") {
         document.documentElement.style.overflow = "auto";
@@ -41,24 +47,31 @@ const NavBarModalComponent = (props: INavBarModalComponentProps) => {
           </div>
         )}
       </button>
-
-      <div
-        className={`${
-          style[isOpen ? "nav-bar-modal__opened" : "nav-bar-modal__closed"]
-        } ${style["nav-bar-modal"]} `}
-      >
-        <div
-          className={`${style["nav-bar-modal__holder"]} ${
-            style[`nav-bar-modal__holder__menu__close`]
-          } ${isOpen ? style[`nav-bar-modal__holder__menu__open`] : ""} `}
-        >
-          <div className={`${"container"} ${style[`nav-bar-modal__menu`]}`}>
-            <div className={style["nav-bar-modal__items"]}>
-              {props.children}
+      {typeof document !== "undefined" &&
+        ReactDOM.createPortal(
+          <div
+            className={`${
+              style[isOpen ? "nav-bar-modal__opened" : "nav-bar-modal__closed"]
+            } ${style["nav-bar-modal"]} `}
+            onClick={(e): any => {
+              onClickAway(e);
+            }}
+          >
+            <div
+              className={`${style["nav-bar-modal__holder"]} ${
+                style[`nav-bar-modal__holder__menu__close`]
+              } ${isOpen ? style[`nav-bar-modal__holder__menu__open`] : ""} `}
+              ref={modalRef}
+            >
+              <div className={`${"container"} ${style[`nav-bar-modal__menu`]}`}>
+                <div className={style["nav-bar-modal__items"]}>
+                  {props.children}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </div>,
+          document.body
+        )}
     </div>
   );
 };

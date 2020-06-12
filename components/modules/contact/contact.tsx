@@ -3,21 +3,18 @@ import style from "./contact.module.scss";
 import { IContact } from "../../../api/modules/contact/contact";
 import { ContactFormComponent } from "../../cores/contact-form/contact-form";
 import ReactSVG from "react-svg";
-import ScreenWidthContext from "../../../context/screen-width";
 
 interface IContactComponentProps {
   contact: IContact;
 }
 const ContactComponent = (props: IContactComponentProps) => {
-  const { windowSize } = React.useContext(ScreenWidthContext);
-
   return (
     <div className={` ${style["contact"]} container`}>
       <h2 className="title">{props.contact.title}</h2>
       <div>
         <div className={style["contact-left"]}>
           <p>{props.contact.description}</p>
-          <ContactFormComponent onSubmit={() => alert("submited")} />
+          <ContactFormComponent onSubmit={() => ""} />
         </div>
         <div className={style["contact-right"]}>
           <div>
@@ -39,14 +36,14 @@ const ContactComponent = (props: IContactComponentProps) => {
             <div>
               <img src={props.contact.mapImage} alt="" />
             </div>
-            <span
+            {/* <span
               style={{
                 top: `${windowSize / 110}%`,
                 left: `${windowSize / 31}%`,
               }}
             >
               <ReactSVG src="/icons/location.svg" />
-            </span>
+            </span> */}
           </div>
         </div>
       </div>

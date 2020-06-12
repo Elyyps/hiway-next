@@ -22,10 +22,7 @@ const ContactPage = () => {
       <Layout>
         <div className={style["contact-header"]}>
           <SectionComponent
-            backgroundImage={headerContactData().backgroundImage}
-            title={headerContactData().title}
-            button={headerContactData().button}
-            content={headerContactData().content}
+            {...headerContactData()}
             postion="center"
             variant="primary"
             isHeader

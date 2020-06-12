@@ -8,6 +8,5 @@ export const contactData = (): IContact => ({
   address: "Herengracht 216 \n 1016 BS – Amsterdam",
   phoneNumber: "+31(0) 6 10211367",
   email: "info@hiway.io",
-  mapImage: "/icons/map.svg",
-  locationIcon: "/icons/location.svg",
+  mapImage: "/img/optimized/map.png",
 });

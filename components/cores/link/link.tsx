@@ -11,6 +11,7 @@ interface ILinkComponentProps {
   underlined?: boolean;
   to: string;
   variant?: "primary" | "secondary";
+  iconIsLeft?: boolean;
 }
 
 const LinkComponent = (props: ILinkComponentProps) => {
@@ -22,10 +23,20 @@ const LinkComponent = (props: ILinkComponentProps) => {
           props.variant && style[`link-${props.variant}`]
         }  ${style[props.animated ? "link-animated" : ""]} ${
           style[props.underlined ? "link-underlined" : ""]
-        }`}
+        } ${style[props.iconIsLeft ? "link-left-icon" : "link-right-icon"]}`}
       >
+        {props.icon && props.iconIsLeft && (
+          <ReactSVG
+            src={props.icon}
+            style={
+              props.variant && {
+                fill: `var(--${props.variant}-color)`,
+              }
+            }
+          />
+        )}
         {props.children}
-        {props.icon && (
+        {props.icon && !props.iconIsLeft && (
           <ReactSVG
             src={props.icon}
             style={

@@ -6,5 +6,4 @@ export type IContact = {
   phoneNumber: string;
   email: string;
   mapImage: string;
-  locationIcon: string;
 };

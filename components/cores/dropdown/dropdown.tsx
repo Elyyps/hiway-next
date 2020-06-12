@@ -32,7 +32,7 @@ const DropdownComponent = (props: IDropDownComponentProps) => {
         style={
           props.fullWidth
             ? {
-                marginTop: "5px",
+                marginTop: "19px",
                 width: "100%",
                 borderTop: "1px solid #dfdfdf",
               }

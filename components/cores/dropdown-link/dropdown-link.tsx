@@ -6,6 +6,7 @@ import { ILink } from "../../../api/cores/link";
 interface IDropdownLinkComponentProps {
   link: ILink;
   content: string;
+  linkIconLeft?: boolean;
 }
 
 const DropdownLinkComponent = (props: IDropdownLinkComponentProps) => {
@@ -17,11 +18,14 @@ const DropdownLinkComponent = (props: IDropdownLinkComponentProps) => {
           variant="secondary"
           animated
           icon={"/icons/chevron-right.svg"}
+          iconIsLeft={props.linkIconLeft}
         >
           {props.link.text}
         </LinkComponent>
       </span>
-      <div>{props.content}</div>
+      <div style={props.linkIconLeft ? { marginLeft: "16px" } : {}}>
+        {props.content}
+      </div>
     </div>
   );
 };

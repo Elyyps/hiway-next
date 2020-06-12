@@ -5,6 +5,7 @@ import { INavItem } from "../../../api/cores/nav-item";
 import ExpandablePanelComponent from "../expandable-panel/expandable-panel";
 import ReactSVG from "react-svg";
 import { IDropdownLink } from "../../../api/cores/dropdown-link";
+import DropdownLinkComponent from "../dropdown-link/dropdown-link";
 export interface IHamburgerMenuComponentProps {
   menuItems: INavItem[];
 }
@@ -19,10 +20,7 @@ const HamburgerMenuComponent = (props: IHamburgerMenuComponentProps) => (
               <ul>
                 {item.dropdownLink?.map((link: IDropdownLink, key: number) => (
                   <li key={key}>
-                    <ReactSVG src={"/icons/chevron-right.svg"} />
-                    <LinkComponent to={link.link.url ? link.link.url : ""}>
-                      {link.link.text}
-                    </LinkComponent>
+                    <DropdownLinkComponent {...link} linkIconLeft />
                   </li>
                 ))}
               </ul>
@@ -32,7 +30,6 @@ const HamburgerMenuComponent = (props: IHamburgerMenuComponentProps) => (
           <li key={key}>
             <LinkComponent to={item.title.url ? item.title.url : ""}>
               {item.title.text}
-
               <ReactSVG src={"/icons/chevron-right.svg"} />
             </LinkComponent>
           </li>

@@ -43,15 +43,11 @@
     }
   }
   &-image {
-    position: relative;
     > div {
       img {
         width: 100%;
         height: 100%;
       }
-    }
-    > span {
-      position: absolute;
     }
   }
 }
