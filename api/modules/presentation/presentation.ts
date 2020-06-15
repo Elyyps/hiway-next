@@ -6,4 +6,5 @@ export type IPresentation = {
   videoTitle: ILink;
   content: string;
   icon: string;
+  beta?: string;
 };
