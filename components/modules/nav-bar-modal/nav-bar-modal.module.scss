@@ -60,7 +60,7 @@
     background-color: white;
     width: 100%;
     min-height: min-content;
-    height: max-content;
+    height: intrinsic;
     display: inline-block;
     &__menu {
       &__close {
