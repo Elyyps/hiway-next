@@ -63,7 +63,7 @@ export const headerContactData = (): ISection => ({
   backgroundMobileImage: "/img/optimized/contact-mobile.jpg",
   title: "Get in touch",
   content:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ante at erat consequat congue.",
+    "Are you looking for a demo of one of our products? Or have anything else to ask us? Reach out, and we’ll get back to you shortly",
   postion: "center",
   variant: "primary",
   button: { text: "Contact" },

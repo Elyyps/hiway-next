@@ -13,14 +13,14 @@ export const navBarData = (): INavBar => ({
       dropdownTitle: "Our products",
       dropdownLink: [
         {
-          link: { text: "Freelance platform", url: "/freelance-product" },
-          content:
-            "Our online freelance platform which enables blockchain technology in matching freelancers worldwide",
-        },
-        {
           link: { text: "HR platform", url: "/hr-product" },
           content:
             " Matching and contracting of a flexible workforce all within an easy to use modular design.",
+        },
+        {
+          link: { text: "Freelance platform", url: "/freelance-product" },
+          content:
+            "Our online freelance platform which enables blockchain technology in matching freelancers worldwide",
         },
       ],
     },

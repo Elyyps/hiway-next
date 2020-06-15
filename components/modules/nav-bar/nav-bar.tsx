@@ -80,11 +80,11 @@ const NavBarComponent = (props: INavBarComponentProps) => {
           </ul>
         </DropdownComponent>
       </div>
-      <div className={style["nav-bar-search"]}>
-        <span className={"uk-visible@s"}>
+      <div className={` uk-hidden@s ${style["nav-bar-search"]} `}>
+        {/* <span className={"uk-visible@s"}>
           <ReactSVG src={props.navBarModule.searchIcon} />
-        </span>
-        <span className={"uk-hidden@s"}>
+        </span> */}
+        <span>
           <NavBarModalComponent icon={props.navBarModule.menuIcon}>
             <HamburgerMenuComponent menuItems={props.navBarModule.items} />
           </NavBarModalComponent>
