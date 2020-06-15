@@ -59,8 +59,9 @@
     z-index: 15;
     background-color: white;
     width: 100%;
-    ///max-height: fit-content;
+    min-height: min-content;
     height: max-content;
+    display: inline-block;
     &__menu {
       &__close {
         opacity: 0;
