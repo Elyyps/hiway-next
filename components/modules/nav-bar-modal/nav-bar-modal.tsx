@@ -47,31 +47,29 @@ const NavBarModalComponent = (props: INavBarModalComponentProps) => {
           </div>
         )}
       </button>
-      {typeof document !== "undefined" &&
-        ReactDOM.createPortal(
+      {typeof document !== "undefined" && (
+        <div
+          className={`${
+            style[isOpen ? "nav-bar-modal__opened" : "nav-bar-modal__closed"]
+          } ${style["nav-bar-modal"]} `}
+          onClick={(e): any => {
+            onClickAway(e);
+          }}
+        >
           <div
-            className={`${
-              style[isOpen ? "nav-bar-modal__opened" : "nav-bar-modal__closed"]
-            } ${style["nav-bar-modal"]} `}
-            onClick={(e): any => {
-              onClickAway(e);
-            }}
+            className={`${style["nav-bar-modal__holder"]} ${
+              style[`nav-bar-modal__holder__menu__close`]
+            } ${isOpen ? style[`nav-bar-modal__holder__menu__open`] : ""} `}
+            ref={modalRef}
           >
-            <div
-              className={`${style["nav-bar-modal__holder"]} ${
-                style[`nav-bar-modal__holder__menu__close`]
-              } ${isOpen ? style[`nav-bar-modal__holder__menu__open`] : ""} `}
-              ref={modalRef}
-            >
-              <div className={`${"container"} ${style[`nav-bar-modal__menu`]}`}>
-                <div className={style["nav-bar-modal__items"]}>
-                  {props.children}
-                </div>
+            <div className={`${"container"} ${style[`nav-bar-modal__menu`]}`}>
+              <div className={style["nav-bar-modal__items"]}>
+                {props.children}
               </div>
             </div>
-          </div>,
-          document.body
-        )}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
