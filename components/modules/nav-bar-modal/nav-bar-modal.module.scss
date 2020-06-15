@@ -56,19 +56,14 @@
   }
 
   &__holder {
-    z-index: 15;
     background-color: white;
-    width: 100%;
-    min-height: min-content;
-    height: intrinsic;
-    display: inline-block;
     &__menu {
+      display: inline-table;
       &__close {
         opacity: 0;
         visibility: hidden;
         position: absolute;
         top: 0;
-        bottom: 0;
         right: 0;
         transition: 0.25s opacity ease-in-out;
       }
