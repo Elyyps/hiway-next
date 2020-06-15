@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./nav-bar.module.scss";
 import { INavBar } from "../../../api/modules/nav-bar/nav-bar";
-import ReactSVG from "react-svg";
 import LinkComponent from "../../cores/link/link";
 import DropdownComponent from "../../cores/dropdown/dropdown";
 import NavBarModalComponent from "../nav-bar-modal/nav-bar-modal";
