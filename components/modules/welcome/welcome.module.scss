@@ -7,8 +7,10 @@
   > div {
     width: 50%;
     height: auto;
-    &:last-child {
-      border-left: 1px solid white;
+    @media (min-width: 639px) {
+      &:last-child {
+        border-left: 1px solid white;
+      }
     }
     @media (max-width: 960px) {
       //  height: 480px;
