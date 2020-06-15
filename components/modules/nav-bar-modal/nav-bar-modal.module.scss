@@ -65,12 +65,12 @@
         position: absolute;
         top: 0;
         right: 0;
-        transition: 0.2s height ease-in-out;
+        transition: 0.3s height ease-in-out;
       }
       &__open {
         height: auto;
         visibility: visible;
-        transition: 0.2s height ease-in-out;
+        transition: 0.3s height ease-in-out;
       }
     }
   }
