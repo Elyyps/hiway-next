@@ -105,3 +105,19 @@ textarea {
     border-color: var(--primary-color);
   }
 }
+.header-button {
+  button {
+    width: 170px;
+
+    @media (max-width: 960px) {
+      width: 130px;
+    }
+    span {
+      width: 10px;
+      height: 5px;
+    }
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+}

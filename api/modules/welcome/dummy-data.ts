@@ -56,7 +56,7 @@ export const headerAboutData = (): ISection => ({
     "Creating the employment environment of the future by utilising technological advancements",
   postion: "center",
   variant: "primary",
-  button: { text: "Go to HR platform" },
+  button: { text: "Discover more" },
 });
 export const headerContactData = (): ISection => ({
   backgroundImage: "/img/optimized/contact.jpg",

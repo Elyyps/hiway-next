@@ -3,7 +3,7 @@ import { IOurFocus } from "./our-focus";
 export const ourFocusData = (): IOurFocus => ({
   title: "What we do best",
   content:
-    "At Hiway, we focus on work. We are getting work done ourselves while at the same time enabling others to do the same. Our team is built with a strong background and focus on the recruitment industry. We started with running our own recruitment agency through which we found numerous ways to improve the process of finding, administrating, and matching candidates and vacancies. Our main focus is on the employer side of running a small to medium sizes company. At the same time, we are fascinated by technological advancements, which led us to start experimenting with technologies like Blockchain and Artificial intelligence. Check out our first two products down below.",
+    "At Hiway, we focus on work. Getting work done ourselves while at the same time enabling others to do the same. Our team is built with a strong background and focus on the recruitment industry. We started with running our own recruitment agency through which we found numerous ways to improve the process of finding, administrating, and matching candidates and vacancies. Our main focus is on the employer side of running a small to medium sizes company. At the same time, we are fascinated by technological advancements, which led us to start experimenting with technologies like Blockchain and Artificial intelligence. Check out our first two products down below.",
   descriptionCards: [
     {
       title: "Developers",

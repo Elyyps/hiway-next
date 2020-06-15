@@ -12,20 +12,30 @@ import { vacanciesData } from "../../api/modules/vacancies/dummy-data";
 
 const AboutPage = () => {
   const { selectRoute } = React.useContext(RouteContext);
+  const myRef = React.useRef(null);
+  const scrollToRef = (ref: any) =>
+    window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" });
+  const executeScroll = () => scrollToRef(myRef);
+
   React.useEffect(() => {
     selectRoute("About");
   }, []);
   return (
     <div>
       <Layout>
-        <SectionComponent
-          {...headerAboutData()}
-          postion="center"
-          variant="primary"
-          isHeader
-          buttonIsHidden
-        />
-        <OurFocusComponent ourFocus={ourFocusData()} />
+        <div className={"header-button"}>
+          <SectionComponent
+            {...headerAboutData()}
+            postion="center"
+            variant="primary"
+            isHeader
+            buttonIsHidden
+            onButtonClick={executeScroll}
+          />
+        </div>
+        <div ref={myRef}>
+          <OurFocusComponent ourFocus={ourFocusData()} />
+        </div>
         <OurTeamComponent ourTeam={ourTeamData()} />
         <VacanciesComponent vacancies={vacanciesData()} />
       </Layout>

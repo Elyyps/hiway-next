@@ -5,8 +5,8 @@ export const contactData = (): IContact => ({
   description:
     "Filium morte multavit si sine dubio praeclara sunt, fecerint, virtutem iis per se. Torquem detraxit hosti et quidem exercitus quid ex eo est primum igitur.",
   subTitle: "Hiway office",
-  address: "Herengracht 216 \n 1016 BS – Amsterdam",
-  phoneNumber: "+31(0) 6 10211367",
+  address: "Kerkenbos 1075-V \n 6546 BB Nijmegen",
+  phoneNumber: "+31(0) 88 711 3333",
   email: "info@hiway.io",
   mapImage: "/img/optimized/map.png",
 });

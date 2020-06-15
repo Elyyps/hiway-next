@@ -2,7 +2,7 @@ import { INewsletter } from "./newsletter";
 
 export const newsletterData = (): INewsletter => ({
   title: "Want more information about Hiway?",
-  link: { text: "sign up" },
+  link: { text: "about page", url: "/about" },
   button: { text: "Get in touch" },
   card: {
     title: "Newsletter",

@@ -28,7 +28,7 @@ export const descriptionSliderData = (): IDescriptionSlider[] => [
   },
   {
     content:
-      "A globally operating freelance platform that enables workers to find and take on jobs from all over the world. Payments settle through the use of blockchain technology to facilitate worldwide and instant payments.For employers, this product offers an easy to use the platform to centralize the search and hiring of freelancers.",
+      "A globally operating freelance platform that enables workers to find and take on jobs from all over the world. Payments settle through the use of blockchain technology to facilitate worldwide and instant payments.\nFor employers, this product offers an easy to use the platform to centralize the search and hiring of freelancers.",
     link: { text: "More information" },
     pictures: [
       "/img/optimized/freelance1.png",

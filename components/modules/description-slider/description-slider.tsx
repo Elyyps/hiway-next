@@ -10,12 +10,14 @@ interface IDescriptionSliderComponentProps {
   descriptionSlider: IDescriptionSlider[];
   isHr?: boolean;
   isFreelance?: boolean;
+  onLinkClick?: () => void;
 }
 
 const DescriptionSliderComponent = ({
   descriptionSlider,
   isHr,
   isFreelance,
+  onLinkClick,
 }: IDescriptionSliderComponentProps) => {
   const [selectedTab, setSelectedTab] = React.useState<number>(
     isHr ? 0 : isFreelance ? 1 : 0
@@ -81,14 +83,16 @@ const DescriptionSliderComponent = ({
 
         <div className={style["description-slider-content"]}>
           {descriptionSlider[selectedTab].content}
-          <LinkComponent
-            to={""}
-            animated
-            icon={"/icons/chevron-right.svg"}
-            variant={descriptionSlider[selectedTab].variant}
-          >
-            {descriptionSlider[selectedTab].link.text}
-          </LinkComponent>
+          <span onClick={onLinkClick}>
+            <LinkComponent
+              to={"#"}
+              animated
+              icon={"/icons/chevron-right.svg"}
+              variant={descriptionSlider[selectedTab].variant}
+            >
+              {descriptionSlider[selectedTab].link.text}
+            </LinkComponent>
+          </span>
         </div>
         <div className={"uk-visible@m"}>{displayCards()}</div>
       </div>

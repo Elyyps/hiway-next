@@ -1,6 +1,5 @@
 import React from "react";
 import { headerContactData } from "../../api/modules/welcome/dummy-data";
-import style from "./contact.module.scss";
 import Layout from "../../components/Layout";
 import RouteContext from "../../context/route";
 import SectionComponent from "../../components/cores/section/section";
@@ -18,9 +17,9 @@ const ContactPage = () => {
     selectRoute("Contact");
   }, []);
   return (
-    <div className={style["contact"]}>
+    <div>
       <Layout>
-        <div className={style["contact-header"]}>
+        <div className={"header-button"}>
           <SectionComponent
             {...headerContactData()}
             postion="center"

@@ -17,6 +17,11 @@ import RouteContext from "../../context/route";
 
 const FreelanceProduct = () => {
   const { selectRoute } = React.useContext(RouteContext);
+  const myRef = React.useRef(null);
+  const scrollToRef = (ref: any) =>
+    window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" });
+  const executeScroll = () => scrollToRef(myRef);
+
   React.useEffect(() => {
     selectRoute("Producten");
   }, []);
@@ -35,10 +40,14 @@ const FreelanceProduct = () => {
         <DescriptionSliderComponent
           descriptionSlider={descriptionSliderData()}
           isFreelance
+          onLinkClick={executeScroll}
         />
-        <FunctionalitiesComponent
-          functionalities={functionalitiesFreelanceData()}
-        />
+        <div ref={myRef}>
+          <FunctionalitiesComponent
+            functionalities={functionalitiesFreelanceData()}
+          />
+        </div>
+
         <br />
         <PresentationComponent presentation={presentationFreelanceData()} />
         <div className={`${style["parts"]} `}>

@@ -9,23 +9,18 @@ export const navBarData = (): INavBar => ({
     {
       title: { text: "Producten" },
       dropdownText:
-        "Torquem detraxit hosti et quidem faciunt ut alterum aspernandum sentiamus alii autem quibus ego cum soluta nobis est cur nec.",
+        "An ever-evolving line-up; build to change the way we work.",
       dropdownTitle: "Our products",
       dropdownLink: [
         {
           link: { text: "Freelance platform", url: "/freelance-product" },
           content:
-            "Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex. ",
-        },
-        {
-          link: { text: "Product 3" },
-          content:
-            "Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex. ",
+            "Our online freelance platform which enables blockchain technology in matching freelancers worldwide",
         },
         {
           link: { text: "HR platform", url: "/hr-product" },
           content:
-            "Certe, inquam, pertinax non fuisse torquem detraxit hosti et quidem exercitus quid ex. ",
+            " Matching and contracting of a flexible workforce all within an easy to use modular design.",
         },
       ],
     },

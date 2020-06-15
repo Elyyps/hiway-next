@@ -27,11 +27,13 @@ const NewsletterComponent = (props: INewsletterComponentProps) => {
               onClick={() => setIsOpen(true)}
             />
             <span>
-              or{" "}
-              <LinkComponent underlined to="">
+              or check out our{" "}
+              <LinkComponent
+                underlined
+                to={props.newsletter.link.url ? props.newsletter.link.url : ""}
+              >
                 {props.newsletter.link.text}
-              </LinkComponent>{" "}
-              for our newsletter
+              </LinkComponent>
             </span>
           </div>
         </div>
