@@ -1,6 +1,7 @@
 import * as React from "react";
 import style from "./nav-bar-modal.module.scss";
 import ReactSVG from "react-svg";
+import ReactDOM from "react-dom";
 
 export interface INavBarModalComponentProps {
   children?: any;
@@ -46,29 +47,31 @@ const NavBarModalComponent = (props: INavBarModalComponentProps) => {
           </div>
         )}
       </button>
-      {typeof document !== "undefined" && (
-        <div
-          className={`${
-            style[isOpen ? "nav-bar-modal__opened" : "nav-bar-modal__closed"]
-          } ${style["nav-bar-modal"]} `}
-          onClick={(e): any => {
-            onClickAway(e);
-          }}
-        >
+      {typeof document !== "undefined" &&
+        ReactDOM.createPortal(
           <div
-            className={`${style["nav-bar-modal__holder"]} ${
-              style[`nav-bar-modal__holder__menu__close`]
-            } ${isOpen ? style[`nav-bar-modal__holder__menu__open`] : ""} `}
-            ref={modalRef}
+            className={`${
+              style[isOpen ? "nav-bar-modal__opened" : "nav-bar-modal__closed"]
+            } ${style["nav-bar-modal"]} `}
+            onClick={(e): any => {
+              onClickAway(e);
+            }}
           >
-            <div className={`${"container"} ${style[`nav-bar-modal__menu`]}`}>
-              <div className={style["nav-bar-modal__items"]}>
-                {props.children}
+            <div
+              className={`${style["nav-bar-modal__holder"]} ${
+                style[`nav-bar-modal__holder__menu__close`]
+              } ${isOpen ? style[`nav-bar-modal__holder__menu__open`] : ""} `}
+              ref={modalRef}
+            >
+              <div className={`${"container"} ${style[`nav-bar-modal__menu`]}`}>
+                <div className={style["nav-bar-modal__items"]}>
+                  {props.children}
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      )}
+          </div>,
+          document.body
+        )}
     </div>
   );
 };
