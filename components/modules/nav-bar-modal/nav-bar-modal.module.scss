@@ -60,17 +60,15 @@
     width: 100%;
     &__menu {
       &__close {
-        height: 0;
+        opacity: 0;
         visibility: hidden;
         position: absolute;
         top: 0;
         right: 0;
-        transition: 0.3s height ease-in-out;
       }
       &__open {
-        height: auto;
+        opacity: 1;
         visibility: visible;
-        transition: 0.3s height ease-in-out;
       }
     }
   }

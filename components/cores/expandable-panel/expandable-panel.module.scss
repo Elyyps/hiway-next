@@ -30,13 +30,11 @@
   .open-content {
     height: 0;
     visibility: hidden;
-    transition: 2s height;
   }
   &-open {
     .open-content {
       visibility: visible;
-      opacity: 1;
-      height: fit-content;
+      height: auto;
       > ul {
         margin-top: 16px;
         list-style: none;
