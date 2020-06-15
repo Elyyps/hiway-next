@@ -58,19 +58,18 @@
   &__holder {
     background-color: white;
     &__menu {
-      display: inline-table;
       &__close {
         opacity: 0;
         visibility: hidden;
         position: absolute;
         top: 0;
         right: 0;
-        transition: 0.25s opacity ease-in-out;
+        transition: 0.25s opacity;
       }
       &__open {
         opacity: 1;
         visibility: visible;
-        transition: 0.25s opacity ease-in-out;
+        transition: 0.25s opacity;
       }
     }
   }

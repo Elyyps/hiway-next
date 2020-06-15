@@ -12,13 +12,11 @@ type Props = {
   title?: string;
 };
 
-const Layout = ({
-  children,
-  title = "Hiway plateform | Marketplace for work",
-}: Props) => (
+const Layout = ({ children, title = "Hiway HR Platform" }: Props) => (
   <div>
     <Head>
       <title>{title}</title>
+      <link rel="shortcut icon" href="/img/title-icon.png" />
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta
