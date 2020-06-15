@@ -14,7 +14,11 @@ const MoreAboutComponent = ({ moreAbout }: IMoreAboutComponent) => {
     return (
       <span className={style["medium-link"]}>
         More on
-        <LinkComponent to="" underlined>
+        <LinkComponent
+          to={moreAbout.link.url ? moreAbout.link.url : ""}
+          target="_blank"
+          underlined
+        >
           {moreAbout.link.text}
         </LinkComponent>
         <div>

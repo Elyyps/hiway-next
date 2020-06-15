@@ -16,9 +16,14 @@ interface ILinkComponentProps {
 
 const LinkComponent = (props: ILinkComponentProps) => {
   return (
-    <Link href={props.to ? props.to : ""}>
+    <Link
+      href={props.to ? props.to : "#"}
+      passHref={props.target ? true : false}
+      prefetch={props.target ? false : true}
+    >
       <a
-        href={props.target ? (props.to ? props.to : "") : ""}
+        href={props.to ? props.to : ""}
+        target={props.target}
         className={`${style["link"]} ${
           props.variant && style[`link-${props.variant}`]
         }  ${style[props.animated ? "link-animated" : ""]} ${

@@ -44,11 +44,6 @@ const SectionComponent = (props: ISectionComponentProps) => {
               : props.backgroundImage
           }
           alt="man working in an office"
-          // style={
-          //   props.isHeader
-          //     ? { objectFit: windowSize > 640 ? "cover" : "fill" }
-          //     : {}
-          // }
         />
       </div>
 
@@ -97,6 +92,7 @@ const SectionComponent = (props: ISectionComponentProps) => {
                 icon={"/icons/chevron-right.svg"}
                 to={props.link.url ? props.link.url : ""}
                 variant={props.variant}
+                target={"_blank"}
                 underlined
                 animated
               >

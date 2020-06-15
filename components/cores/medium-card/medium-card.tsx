@@ -20,6 +20,7 @@ export const MediumCardComponent = (props: IMediumCardComponent) => {
           icon={"/icons/chevron-right.svg"}
           to={props.link.url ? props.link.url : ""}
           variant={"primary"}
+          target="_blank"
           underlined
         >
           {props.link.text}
