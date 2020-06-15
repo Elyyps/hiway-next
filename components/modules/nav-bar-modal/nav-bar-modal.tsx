@@ -1,7 +1,6 @@
 import * as React from "react";
 import style from "./nav-bar-modal.module.scss";
 import ReactSVG from "react-svg";
-import ReactDOM from "react-dom";
 
 export interface INavBarModalComponentProps {
   children?: any;
