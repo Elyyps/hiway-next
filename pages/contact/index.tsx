@@ -18,7 +18,7 @@ const ContactPage = () => {
   }, []);
   return (
     <div>
-      <Layout>
+      <Layout title="Hiway | Contact">
         <div className={"header-button"}>
           <SectionComponent
             {...headerContactData()}

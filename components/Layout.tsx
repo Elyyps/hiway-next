@@ -12,7 +12,7 @@ type Props = {
   title?: string;
 };
 
-const Layout = ({ children, title = "Hiway HR Platform" }: Props) => (
+const Layout = ({ children, title = "Hiway" }: Props) => (
   <div>
     <Head>
       <title>{title}</title>

@@ -28,7 +28,7 @@ const FreelanceProduct = () => {
 
   return (
     <div>
-      <Layout>
+      <Layout title="Hiway | Freelance Platform">
         <div className={style["header"]}>
           <SectionComponent
             {...headerFreelanceData()}

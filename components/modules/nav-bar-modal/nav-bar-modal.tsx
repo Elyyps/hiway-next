@@ -10,7 +10,6 @@ export interface INavBarModalComponentProps {
 
 const NavBarModalComponent = (props: INavBarModalComponentProps) => {
   const [isOpen, setIsMenuOpened] = React.useState(false);
-
   const modalRef = React.createRef<HTMLDivElement>();
   const onClickAway = (e: any) => {
     if (modalRef.current && modalRef.current.contains(e.target)) return;

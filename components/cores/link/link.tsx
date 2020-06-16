@@ -18,7 +18,6 @@ const LinkComponent = (props: ILinkComponentProps) => {
   return (
     <Link
       href={props.to ? props.to : "#"}
-      passHref={props.target ? true : false}
       prefetch={props.target ? false : true}
     >
       <a

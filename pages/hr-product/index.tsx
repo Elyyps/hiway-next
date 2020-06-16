@@ -28,7 +28,7 @@ const HrProduct = () => {
   }, []);
   return (
     <div>
-      <Layout>
+      <Layout title="Hiway | HR Platform">
         <div className={style["header"]}>
           <SectionComponent
             {...headerHRData()}

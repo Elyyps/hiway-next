@@ -22,7 +22,7 @@ const AboutPage = () => {
   }, []);
   return (
     <div>
-      <Layout>
+      <Layout title="Hiway | About">
         <div className={"header-button"}>
           <SectionComponent
             {...headerAboutData()}

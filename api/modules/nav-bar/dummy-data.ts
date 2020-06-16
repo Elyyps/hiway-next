@@ -20,7 +20,7 @@ export const navBarData = (): INavBar => ({
         {
           link: { text: "Freelance platform", url: "/freelance-product" },
           content:
-            "Our online freelance platform which enables blockchain technology in matching freelancers worldwide",
+            "Our online freelance platform which utilises blockchain technology in matching freelancers worldwide",
         },
       ],
     },
