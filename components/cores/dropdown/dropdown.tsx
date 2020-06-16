@@ -8,20 +8,33 @@ interface IDropDownComponentProps {
   position?: "left" | "right" | "top";
   variant?: "primary" | "secondary";
   fullWidth?: boolean;
-  isClosed?: boolean;
 }
 const DropdownComponent = (props: IDropDownComponentProps) => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const wrapperRef = React.createRef<HTMLDivElement>();
 
   React.useEffect(() => {
-    (props.isClosed === undefined || props.isClosed) && setIsOpen(false);
-  }, [props.title, props.isClosed]);
+    function handleClickOutside(event: any) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen, props]);
+
+  React.useEffect(() => {
+    setIsOpen(false);
+  }, [props.title]);
   return (
     <div
       className={`${style["dropdown"]} ${style[`dropdown-${props.variant}`]} ${
         style[isOpen ? "dropdown-opened" : ""]
       } `}
       style={props.fullWidth ? {} : { position: "relative" }}
+      ref={wrapperRef}
     >
       <ButtonComponent
         title={props.title}

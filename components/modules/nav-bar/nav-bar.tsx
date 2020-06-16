@@ -44,7 +44,7 @@ const NavBarComponent = (props: INavBarComponentProps) => {
                 <DropdownComponent
                   title={item.title.text}
                   fullWidth
-                  isClosed={route !== item.title.text && true}
+                  // isClosed={route !== item.title.text && true}
                 >
                   <div className={style["nav-bar-dropdown"]}>
                     <div className="uk-container uk-container-small">
