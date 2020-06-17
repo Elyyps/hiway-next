@@ -104,6 +104,7 @@ const InnerForm = (props: FormikProps<IContactFormValues>) => {
           title={"Send message"}
           variant={"primary"}
           icon={"/icons/chevron-right.svg"}
+          type={"submit"}
         />
       </div>
     </Form>

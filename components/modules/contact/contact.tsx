@@ -1,20 +1,36 @@
 import React from "react";
 import style from "./contact.module.scss";
 import { IContact } from "../../../api/modules/contact/contact";
-import { ContactFormComponent } from "../../cores/contact-form/contact-form";
+import {
+  ContactFormComponent,
+  IContactFormValues,
+} from "../../cores/contact-form/contact-form";
 import ReactSVG from "react-svg";
 
 interface IContactComponentProps {
   contact: IContact;
 }
 const ContactComponent = (props: IContactComponentProps) => {
+  const handlePress = (name: string, email: string) => {
+    // alert("sent " + email);
+    fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: name, email: email }),
+    });
+  };
+
   return (
     <div className={` ${style["contact"]} container`}>
       <h2 className="title">{props.contact.title}</h2>
       <div>
         <div className={style["contact-left"]}>
           <p>{props.contact.description}</p>
-          <ContactFormComponent onSubmit={() => ""} />
+          <ContactFormComponent
+            onSubmit={(e: IContactFormValues) =>
+              handlePress(e.firstName, e.email)
+            }
+          />
         </div>
         <div className={style["contact-right"]}>
           <div>

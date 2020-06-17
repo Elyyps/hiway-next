@@ -10,12 +10,12 @@ interface IButtonProps {
   position?: "right" | "left";
   target?: string;
   title: string;
-  type?: string;
+  type?: "button" | "submit";
   variant?: "primary" | "secondary" | "tertiary" | "dropdown";
 }
 
 const ButtonComponent = (props: IButtonProps) => {
-  const { onClick, href, target, title, icon, position, variant } = props;
+  const { onClick, href, target, title, icon, position, variant, type } = props;
 
   const returnIconPosition = (
     <React.Fragment>
@@ -48,6 +48,7 @@ const ButtonComponent = (props: IButtonProps) => {
         <button
           onClick={onClick}
           className={`${style[`button-${variant}`]} ${style["button"]}`}
+          type={type ? type : "button"}
         >
           {returnIconPosition}
           {variant === "dropdown" && (
