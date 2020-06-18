@@ -39,6 +39,13 @@ $tablet-size: 960px;
   > p,
   ul {
     color: #292c30;
+    line-height: 1.75;
+    @media (max-width: 639px) {
+      line-height: 1.71;
+    }
+  }
+  > div {
+    letter-spacing: -0.1px;
   }
 }
 .container {
@@ -51,11 +58,14 @@ h4 {
   margin-bottom: 0;
   line-height: unset;
   font-family: "Apercu";
+  letter-spacing: normal;
+  line-height: normal;
 }
 .title {
   font-size: 30px;
   font-weight: bold;
   width: 100%;
+
   color: var(--primary-color);
   @media (max-width: 960px) {
     font-size: 24px;
