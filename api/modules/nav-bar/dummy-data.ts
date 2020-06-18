@@ -7,7 +7,7 @@ export const navBarData = (): INavBar => ({
   items: [
     { title: { text: "Home", url: "/" } },
     {
-      title: { text: "Producten" },
+      title: { text: "Products" },
       dropdownText:
         "An ever-evolving line-up; build to change the way we work.",
       dropdownTitle: "Our products",

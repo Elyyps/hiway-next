@@ -29,11 +29,13 @@ const SectionComponent = (props: ISectionComponentProps) => {
     <div
       className={` ${style["section"]} `}
       style={
-        windowSize > 640
-          ? {
-              height: `${windowSize / 3.3}px`,
-            }
-          : { height: `${windowSize / 2.1}px` }
+        props.postion !== "bottom"
+          ? windowSize > 640
+            ? {
+                height: `${windowSize / 3.3}px`,
+              }
+            : { height: `${windowSize / 2.1}px` }
+          : { height: `${windowSize / 3.5}px`, maxHeight: "380px" }
       }
     >
       <div className={style["section-background"]}>

@@ -42,13 +42,9 @@
   }
   &-big-card {
     width: 48%;
-
-    @media (max-width: 639px) {
-      div {
-        span {
-          font-size: 14px;
-        }
-      }
+    height: 100%;
+    > div h2 {
+      font-size: 18px;
     }
   }
   &-cards {

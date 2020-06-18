@@ -12,9 +12,9 @@ const FunctionalitiesComponent = (props: IFunctionalitiesComponentProps) => {
       <div className="container">
         <h2 className="title">{props.functionalities.title}</h2>
         <div className="divider" />
-        <div className={style["functionalities-content"]}>
+        <p className={style["functionalities-content"]}>
           {props.functionalities.content}
-        </div>
+        </p>
         <ul>
           {props.functionalities.items.map((item, key) => (
             <li key={key}>

@@ -36,6 +36,10 @@ $tablet-size: 960px;
 
 * {
   font-family: "Apercu";
+  > p,
+  ul {
+    color: #292c30;
+  }
 }
 .container {
   width: 90%;
@@ -95,8 +99,10 @@ textarea {
   box-sizing: border-box;
   border: 0;
   border-bottom: 1px solid lightgrey;
-  font-family: 16px;
   background-color: transparent;
+  &::placeholder {
+    color: #292c30;
+  }
   @media (max-width: 960px) {
     font-size: 14px;
   }

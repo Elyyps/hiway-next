@@ -13,14 +13,14 @@ export const descriptionSliderData = (): IDescriptionSlider[] => [
     variant: "primary",
     descriptionCards: [
       {
-        icon: "/img/optimized/red1.png",
-        title: "Well protected",
+        icon: "/icons/modular-design.svg",
+        title: "Modular Design",
         content:
           "Select what tools you need for your company and disable the rest. Can’t find what you’re looking for? We are happy to build a new module tailored to your needs.",
       },
       {
-        icon: "/img/optimized/red2.png",
-        title: "Easy to use",
+        icon: "/icons/browser-friendly.svg",
+        title: "Browser Friendly",
         content:
           "Accessible through any web-browser. No installation time and suitable for any system. ",
       },
@@ -38,13 +38,13 @@ export const descriptionSliderData = (): IDescriptionSlider[] => [
     variant: "secondary",
     descriptionCards: [
       {
-        icon: "/img/optimized/blue1.png",
+        icon: "/icons/well-protected.svg",
         title: "Well protected",
         content:
           "It is secured using blockchain technology while complying with the newest GDPR privacy regulation.",
       },
       {
-        icon: "/img/optimized/blue2.png",
+        icon: "/icons/easy-use.svg",
         title: "Easy to use",
         content:
           "Build with user-friendliness in mind; this platform offers everything the freelance industry needs to operate globally.",

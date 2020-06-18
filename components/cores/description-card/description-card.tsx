@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./description-card.module.scss";
+import ReactSVG from "react-svg";
 
 interface IDescriptionCardComponentProps {
   icon: string;
@@ -30,7 +31,7 @@ const DescriptionCardComponent = (props: IDescriptionCardComponentProps) => {
             : {}
         }
       >
-        <img src={props.icon} alt="icon illustrating this section" />
+        <ReactSVG src={props.icon} />
       </div>
       <div className={style[props.isHorizonal ? "horizontal" : ""]}>
         <h4 style={{ color: `var(--${props.variant}-color)` }}>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="54px" viewBox="0 0 64 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>all-browsers</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Home---HR-platform" transform="translate(-644.000000, -1047.000000)" stroke="#C9002A">
+            <g id="all-browsers" transform="translate(646.000000, 1049.000000)">
+                <g id="Group-21">
+                    <line x1="60.0000024" y1="9.60000038" x2="0" y2="9.60000038" id="Stroke-1" stroke-width="2.4000001"></line>
+                    <path d="M55.8000022,4.80000019 C55.8000022,5.1312002 55.5312022,5.40000021 55.2000022,5.40000021 C54.8688022,5.40000021 54.6000022,5.1312002 54.6000022,4.80000019 C54.6000022,4.46880018 54.8688022,4.20000017 55.2000022,4.20000017 C55.5312022,4.20000017 55.8000022,4.46880018 55.8000022,4.80000019 Z" id="Stroke-3" stroke-width="1.20000005" stroke-linecap="round"></path>
+                    <path d="M51.000002,4.80000019 C51.000002,5.1312002 50.731202,5.40000021 50.400002,5.40000021 C50.068802,5.40000021 49.800002,5.1312002 49.800002,4.80000019 C49.800002,4.46880018 50.068802,4.20000017 50.400002,4.20000017 C50.731202,4.20000017 51.000002,4.46880018 51.000002,4.80000019 Z" id="Stroke-5" stroke-width="1.20000005" stroke-linecap="round"></path>
+                    <path d="M46.2000018,4.80000019 C46.2000018,5.1312002 45.9312018,5.40000021 45.6000018,5.40000021 C45.2688018,5.40000021 45.0000018,5.1312002 45.0000018,4.80000019 C45.0000018,4.46880018 45.2688018,4.20000017 45.6000018,4.20000017 C45.9312018,4.20000017 46.2000018,4.46880018 46.2000018,4.80000019 Z" id="Stroke-7" stroke-width="1.20000005" stroke-linecap="round"></path>
+                    <path d="M56.4000022,50.400002 C58.3884023,50.400002 60,48.7884019 60,46.8000019 L60,3.60000014 C60,1.61160006 58.3884023,0 56.4000022,0 L3.60000014,0 C1.61160006,0 0,1.61160006 0,3.60000014 L0,46.8000019 C0,48.7884019 1.61160006,50.400002 3.60000014,50.400002 L56.4000022,50.400002 Z" id="Stroke-9" stroke-width="2.4000001" stroke-linecap="round"></path>
+                    <line x1="19" y1="28.6" x2="53" y2="28.6" id="Stroke-13" stroke-width="2.4000001" stroke-linecap="round"></line>
+                    <line x1="19" y1="33.4000002" x2="48" y2="33.4000002" id="Stroke-15" stroke-width="2.4000001" stroke-linecap="round"></line>
+                    <line x1="19" y1="38.6" x2="53" y2="38.6" id="Stroke-13-Copy" stroke-width="2.4000001" stroke-linecap="round"></line>
+                    <line x1="19" y1="43.4000002" x2="48" y2="43.4000002" id="Stroke-15-Copy" stroke-width="2.4000001" stroke-linecap="round"></line>
+                </g>
+                <polygon id="Stroke-1" stroke-width="2.37951988" points="7 22 53 22 53 15 7 15"></polygon>
+                <polygon id="Stroke-1" stroke-width="2" points="7 34 13 34 13 28 7 28"></polygon>
+                <polygon id="Stroke-1-Copy" stroke-width="2" points="7 44 13 44 13 38 7 38"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

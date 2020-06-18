@@ -18,7 +18,7 @@ export const welcomeData = (): ISection[] => [
     title: "Freelance platform",
     subTitle: "i want to go to ",
     content:
-      "Find the perfect job for you — a platform aimed at freelancers. Take on jobs from anywhere in the world!",
+      "Our online marketplace for freelancers. Create an account, find a suitable job, and get paid instantly from anywhere in the world.",
     postion: "left",
     variant: "secondary",
     button: { text: "Go to Freelance platform" },
@@ -42,7 +42,7 @@ export const headerFreelanceData = (): ISection => ({
   title: "Freelance platform",
   subTitle: "i want to go to ",
   content:
-    "Find the perfect job for you — a platform aimed at freelancers. Take on jobs from anywhere in the world!",
+    "Our online marketplace for freelancers. Create an account, find a suitable job, and get paid instantly from anywhere in the world.",
   postion: "left",
   variant: "secondary",
   button: { text: "Go to Freelance platform" },
