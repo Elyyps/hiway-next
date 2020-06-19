@@ -21,5 +21,5 @@ export const presentationFreelanceData = (): IPresentation => ({
     url: "https://www.youtube.com/watch?v=UsvLF3ZNxSI",
   },
   icon: "/icons/play.svg",
-  beta: "This software is currently running as a beta product.",
+  beta: "This software is a proof of concept and not yet a first version.",
 });
