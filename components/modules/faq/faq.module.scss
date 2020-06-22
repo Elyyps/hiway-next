@@ -15,6 +15,9 @@
       letter-spacing: -0.1px;
     }
     list-style: none;
+    > li {
+      height: auto;
+    }
     li:not(:last-child) {
       margin-bottom: 13px;
     }
