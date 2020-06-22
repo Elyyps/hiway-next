@@ -4,6 +4,7 @@
     @media (max-width: 960px) {
       padding: 18px 16px;
     }
+    width: calc(100% - 32px);
   }
   > div {
     height: 100%;
@@ -13,7 +14,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-
     white-space: pre-wrap;
     text-align: left;
     > span {
@@ -54,7 +54,6 @@
       }
     }
     button {
-      width: fit-content;
       svg {
         transform: rotate(180deg);
       }
