@@ -23,7 +23,15 @@ const FooterComponent = (props: IFooterComponentProps) => {
           <h2>{props.footer.contactTitle}</h2>
           <ul>
             {props.footer.contacts.map((contact, key) => (
-              <li key={key}>{contact}</li>
+              <li key={key}>
+                {contact.url ? (
+                  <a href={contact.url} target="__blank" rel="nofollow">
+                    {contact.text}
+                  </a>
+                ) : (
+                  contact.text
+                )}
+              </li>
             ))}
           </ul>
         </div>

@@ -2,7 +2,14 @@ import { IFooter } from "./footer";
 
 export const footerData = (): IFooter => ({
   contactTitle: "Contact",
-  contacts: ["contact@hiway.io", "Terms of Service", "Privacy Statement"],
+  contacts: [
+    { text: "contact@hiway.io" },
+    {
+      text: "Terms of Service",
+      url: "https://hiway.io/documents/Hiway_Terms_of_Service.pdf",
+    },
+    { text: "Privacy Statement" },
+  ],
   mediaTitle: "Follow us on social media",
   mediaTitleMobile: "Social media",
   medias: [
