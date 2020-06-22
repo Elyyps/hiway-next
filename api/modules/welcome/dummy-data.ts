@@ -7,7 +7,7 @@ export const welcomeData = (): ISection[] => [
     title: "HR platform",
     subTitle: "i want to go to ",
     content:
-      "The perfect HR solution for flexible workforces. Let employees track their hours, sign contracts, and let payments settled automatically.",
+      "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic payments.",
     postion: "center",
     variant: "primary",
     button: { text: "Go to HR platform" },
@@ -31,7 +31,7 @@ export const headerHRData = (): ISection => ({
   title: "HR platform",
   subTitle: "i want to go to ",
   content:
-    "The perfect HR solution for flexible workforces. Let employees track their hours, sign contracts, and let payments settled automatically.",
+    "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic payments.",
   postion: "center",
   variant: "primary",
   button: { text: "Go to HR platform" },
@@ -53,7 +53,7 @@ export const headerAboutData = (): ISection => ({
   backgroundMobileImage: "/img/optimized/about-mobile.jpg",
   title: "Simplifying Work",
   content:
-    "Creating the employment environment of the future by utilising technological advancements",
+    "Creating the employment environment of the future by leveraging technological advancements",
   postion: "center",
   variant: "primary",
   button: { text: "Discover more" },

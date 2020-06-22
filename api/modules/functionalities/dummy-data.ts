@@ -1,28 +1,25 @@
 import { IFunctionalities } from "./functionalities";
 
 export const functionalitiesHrData = (): IFunctionalities => ({
-  title: "What functionality to expect:",
+  title: "What to expect",
   content:
-    "Meet the power of a modular design. As with any software or platform, quite often, functionality is not 100% fitted to every company. We are changing this by offering a modular build software suite. Select what features you would like to use, deselect what you don’t need, and if something is missing, simply reach out, and we’ll look for a way to make this module available as soon as possible. Below you'll find a list of the main functionalities currently offered by the HR Platform. At the bottom of this page, we also listed the main modules we are working on as of right now! As always, the Hiway team can help you with any module related question or showcase modules that are still in development. Reach out, and we'll arrange a video call!",
+    "Tired of software or platforms with built-in functionalities you just don’t need? Experience the power of a modular design. We offer a modular build software suite that gives companies the freedom to select the features they would like to use and omit those they don’t need. If something is missing, we’ll look for a way to make additional modules available. New modules are always in development (you can get a sneak preview at the bottom of this page) and current functionalities include:",
   items: [
-    "Easy administration of candidates, companies and contract",
-    "Digital signing of proposals and contracts",
-    "Automatically pay flex employees",
-    "Let employees keep track of their hours and expenses",
+    "Simple administration for companies and candidates",
     "Easy matchmaking through filters",
-    "Still looking for more? Get in touch",
+    "Digital signing of proposals and contracts",
+    "Timekeeping and expense tracking",
+    "Automatic payments",
   ],
 });
 export const functionalitiesFreelanceData = (): IFunctionalities => ({
-  title: "What functionality to expect:",
+  title: "What to expect",
   content:
-    "Our freelance platform is an experimental tool using blockchain technology to revolutionaze the way freelancers work globally. A tool that enables freelancers to take on jobs from anywhere in the world and get paid without the hassale of bank transfers. Currently in it’s beta version the freelance platform is safe to use but not yet fully optimized in terms of UX and usability.",
+    "Our freelance platform is a proof-of-concept, using blockchain technology to revolutionise the way freelancers work globally. Operating in beta version, the platform is safe to use with further optimisations in the pipeline. New functionalities are always being explored, so if there is something you are looking for just reach out and we’ll see what we can do. For now, current functionalities include:",
   items: [
-    "Create an account and find jobs and freelancers from all over the world",
-    "No hassle with international payments, blockchain backed instant solution",
-    "Build your portfolio and create your own work enviroment",
-    "One place to take on jobs and communicate with all parties",
-    "Strong focus on blockchain industry jobs!",
-    "Looking for more functionalities? Reach out and we’ll see what we can do!",
+    "Create an account to match vacancies and freelancers from all over the world - with a strong focus on blockchain industry roles",
+    "Portfolio and work environment management",
+    "One-stop-shop for communication between companies and employees",
+    "Hassle-free and instant international payments, backed by blockchain security",
   ],
 });

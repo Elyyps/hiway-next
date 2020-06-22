@@ -11,7 +11,7 @@ import { presentationFreelanceData } from "../../api/modules/presentation/dummy-
 import DevelopmentComponent from "../../components/modules/development/development";
 import { developmentFreelanceData } from "../../api/modules/development/dummy-data";
 import FAQComponent from "../../components/modules/faq/faq";
-import { faqData } from "../../api/modules/faq/dummy-data";
+import { faqFreelanceData } from "../../api/modules/faq/dummy-data";
 import Layout from "../../components/Layout";
 import RouteContext from "../../context/route";
 
@@ -52,7 +52,7 @@ const FreelanceProduct = () => {
         <PresentationComponent presentation={presentationFreelanceData()} />
         <div className={`${style["parts"]} `}>
           <DevelopmentComponent development={developmentFreelanceData()} />
-          <FAQComponent faq={faqData()} />
+          <FAQComponent faq={faqFreelanceData()} />
         </div>
       </Layout>
     </div>

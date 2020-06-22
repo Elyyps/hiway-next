@@ -4,21 +4,21 @@ export const developmentHrData = (): IDevelopment => ({
   title: "Development",
   items: [
     {
-      title: "Module X",
+      title: "Advanced matching: AI & filtering",
       content:
-        "Certe, inquam, pertinax non quo enim ipsam per se ipsam causam non possim. Quae fuerit causa, nollem me tamen laudandis maioribus meis corrupisti nec in culpa.",
+        "This module helps HR managers and recruiters leverage artificial intelligence and machine learning to find the perfect fit for an open position",
       percentage: 75,
     },
     {
-      title: "Module X",
+      title: "Vacancy distribution",
       content:
-        "Torquem detraxit hosti et quidem rerum hic tenetur a sapiente delectus, ut aut. Et quidem se esse admonere interesse enim ipsam causam non existimant oportere exquisitis.",
+        "Simply create, place and edit vacancies on numerous different channels from this new module, minimising time spent on repetitive and time-consuming processes",
       percentage: 40,
     },
     {
-      title: "Module X",
+      title: "Reporting",
       content:
-        "Certe, inquam, pertinax non quo enim ipsam per se ipsam causam non possim. Quae fuerit causa, nollem me tamen laudandis maioribus meis corrupisti nec in culpa.",
+        "Get a clear overview of candidates matched, hours worked, loans paid. This module enables any level of user to get a better insight into their data",
       percentage: 91,
     },
   ],
@@ -27,21 +27,21 @@ export const developmentFreelanceData = (): IDevelopment => ({
   title: "Development",
   items: [
     {
-      title: "Module X",
+      title: "UI/UX rebuilding",
       content:
-        "Certe, inquam, pertinax non quo enim ipsam per se ipsam causam non possim. Quae fuerit causa, nollem me tamen laudandis maioribus meis corrupisti nec in culpa.",
+        "One of the most requested changes to our proof of concept was a redesign of the way it looks and feels. Updating the UX flow and design to match the Hiway HR platform will be our first priority for the next version",
       percentage: 75,
     },
     {
-      title: "Module X",
+      title: "Fiat payments",
       content:
-        "Torquem detraxit hosti et quidem rerum hic tenetur a sapiente delectus, ut aut. Et quidem se esse admonere interesse enim ipsam causam non existimant oportere exquisitis.",
+        "With the proof of concept focusing on blockchain currency payments, the goal for the next version will be integrating Fiat to support speedy payments and fee transactions",
       percentage: 40,
     },
     {
-      title: "Module X",
+      title: "Invoicing and tax automatisation",
       content:
-        "Certe, inquam, pertinax non quo enim ipsam per se ipsam causam non possim. Quae fuerit causa, nollem me tamen laudandis maioribus meis corrupisti nec in culpa.",
+        "Functionality that makes administration for freelance workers easier, from tracking invoices to sourcing tax reports and much more",
       percentage: 91,
     },
   ],

@@ -1,10 +1,12 @@
 .functionalities {
-  &-content,
-  ul {
+  &-content {
     column-count: 2;
-    column-gap: 30px;
-    @media (max-width: 639px) {
+    column-gap: 40px;
+
+    @media (max-width: 960px) {
       column-count: 1;
+    }
+    @media (max-width: 639px) {
       font-size: 14px;
     }
   }
@@ -12,9 +14,18 @@
     list-style: none;
     margin-top: 20px;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 960px) {
+      flex-direction: column;
+    }
     li {
       display: flex;
       margin-bottom: 19px;
+      @media (min-width: 960px) {
+        width: 48%;
+      }
       div {
         width: 25px;
         height: 25px;

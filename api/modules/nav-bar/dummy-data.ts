@@ -9,18 +9,18 @@ export const navBarData = (): INavBar => ({
     {
       title: { text: "Products" },
       dropdownText:
-        "An ever-evolving line-up; build to change the way we work.",
+        "An ever-evolving line-up, build to change the way we work.",
       dropdownTitle: "Our products",
       dropdownLink: [
         {
           link: { text: "HR platform", url: "/hr-product" },
           content:
-            " Matching and contracting of a flexible workforce all within an easy to use modular design.",
+            "Find candidates and arrange contracts for your flexible workforce needs, within a simple platform that can be tailored to your business.",
         },
         {
           link: { text: "Freelance platform", url: "/freelance-product" },
           content:
-            "Our online freelance platform which utilises blockchain technology in matching freelancers worldwide",
+            "Find freelance vacancies worldwide, with our online job-search platform that uses blockchain technology to match the right candidate with the right job.",
         },
       ],
     },

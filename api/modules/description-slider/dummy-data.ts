@@ -3,7 +3,7 @@ import { IDescriptionSlider } from "./description-slider";
 export const descriptionSliderData = (): IDescriptionSlider[] => [
   {
     content:
-      "Tailored towards small business and recruitment agencies, this software suite enables any company in their search and contracting of flexible employees. A simple tool that enables digital contract signing and automatical payments from the employer side. And an easy to use platform for employees to submit hours and expenses. An all-compassing easy to use workforce tool.",
+      "Tailored towards small business and recruitment agencies, this software suite facilitates search and contracting needs for flexible vacancies. The all-encompassing platform enables both employer and employee with digital contract signing, tracking of hours and expenses, and automatic payments.",
     link: { text: "More information" },
     pictures: [
       "/img/optimized/hr1.jpg",
@@ -16,19 +16,19 @@ export const descriptionSliderData = (): IDescriptionSlider[] => [
         icon: "/icons/modular-design.svg",
         title: "Modular Design",
         content:
-          "Select what tools you need for your company and disable the rest. Can’t find what you’re looking for? We are happy to build a new module tailored to your needs.",
+          "Select the tools you need for your company and disable the rest. Can’t find what you’re looking for? We are happy to build new modules tailored to your requirements.",
       },
       {
         icon: "/icons/browser-friendly.svg",
         title: "Browser Friendly",
         content:
-          "Accessible through any web-browser. No installation time and suitable for any system. ",
+          "Available to use through any web-browser - on mobile and desktop, with no installation time required and suitable across any operating system.",
       },
     ],
   },
   {
     content:
-      "A globally operating freelance platform that enables workers to find and take on jobs from all over the world. Payments settle through the use of blockchain technology to facilitate worldwide and instant payments.\nFor employers, this product offers an easy to use the platform to centralize the search and hiring of freelancers.",
+      "Built for a global workforce, this platform empowers freelance workers to find jobs from wherever they are in the world. Market your skills and services, secure jobs remotely and, once the contract is complete, settle payments using secure blockchain technology to facilitate instant worldwide transactions. For employers, this platform centralises the search and hiring of freelancers.",
     link: { text: "More information" },
     pictures: [
       "/img/optimized/freelance1.png",
@@ -39,15 +39,15 @@ export const descriptionSliderData = (): IDescriptionSlider[] => [
     descriptionCards: [
       {
         icon: "/icons/well-protected.svg",
-        title: "Well protected",
+        title: "Safe and secure",
         content:
-          "It is secured using blockchain technology while complying with the newest GDPR privacy regulation.",
+          "The platform is secured using blockchain technology while complying with all the latest GDPR privacy regulations.",
       },
       {
         icon: "/icons/easy-use.svg",
         title: "Easy to use",
         content:
-          "Build with user-friendliness in mind; this platform offers everything the freelance industry needs to operate globally.",
+          "Built with the user in mind, the platform offers a seamless experience for the global freelance industry’s needs.",
       },
     ],
   },

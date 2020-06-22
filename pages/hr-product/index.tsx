@@ -11,7 +11,7 @@ import { presentationHrData } from "../../api/modules/presentation/dummy-data";
 import DevelopmentComponent from "../../components/modules/development/development";
 import { developmentHrData } from "../../api/modules/development/dummy-data";
 import FAQComponent from "../../components/modules/faq/faq";
-import { faqData } from "../../api/modules/faq/dummy-data";
+import { faqHRData } from "../../api/modules/faq/dummy-data";
 import Layout from "../../components/Layout";
 import RouteContext from "../../context/route";
 
@@ -49,7 +49,7 @@ const HrProduct = () => {
         <PresentationComponent presentation={presentationHrData()} />
         <div className={`${style["parts"]} `}>
           <DevelopmentComponent development={developmentHrData()} />
-          <FAQComponent faq={faqData()} />
+          <FAQComponent faq={faqHRData()} />
         </div>
       </Layout>
     </div>

@@ -1,26 +1,26 @@
 import { IOurFocus } from "./our-focus";
 
 export const ourFocusData = (): IOurFocus => ({
-  title: "What we do best",
+  title: "Experts in work",
   content:
-    "At Hiway, we focus on work. Getting work done ourselves while at the same time enabling others to do the same. Our team is built with a strong background and focus on the recruitment industry. We started with running our own recruitment agency through which we found numerous ways to improve the process of finding, administrating, and matching candidates and vacancies. Our main focus is on the employer side of running a small to medium sizes company. At the same time, we are fascinated by technological advancements, which led us to start experimenting with technologies like Blockchain and Artificial intelligence. Check out our first two products down below.",
+    "At Hiway, we focus on work. Empowering HR managers, recruiters and job seekers to do the best work they can, while our team draws on their extensive experience to build for the future. From running our own agency, we found numerous ways to improve the process of sourcing, matching and managing candidates and vacancies. With that in mind, we specialise in the HR industry with an emphasis on the employer side of running a small to medium-size enterprise. We help job seekers find work and support employers with all their HR needs.",
   descriptionCards: [
     {
-      title: "Developers",
+      title: "Recruitment specialists",
       content:
-        "A strong development team ready to solve every HR problem found within the industry.",
+        " More than 15 years of industry experience, contributing to a robust understanding of every aspect of the recruitment process",
       icon: "/icons/dev.svg",
     },
     {
-      title: "Focus",
+      title: "Data-driven innovators",
       content:
-        "Strong focus on the HR industry. Helping people find work and helping employers with everything HR related.",
+        "Blockchain, artificial intelligence and machine learning enthusiasts, harnessing the latest developments to inform new solutions",
       icon: "/icons/focus.svg",
     },
     {
-      title: "Experience",
+      title: "Creative entrepreneurs",
       content:
-        "15+ years experience in the industry. Running our own recruitment agency and solving all the usual recruitment problems.",
+        "Ongoing experimentation and collaboration fuelled by an entrepreneurial spirit",
       icon: "/icons/experience.svg",
     },
   ],

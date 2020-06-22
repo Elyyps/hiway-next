@@ -3,7 +3,7 @@ import { IPresentation } from "./presentation";
 export const presentationHrData = (): IPresentation => ({
   title: "Discover Hiway in 90 seconds",
   content:
-    "Would you like to get a small impression of what the platform could mean for you company? Take a look at a small video animation we made to showcase the HR platform and it’s functionality. Not sure yet? Don’t hesitate to contact us for a live demo!",
+    "Would you like to further understand how the platform could help your company? Check out this video that dives deeper on the platform and its functionality. Alternatively, contact us for a live demo.",
   video: "/img/optimized/video.jpg",
   videoTitle: {
     text: "Introduction to the HR platform",
@@ -14,7 +14,7 @@ export const presentationHrData = (): IPresentation => ({
 export const presentationFreelanceData = (): IPresentation => ({
   title: "Discover Hiway in 90 seconds",
   content:
-    "Check out the explainer video we. made for this project. It gives a short impression of why this project was started and were we see this solution be relevant.",
+    "Learn more about why this project was started and where we see this solution being relevant.",
   video: "/img/optimized/video.jpg",
   videoTitle: {
     text: "Introduction to the Freelance platform",
