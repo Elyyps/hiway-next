@@ -1,4 +1,10 @@
 .development {
+  > div > p {
+    @media (max-width: 639px) {
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+  }
   &-items {
     list-style: none;
     padding: 0;

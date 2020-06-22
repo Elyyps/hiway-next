@@ -9,11 +9,15 @@ interface IOurFocusComponentProps {
 const OurFocusComponent = (props: IOurFocusComponentProps) => {
   return (
     <div className={` ${style["our-focus"]} ${"container"} `}>
-      <h2 className="title">{props.ourFocus.title}</h2>
-      <div className="divider" />
       <div>
         <div className={style["our-focus-left"]}>
-          <p>{props.ourFocus.content}</p>
+          {props.ourFocus.descriptions.map((description, key) => (
+            <div key={key}>
+              <h2 className="title">{description.title}</h2>
+              <div className="divider" />
+              <p>{description.content}</p>
+            </div>
+          ))}
           <span>
             {props.ourFocus.links.map((link, key) => (
               <LinkComponent

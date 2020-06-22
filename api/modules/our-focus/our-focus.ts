@@ -1,9 +1,9 @@
 import { ILink } from "../../cores/link";
 import { IDescriptionCard } from "../../cores/description-card";
+import { ITitleContent } from "../../cores/title-content";
 
 export type IOurFocus = {
-  title: string;
-  content: string;
+  descriptions: ITitleContent[];
   links: ILink[];
   descriptionCards: IDescriptionCard[];
   images: string[];

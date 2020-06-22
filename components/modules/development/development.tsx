@@ -18,6 +18,12 @@ const DevelopmentComponent = (props: IDevelopmentComponentProps) => {
           </li>
         ))}
       </ul>
+      {props.development.moreInfo && (
+        <div>
+          <div className="divider" />
+          <p>{props.development.moreInfo}</p>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,7 +1,7 @@
-import { IFAQItem } from "../../cores/faq-item";
+import { ITitleContent } from "../../cores/title-content";
 
 export type IFAQ = {
   title: string;
-  items: IFAQItem[];
+  items: ITitleContent[];
   description: string;
 };

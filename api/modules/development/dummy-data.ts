@@ -2,6 +2,8 @@ import { IDevelopment } from "./development";
 
 export const developmentHrData = (): IDevelopment => ({
   title: "Development",
+  moreInfo:
+    "Looking for more information? Get in touch. As always, the Hiway team can help you with any module related question or showcase those that are still in development. Reach out and we'll arrange a video call.",
   items: [
     {
       title: "Advanced matching: AI & filtering",
