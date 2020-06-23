@@ -3,7 +3,6 @@ import style from "./presentation.module.scss";
 import { IPresentation } from "../../../api/modules/presentation/presentation";
 import ReactSVG from "react-svg";
 import ScreenWidthContext from "../../../context/screen-width";
-import ButtonComponent from "../../cores/button/button";
 import { ShareSocialComponent } from "../../cores/share-social/share-social.component";
 
 interface IPresentationComponentProps {
