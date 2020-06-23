@@ -24,13 +24,13 @@ const FooterComponent = (props: IFooterComponentProps) => {
           <ul>
             {props.footer.contacts.map((contact, key) => (
               <li key={key}>
-                {contact.url ? (
-                  <a href={contact.url} target="__blank" rel="nofollow">
-                    {contact.text}
-                  </a>
-                ) : (
-                  contact.text
-                )}
+                <a
+                  href={contact.url ? contact.url : ""}
+                  target={contact.url ? "__blank" : ""}
+                  rel="nofollow"
+                >
+                  {contact.text}
+                </a>
               </li>
             ))}
           </ul>

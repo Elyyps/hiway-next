@@ -7,6 +7,7 @@ import WelcomeComponent from "../components/modules/welcome/welcome";
 import { moreAboutData } from "../api/modules/more-about/dummy-data";
 import MoreAboutComponent from "../components/modules/more-about/more-about";
 import RouteContext from "../context/route";
+import ReactSVG from "react-svg";
 
 const HomePage = () => {
   const { selectRoute } = React.useContext(RouteContext);
@@ -17,10 +18,20 @@ const HomePage = () => {
     <div>
       <Layout>
         <WelcomeComponent sections={welcomeData()} />
+        {/* <ReactSVG
+          src={"/icons/oval-1.svg"}
+          className={`overlay uk-visible@l`}
+        /> */}
         <DescriptionSliderComponent
           descriptionSlider={descriptionSliderData()}
         />
-        <MoreAboutComponent moreAbout={moreAboutData()} />
+        <div className={`overlay`}>
+          <MoreAboutComponent moreAbout={moreAboutData()} />
+          <ReactSVG
+            src={"/icons/oval-2.svg"}
+            className={`overlay-icon uk-visible@xl`}
+          />
+        </div>
       </Layout>
     </div>
   );

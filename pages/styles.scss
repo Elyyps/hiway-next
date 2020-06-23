@@ -133,3 +133,11 @@ textarea {
     }
   }
 }
+.overlay {
+  position: relative;
+  &-icon {
+    z-index: 10;
+    position: absolute;
+    bottom: 25%;
+  }
+}
