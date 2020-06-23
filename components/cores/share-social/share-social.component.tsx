@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./share-social-component.module.scss";
-import { EmailShareButton, WhatsappShareButton } from "react-share";
+import { EmailShareButton } from "react-share";
 import ButtonComponent from "../button/button";
 
 export interface IShareSocialComponentProps {
