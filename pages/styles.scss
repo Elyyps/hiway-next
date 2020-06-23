@@ -136,8 +136,17 @@ textarea {
 .overlay {
   position: relative;
   &-icon {
-    z-index: 10;
+    width: 8%;
     position: absolute;
+    z-index: 10;
+  }
+  .more-about-overlay {
     bottom: 25%;
+  }
+  .welcome-overlay {
+    bottom: 40%;
+    &-2 {
+      bottom: 50%;
+    }
   }
 }

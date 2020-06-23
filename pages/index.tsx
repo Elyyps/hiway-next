@@ -17,19 +17,25 @@ const HomePage = () => {
   return (
     <div>
       <Layout>
-        <WelcomeComponent sections={welcomeData()} />
-        {/* <ReactSVG
-          src={"/icons/oval-1.svg"}
-          className={`overlay uk-visible@l`}
-        /> */}
-        <DescriptionSliderComponent
-          descriptionSlider={descriptionSliderData()}
-        />
+        <div className={`overlay`}>
+          <WelcomeComponent sections={welcomeData()} />
+          <DescriptionSliderComponent
+            descriptionSlider={descriptionSliderData()}
+          />
+          <ReactSVG
+            src={"/icons/oval-1.svg"}
+            className={`${"welcome-overlay"} ${"overlay-icon"} uk-visible@xl`}
+          />
+          <ReactSVG
+            src={"/icons/oval-2.svg"}
+            className={`${"welcome-overlay-2"} ${"overlay-icon"} uk-visible@xl`}
+          />
+        </div>
         <div className={`overlay`}>
           <MoreAboutComponent moreAbout={moreAboutData()} />
           <ReactSVG
-            src={"/icons/oval-2.svg"}
-            className={`overlay-icon uk-visible@xl`}
+            src={"/icons/oval-3.svg"}
+            className={`${"more-about-overlay"} ${"overlay-icon"} uk-visible@xl`}
           />
         </div>
       </Layout>
