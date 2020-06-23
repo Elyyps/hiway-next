@@ -27,6 +27,9 @@
     @media (min-width: 1200px) {
       max-height: 350px;
     }
+    @media (min-width: 960px) {
+      min-height: 280px;
+    }
     > div {
       position: absolute;
       width: 60%;
@@ -70,8 +73,9 @@
     }
   }
   &-content {
-    padding-top: 8px;
-
+    @media (min-width: 1200px) {
+      padding-top: 8px;
+    }
     @media (max-width: 960px) {
       padding-top: 32px;
       padding-left: 0;

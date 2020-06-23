@@ -3,6 +3,8 @@ import style from "./presentation.module.scss";
 import { IPresentation } from "../../../api/modules/presentation/presentation";
 import ReactSVG from "react-svg";
 import ScreenWidthContext from "../../../context/screen-width";
+import ButtonComponent from "../../cores/button/button";
+import { ShareSocialComponent } from "../../cores/share-social/share-social.component";
 
 interface IPresentationComponentProps {
   presentation: IPresentation;
@@ -41,6 +43,14 @@ const PresentationComponent = (props: IPresentationComponentProps) => {
             <h2 className="title">{props.presentation.title}</h2>
             <div className="divider" />
             <p>{props.presentation.content}</p>
+            <div>
+              <ShareSocialComponent
+                title="dsadsa"
+                nameSocialShare="Request a demo"
+                subject="dsadas"
+                url="dsadsa"
+              />
+            </div>
           </div>
         </div>
         {props.presentation.beta && (
