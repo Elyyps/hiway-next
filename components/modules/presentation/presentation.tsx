@@ -45,10 +45,10 @@ const PresentationComponent = (props: IPresentationComponentProps) => {
             <p>{props.presentation.content}</p>
             <div>
               <ShareSocialComponent
-                title="dsadsa"
+                title=""
                 nameSocialShare="Request a demo"
-                subject="dsadas"
-                url="dsadsa"
+                subject="I would like to request an HR platform Demo"
+                url="test"
               />
             </div>
           </div>
