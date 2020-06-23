@@ -32,8 +32,8 @@ export const descriptionSliderData = (): IDescriptionSlider[] => [
     link: { text: "More information" },
     pictures: [
       "/img/optimized/freelance1.png",
-      "/img/optimized/freelance1.png",
-      "/img/optimized/freelance1.png",
+      "/img/optimized/freelance2.png",
+      "/img/optimized/freelance3.png",
     ],
     variant: "secondary",
     descriptionCards: [

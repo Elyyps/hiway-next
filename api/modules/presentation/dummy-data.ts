@@ -7,7 +7,7 @@ export const presentationHrData = (): IPresentation => ({
   video: "/img/optimized/video.jpg",
   videoTitle: {
     text: "Introduction to the HR platform",
-    url: "https://www.youtube.com/watch?v=UsvLF3ZNxSI",
+    url: "https://www.youtube.com/watch?v=73IUC7dxtR0&feature=youtu.be",
   },
   icon: "/icons/play.svg",
 });
@@ -18,7 +18,7 @@ export const presentationFreelanceData = (): IPresentation => ({
   video: "/img/optimized/video.jpg",
   videoTitle: {
     text: "Introduction to the Freelance platform",
-    url: "https://www.youtube.com/watch?v=UsvLF3ZNxSI",
+    url: "https://www.youtube.com/watch?v=qsVlGXfeOog&feature=youtu.be",
   },
   icon: "/icons/play.svg",
   beta: "This software is a proof of concept and not yet a first version.",
