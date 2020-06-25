@@ -124,11 +124,9 @@ textarea {
 .header-button {
   button {
     width: 170px;
-    span {
-      width: 10px;
-      height: 5px;
-    }
+
     svg {
+      width: 100%;
       transform: rotate(90deg);
     }
   }

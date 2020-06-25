@@ -11,14 +11,6 @@ export interface IShareSocialComponentProps {
 }
 
 const ShareSocialComponent = (props: IShareSocialComponentProps) => {
-  const getShareControl = (nameSocial: string | undefined) => (
-    <ButtonComponent
-      title={nameSocial ? nameSocial : ""}
-      variant="primary"
-      icon={"/icons/chevron-right.svg"}
-    />
-  );
-
   const MailShareButtonComponent = (prop: {
     subject: string;
     title: string;
@@ -26,7 +18,11 @@ const ShareSocialComponent = (props: IShareSocialComponentProps) => {
     nameSocialShare: string;
   }) => (
     <EmailShareButton subject={prop.subject} body={prop.title} url={prop.url}>
-      {getShareControl(prop.nameSocialShare)}
+      <ButtonComponent
+        title={prop.nameSocialShare ? prop.nameSocialShare : ""}
+        variant="primary"
+        icon={"/icons/chevron-right.svg"}
+      />
     </EmailShareButton>
   );
   return (
