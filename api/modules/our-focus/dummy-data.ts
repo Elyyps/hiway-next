@@ -18,19 +18,19 @@ export const ourFocusData = (): IOurFocus => ({
       title: "Recruitment specialists",
       content:
         " More than 15 years of industry experience, contributing to a robust understanding of every aspect of the recruitment process",
-      icon: "/icons/dev.svg",
+      icon: "/icons/recruitment-specialists.svg",
     },
     {
       title: "Data-driven innovators",
       content:
         "Blockchain, artificial intelligence and machine learning enthusiasts, harnessing the latest developments to inform new solutions",
-      icon: "/icons/focus.svg",
+      icon: "/icons/data-driven.svg",
     },
     {
       title: "Creative entrepreneurs",
       content:
         "Ongoing experimentation and collaboration fuelled by an entrepreneurial spirit",
-      icon: "/icons/experience.svg",
+      icon: "/icons/creative-entrepreneurs.svg",
     },
   ],
   links: [

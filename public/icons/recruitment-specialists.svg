@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="48px" viewBox="0 0 56 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Recruitment specialists </title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="About" transform="translate(-1005.000000, -813.000000)" stroke="#C9002A" stroke-width="2">
+            <g id="Recruitment-specialists-" transform="translate(1006.000000, 814.000000)">
+                <path d="M18,14 C18,12.487 17.027,11.136 15.591,10.661 L13,10 L9,14 L5,10 L2.408,10.661 C0.973,11.136 0,12.487 0,14 L0,24 C0,26.209 1.791,28 4,28" id="Stroke-1"></path>
+                <path d="M13,4 C13,6.21 11.208,8 9,8 C6.791,8 5,6.21 5,4 C5,1.79 6.791,0 9,0 C11.208,0 13,1.79 13,4 Z" id="Stroke-3"></path>
+                <line x1="9" y1="26" x2="9" y2="42" id="Stroke-5" stroke-linecap="round"></line>
+                <path d="M31,4 C31,6.21 29.208,8 27,8 C24.791,8 23,6.21 23,4 C23,1.79 24.791,0 27,0 C29.208,0 31,1.79 31,4 Z" id="Stroke-7"></path>
+                <path d="M49,4 C49,6.21 47.208,8 45,8 C42.791,8 41,6.21 41,4 C41,1.79 42.791,0 45,0 C47.208,0 49,1.79 49,4 Z" id="Stroke-9"></path>
+                <line x1="45" y1="26" x2="45" y2="42" id="Stroke-11" stroke-linecap="round"></line>
+                <path d="M42,31 C42,39.284 35.284,46 27,46 C18.716,46 12,39.284 12,31 C12,22.716 18.716,16 27,16 C35.284,16 42,22.716 42,31 Z" id="Stroke-13" stroke-linecap="round"></path>
+                <path d="M35,31 C35,35.418 31.418,39 27,39 C22.582,39 19,35.418 19,31 C19,26.582 22.582,23 27,23 C31.418,23 35,26.582 35,31 Z" id="Stroke-15" stroke-linecap="round"></path>
+                <path d="M28,31 C28,31.553 27.553,32 27,32 C26.447,32 26,31.553 26,31 C26,30.447 26.447,30 27,30 C27.553,30 28,30.447 28,31 Z" id="Stroke-17" stroke-linecap="round"></path>
+                <path d="M50,28 C52.209,28 54,26.209 54,24 L54,14 C54,12.487 53.027,11.136 51.591,10.661 L49,10 L45,14 L41,10 L38.408,10.661 C36.973,11.136 36,12.487 36,14" id="Stroke-19"></path>
+                <path d="M4,16 L4,41 C4,41.552 4.447,42 5,42 L13,42 C13.553,42 14,41.552 14,41 L14,38.462" id="Stroke-21" stroke-linecap="round"></path>
+                <line x1="14" y1="23.5381" x2="14" y2="16.0001" id="Stroke-23" stroke-linecap="round"></line>
+                <path d="M40,38.4619 L40,40.9999 C40,41.5519 40.447,41.9999 41,41.9999 L49,41.9999 C49.553,41.9999 50,41.5519 50,40.9999 L50,15.9999" id="Stroke-25" stroke-linecap="round"></path>
+                <line x1="40" y1="16" x2="40" y2="23.538" id="Stroke-27" stroke-linecap="round"></line>
+                <path d="M36,19.0205 L36,13.9995 C36,12.4875 35.027,11.1355 33.591,10.6615 L31,9.9995 L27,13.9995 L23,9.9995 L20.408,10.6615 C18.973,11.1355 18,12.4875 18,13.9995 L18,19.0205" id="Stroke-29"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="56px" viewBox="0 0 52 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Creative entrepreneurs </title>
+    <defs>
+        <polygon id="path-1" points="0 56 52 56 52 0 0 0"></polygon>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-1008.000000, -1047.000000)">
+            <g id="Creative-entrepreneurs-" transform="translate(1008.000000, 1047.000000)">
+                <path d="M11,31 C11,33.209 9.209,35 7,35 C4.791,35 3,33.209 3,31 C3,28.791 4.791,27 7,27 C9.209,27 11,28.791 11,31 Z" id="Stroke-1" stroke="#C9002A" stroke-width="2" stroke-linejoin="round"></path>
+                <path d="M1,41 C1,37.687 3.687,35 7,35 C10.313,35 13,37.687 13,41 L1,41 Z" id="Stroke-3" stroke="#C9002A" stroke-width="2" stroke-linejoin="round"></path>
+                <path d="M30,45 C30,47.209 28.209,49 26,49 C23.791,49 22,47.209 22,45 C22,42.791 23.791,41 26,41 C28.209,41 30,42.791 30,45 Z" id="Stroke-5" stroke="#C9002A" stroke-width="2" stroke-linejoin="round"></path>
+                <path d="M20,55 C20,51.687 22.687,49 26,49 C29.313,49 32,51.687 32,55 L20,55 Z" id="Stroke-7" stroke="#C9002A" stroke-width="2" stroke-linejoin="round"></path>
+                <path d="M49,31 C49,33.209 47.209,35 45,35 C42.791,35 41,33.209 41,31 C41,28.791 42.791,27 45,27 C47.209,27 49,28.791 49,31 Z" id="Stroke-9" stroke="#C9002A" stroke-width="2" stroke-linejoin="round"></path>
+                <path d="M39,41 C39,37.687 41.687,35 45,35 C48.313,35 51,37.687 51,41 L39,41 Z" id="Stroke-11" stroke="#C9002A" stroke-width="2" stroke-linejoin="round"></path>
+                <path d="M31,29 C31,32.313 33.687,35 37,35" id="Stroke-13" stroke="#C9002A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M21,29 C21,32.313 18.313,35 15,35" id="Stroke-15" stroke="#C9002A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-18"></g>
+                <polygon id="Stroke-17" stroke="#C9002A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="19 29 33 29 33 19 19 19"></polygon>
+                <line x1="26" y1="29" x2="26" y2="37" id="Stroke-19" stroke="#C9002A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+                <line x1="26" y1="24" x2="26" y2="24" id="Stroke-20" stroke="#C9002A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+                <path d="M31,6 C31,8.763 28.761,11 26,11 C23.24,11 21,8.763 21,6 C21,3.237 23.24,1 26,1 C28.761,1 31,3.237 31,6 Z" id="Stroke-21" stroke="#C9002A" stroke-width="2" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                <path d="M33,26 L36.073,25.385 C37.143,25.171 37.844,24.14 37.648,23.066 L36.297,15.632 C36.112,14.617 35.418,13.767 34.459,13.384 L31,12 L26,17 L21,12 L17.541,13.384 C16.582,13.767 15.888,14.617 15.703,15.632 L14.352,23.066 C14.156,24.14 14.857,25.171 15.927,25.385 L19,26" id="Stroke-22" stroke="#C9002A" stroke-width="2" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                <line x1="41" y1="23" x2="37.637" y2="23" id="Stroke-23" stroke="#C9002A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+                <line x1="14.3638" y1="23" x2="10.9998" y2="23" id="Stroke-24" stroke="#C9002A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+            </g>
+        </g>
+    </g>
+</svg>
