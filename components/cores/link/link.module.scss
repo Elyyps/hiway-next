@@ -15,6 +15,10 @@
     width: 5px;
     height: 10px;
     transition: transform 150ms ease-in-out;
+    @media (max-width: 639px) {
+      width: 4px;
+      height: 8px;
+    }
   }
   &-right-icon {
     svg {

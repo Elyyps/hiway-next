@@ -13,11 +13,18 @@
   @media (max-width: 960px) {
     padding: 8px 15px;
   }
+
   &:hover {
     text-decoration: none;
   }
   &:focus {
     outline: 0;
+  }
+  span div {
+    min-width: 10px;
+    @media (max-width: 639px) {
+      min-width: 8px;
+    }
   }
   svg {
     line-height: 0.5;
