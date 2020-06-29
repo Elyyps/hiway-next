@@ -9,6 +9,7 @@ import OurTeamComponent from "../../components/modules/our-team/our-team";
 import { ourTeamData } from "../../api/modules/our-team/dummy-data";
 import VacanciesComponent from "../../components/modules/vacancies/vacancies";
 import { vacanciesData } from "../../api/modules/vacancies/dummy-data";
+import ReactSVG from "react-svg";
 
 const AboutPage = () => {
   const { selectRoute } = React.useContext(RouteContext);
@@ -23,20 +24,36 @@ const AboutPage = () => {
   return (
     <div>
       <Layout title="Hiway | About">
-        <div className={"header-button"}>
-          <SectionComponent
-            {...headerAboutData()}
-            postion="center"
-            variant="primary"
-            isHeader
-            buttonIsHidden
-            onButtonClick={executeScroll}
+        <div className="overlay">
+          <div className={"header-button"}>
+            <SectionComponent
+              {...headerAboutData()}
+              postion="center"
+              variant="primary"
+              isHeader
+              buttonIsHidden
+              onButtonClick={executeScroll}
+            />
+          </div>
+          <div ref={myRef}>
+            <OurFocusComponent ourFocus={ourFocusData()} />
+          </div>
+          <ReactSVG
+            src={"/icons/oval-1.svg"}
+            className={`${"header-overlay"} ${"overlay-icon"} uk-visible@xl`}
+          />
+          <ReactSVG
+            src={"/icons/oval-2.svg"}
+            className={`${"header-overlay"} ${"overlay-icon"} uk-visible@xl`}
           />
         </div>
-        <div ref={myRef}>
-          <OurFocusComponent ourFocus={ourFocusData()} />
+        <div className="overlay">
+          <OurTeamComponent ourTeam={ourTeamData()} />
+          <ReactSVG
+            src={"/icons/oval-3.svg"}
+            className={`${"our-team-overlay"} ${"overlay-icon"} uk-visible@xl`}
+          />
         </div>
-        <OurTeamComponent ourTeam={ourTeamData()} />
         <VacanciesComponent vacancies={vacanciesData()} />
       </Layout>
     </div>

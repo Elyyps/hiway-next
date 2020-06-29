@@ -14,6 +14,7 @@ import FAQComponent from "../../components/modules/faq/faq";
 import { faqHRData } from "../../api/modules/faq/dummy-data";
 import Layout from "../../components/Layout";
 import RouteContext from "../../context/route";
+import ReactSVG from "react-svg";
 
 const HrProduct = () => {
   const { selectRoute } = React.useContext(RouteContext);
@@ -29,24 +30,41 @@ const HrProduct = () => {
   return (
     <div>
       <Layout title="Hiway | HR Platform">
-        <div className={style["header"]}>
-          <SectionComponent
-            {...headerHRData()}
-            postion="center"
-            variant="primary"
-            isHeader
+        <div className={`overlay`}>
+          <div className={style["header"]}>
+            <SectionComponent
+              {...headerHRData()}
+              postion="center"
+              variant="primary"
+              isHeader
+            />
+          </div>
+          <DescriptionSliderComponent
+            descriptionSlider={descriptionSliderData()}
+            isHr
+            onLinkClick={executeScroll}
+          />
+          <ReactSVG
+            src={"/icons/oval-1.svg"}
+            className={`${"welcome-overlay"} ${"overlay-icon"} uk-visible@xl`}
+          />
+          <ReactSVG
+            src={"/icons/oval-2.svg"}
+            className={`${"welcome-overlay-2"} ${"overlay-icon"} uk-visible@xl`}
           />
         </div>
-        <DescriptionSliderComponent
-          descriptionSlider={descriptionSliderData()}
-          isHr
-          onLinkClick={executeScroll}
-        />
+
         <div ref={myRef}>
           <FunctionalitiesComponent functionalities={functionalitiesHrData()} />
         </div>
         <br />
-        <PresentationComponent presentation={presentationHrData()} />
+        <div className="overlay">
+          <PresentationComponent presentation={presentationHrData()} />
+          <ReactSVG
+            src={"/icons/oval-3.svg"}
+            className={`${"more-about-overlay"} ${"overlay-icon"} uk-visible@xl`}
+          />
+        </div>
         <div className={`${style["parts"]} `}>
           <DevelopmentComponent development={developmentHrData()} />
           <FAQComponent faq={faqHRData()} />

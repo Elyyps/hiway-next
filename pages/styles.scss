@@ -143,10 +143,19 @@ textarea {
   .more-about-overlay {
     bottom: 25%;
   }
+  .our-team-overlay {
+    bottom: 5%;
+  }
   .welcome-overlay {
     bottom: 40%;
     &-2 {
       bottom: 50%;
     }
+  }
+  .header-overlay {
+    top: 30%;
+  }
+  .contact-overlay {
+    top: 30%;
   }
 }

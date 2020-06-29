@@ -14,6 +14,7 @@ import FAQComponent from "../../components/modules/faq/faq";
 import { faqFreelanceData } from "../../api/modules/faq/dummy-data";
 import Layout from "../../components/Layout";
 import RouteContext from "../../context/route";
+import ReactSVG from "react-svg";
 
 const FreelanceProduct = () => {
   const { selectRoute } = React.useContext(RouteContext);
@@ -29,19 +30,29 @@ const FreelanceProduct = () => {
   return (
     <div>
       <Layout title="Hiway | Freelance Platform">
-        <div className={style["header"]}>
-          <SectionComponent
-            {...headerFreelanceData()}
-            postion="center"
-            variant="secondary"
-            isHeader
+        <div className="overlay">
+          <div className={style["header"]}>
+            <SectionComponent
+              {...headerFreelanceData()}
+              postion="center"
+              variant="secondary"
+              isHeader
+            />
+          </div>
+          <DescriptionSliderComponent
+            descriptionSlider={descriptionSliderData()}
+            isFreelance
+            onLinkClick={executeScroll}
+          />
+          <ReactSVG
+            src={"/icons/oval-1.svg"}
+            className={`${"welcome-overlay"} ${"overlay-icon"} uk-visible@xl`}
+          />
+          <ReactSVG
+            src={"/icons/oval-2.svg"}
+            className={`${"welcome-overlay-2"} ${"overlay-icon"} uk-visible@xl`}
           />
         </div>
-        <DescriptionSliderComponent
-          descriptionSlider={descriptionSliderData()}
-          isFreelance
-          onLinkClick={executeScroll}
-        />
         <div ref={myRef}>
           <FunctionalitiesComponent
             functionalities={functionalitiesFreelanceData()}
@@ -49,7 +60,13 @@ const FreelanceProduct = () => {
         </div>
 
         <br />
-        <PresentationComponent presentation={presentationFreelanceData()} />
+        <div className="overlay">
+          <PresentationComponent presentation={presentationFreelanceData()} />
+          <ReactSVG
+            src={"/icons/oval-3.svg"}
+            className={`${"more-about-overlay"} ${"overlay-icon"} uk-visible@xl`}
+          />
+        </div>
         <div className={`${style["parts"]} `}>
           <DevelopmentComponent development={developmentFreelanceData()} />
           <FAQComponent faq={faqFreelanceData()} />

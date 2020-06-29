@@ -9,7 +9,6 @@ interface INewsletterComponentProps {
 }
 
 const NewsletterComponent = (props: INewsletterComponentProps) => {
-  //const [isOpen, setIsOpen] = React.useState<boolean>(false);
   return (
     <div className={style["newsletter"]}>
       <div className={"container"}>
@@ -23,7 +22,6 @@ const NewsletterComponent = (props: INewsletterComponentProps) => {
               variant="tertiary"
               icon={"/icons/chevron-right.svg"}
               href={"/contact"}
-              //onClick={() => setIsOpen(true)}
             />
             <span>
               or check out our{" "}
@@ -37,13 +35,6 @@ const NewsletterComponent = (props: INewsletterComponentProps) => {
           </div>
         </div>
       </div>
-      {/* {isOpen && (
-        <LightBoxComponent lightBoxOpen={isOpen} setLightBoxOpen={setIsOpen}>
-          <div className={style["newsletter-lightbox"]}>
-            <NewsletterCardComponent {...props.newsletter.card} />
-          </div>
-        </LightBoxComponent>
-      )} */}
     </div>
   );
 };
