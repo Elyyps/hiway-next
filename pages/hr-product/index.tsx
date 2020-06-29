@@ -1,23 +1,43 @@
 import React from "react";
 import SectionComponent from "../../components/cores/section/section";
-import { headerHRData } from "../../api/modules/welcome/dummy-data";
+import {
+  headerHREnglishData,
+  headerHRDutchData,
+} from "../../api/modules/welcome/dummy-data";
 import style from "./hr-product.module.scss";
 import DescriptionSliderComponent from "../../components/modules/description-slider/description-slider";
-import { descriptionSliderData } from "../../api/modules/description-slider/dummy-data";
-import { functionalitiesHrData } from "../../api/modules/functionalities/dummy-data";
+import {
+  descriptionSliderEnglishData,
+  descriptionSliderDutchData,
+} from "../../api/modules/description-slider/dummy-data";
+import {
+  functionalitiesHrEnglishData,
+  functionalitiesHrDutchData,
+} from "../../api/modules/functionalities/dummy-data";
 import FunctionalitiesComponent from "../../components/modules/functionalities/functionalities";
 import PresentationComponent from "../../components/modules/presentation/presentation";
-import { presentationHrData } from "../../api/modules/presentation/dummy-data";
+import {
+  presentationHrEnglishData,
+  presentationHrDutchData,
+} from "../../api/modules/presentation/dummy-data";
 import DevelopmentComponent from "../../components/modules/development/development";
-import { developmentHrData } from "../../api/modules/development/dummy-data";
+import {
+  developmentHrEnglishData,
+  developmentHrDutchData,
+} from "../../api/modules/development/dummy-data";
 import FAQComponent from "../../components/modules/faq/faq";
-import { faqHRData } from "../../api/modules/faq/dummy-data";
+import {
+  faqHREnglishData,
+  faqHRDutchData,
+} from "../../api/modules/faq/dummy-data";
 import Layout from "../../components/Layout";
 import RouteContext from "../../context/route";
 import ReactSVG from "react-svg";
+import { LanguageContext } from "../../context/language";
 
 const HrProduct = () => {
   const { selectRoute } = React.useContext(RouteContext);
+  const { language } = React.useContext(LanguageContext);
 
   const myRef = React.useRef(null);
   const scrollToRef = (ref: any) =>
@@ -33,14 +53,20 @@ const HrProduct = () => {
         <div className={`overlay`}>
           <div className={style["header"]}>
             <SectionComponent
-              {...headerHRData()}
+              {...(language === "EN"
+                ? headerHREnglishData()
+                : headerHRDutchData())}
               postion="center"
               variant="primary"
               isHeader
             />
           </div>
           <DescriptionSliderComponent
-            descriptionSlider={descriptionSliderData()}
+            descriptionSlider={
+              language === "EN"
+                ? descriptionSliderEnglishData()
+                : descriptionSliderDutchData()
+            }
             isHr
             onLinkClick={executeScroll}
           />
@@ -55,19 +81,39 @@ const HrProduct = () => {
         </div>
 
         <div ref={myRef}>
-          <FunctionalitiesComponent functionalities={functionalitiesHrData()} />
+          <FunctionalitiesComponent
+            functionalities={
+              language === "EN"
+                ? functionalitiesHrEnglishData()
+                : functionalitiesHrDutchData()
+            }
+          />
         </div>
         <br />
         <div className="overlay">
-          <PresentationComponent presentation={presentationHrData()} />
+          <PresentationComponent
+            presentation={
+              language === "EN"
+                ? presentationHrEnglishData()
+                : presentationHrDutchData()
+            }
+          />
           <ReactSVG
             src={"/icons/oval-3.svg"}
             className={`${"more-about-overlay"} ${"overlay-icon"} uk-visible@xl`}
           />
         </div>
         <div className={`${style["parts"]} `}>
-          <DevelopmentComponent development={developmentHrData()} />
-          <FAQComponent faq={faqHRData()} />
+          <DevelopmentComponent
+            development={
+              language === "EN"
+                ? developmentHrEnglishData()
+                : developmentHrDutchData()
+            }
+          />
+          <FAQComponent
+            faq={language === "EN" ? faqHREnglishData() : faqHRDutchData()}
+          />
         </div>
       </Layout>
     </div>

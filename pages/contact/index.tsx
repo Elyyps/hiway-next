@@ -1,14 +1,23 @@
 import React from "react";
-import { headerContactData } from "../../api/modules/welcome/dummy-data";
+import {
+  headerContactEnglishData,
+  headerContactDutchData,
+} from "../../api/modules/welcome/dummy-data";
 import Layout from "../../components/Layout";
 import RouteContext from "../../context/route";
 import SectionComponent from "../../components/cores/section/section";
 import ContactComponent from "../../components/modules/contact/contact";
-import { contactData } from "../../api/modules/contact/dummy-data";
+import {
+  contactEnglishData,
+  contactDutchData,
+} from "../../api/modules/contact/dummy-data";
 import ReactSVG from "react-svg";
+import { LanguageContext } from "../../context/language";
 
 const ContactPage = () => {
   const { selectRoute } = React.useContext(RouteContext);
+  const { language } = React.useContext(LanguageContext);
+
   const myRef = React.useRef(null);
   const scrollToRef = (ref: any) =>
     window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" });
@@ -22,7 +31,9 @@ const ContactPage = () => {
       <Layout title="Hiway | Contact">
         <div className={"header-button"}>
           <SectionComponent
-            {...headerContactData()}
+            {...(language === "EN"
+              ? headerContactEnglishData()
+              : headerContactDutchData())}
             postion="center"
             variant="primary"
             isHeader
@@ -31,7 +42,11 @@ const ContactPage = () => {
           />
         </div>
         <div ref={myRef} className="overlay">
-          <ContactComponent contact={contactData()} />
+          <ContactComponent
+            contact={
+              language === "EN" ? contactEnglishData() : contactDutchData()
+            }
+          />
           <ReactSVG
             src={"/icons/oval-1.svg"}
             className={`${"contact-overlay"} ${"overlay-icon"} uk-visible@xl`}

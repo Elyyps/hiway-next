@@ -1,16 +1,28 @@
 import React from "react";
 import Layout from "../components/Layout";
 import DescriptionSliderComponent from "../components/modules/description-slider/description-slider";
-import { descriptionSliderData } from "../api/modules/description-slider/dummy-data";
-import { welcomeData } from "../api/modules/welcome/dummy-data";
+import {
+  descriptionSliderEnglishData,
+  descriptionSliderDutchData,
+} from "../api/modules/description-slider/dummy-data";
+import {
+  welcomeEnglishData,
+  welcomeDutchData,
+} from "../api/modules/welcome/dummy-data";
 import WelcomeComponent from "../components/modules/welcome/welcome";
-import { moreAboutData } from "../api/modules/more-about/dummy-data";
+import {
+  moreAboutEnglishData,
+  moreAboutDutchData,
+} from "../api/modules/more-about/dummy-data";
 import MoreAboutComponent from "../components/modules/more-about/more-about";
 import RouteContext from "../context/route";
 import ReactSVG from "react-svg";
+import { LanguageContext } from "../context/language";
 
 const HomePage = () => {
   const { selectRoute } = React.useContext(RouteContext);
+  const { language } = React.useContext(LanguageContext);
+
   React.useEffect(() => {
     selectRoute("Home");
   }, []);
@@ -18,9 +30,17 @@ const HomePage = () => {
     <div>
       <Layout>
         <div className={`overlay`}>
-          <WelcomeComponent sections={welcomeData()} />
+          <WelcomeComponent
+            sections={
+              language === "EN" ? welcomeEnglishData() : welcomeDutchData()
+            }
+          />
           <DescriptionSliderComponent
-            descriptionSlider={descriptionSliderData()}
+            descriptionSlider={
+              language === "EN"
+                ? descriptionSliderEnglishData()
+                : descriptionSliderDutchData()
+            }
           />
           <ReactSVG
             src={"/icons/oval-1.svg"}
@@ -32,7 +52,11 @@ const HomePage = () => {
           />
         </div>
         <div className={`overlay`}>
-          <MoreAboutComponent moreAbout={moreAboutData()} />
+          <MoreAboutComponent
+            moreAbout={
+              language === "EN" ? moreAboutEnglishData() : moreAboutDutchData()
+            }
+          />
           <ReactSVG
             src={"/icons/oval-3.svg"}
             className={`${"more-about-overlay"} ${"overlay-icon"} uk-visible@xl`}
