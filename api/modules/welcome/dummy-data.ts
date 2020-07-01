@@ -29,7 +29,7 @@ export const welcomeDutchData = (): ISection[] => [
     backgroundImage: "/img/optimized/section1.jpg",
     backgroundMobileImage: "/img/optimized/mobile-hr.jpg",
     title: "HR platform",
-    subTitle: "i want to go to ",
+    subTitle: "dutch version",
     content:
       "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic payments.",
     postion: "center",
