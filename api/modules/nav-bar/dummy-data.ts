@@ -9,13 +9,13 @@ export const navBarEnglishData = (): INavBar => ({
     {
       title: { text: "Products" },
       dropdownText:
-        "An ever-evolving line-up, build to change the way we work.",
+        "An ever-evolving line-up, built to change the way we work.",
       dropdownTitle: "Our products",
       dropdownLink: [
         {
           link: { text: "HR platform", url: "/hr-product" },
           content:
-            "Find candidates and arrange contracts for your flexible workforce needs, within a simple platform that can be tailored to your business.",
+            "From finding candidates and arranging contracts for your flexible workforce, up to salary payments, all in one HR platform.",
         },
         {
           link: { text: "Freelance platform", url: "/freelance-product" },
@@ -37,18 +37,18 @@ export const navBarDutchData = (): INavBar => ({
     {
       title: { text: "Products" },
       dropdownText:
-        "An ever-evolving line-up, build to change the way we work.",
-      dropdownTitle: "Our products",
+        "Dynamische HR software die de huidige manier van werken in human resources veranderd.",
+      dropdownTitle: "Onze diensten",
       dropdownLink: [
         {
           link: { text: "HR platform", url: "/hr-product" },
           content:
-            "Find candidates and arrange contracts for your flexible workforce needs, within a simple platform that can be tailored to your business.",
+            "Van werven van flexibel personeel tot en met verlonen, alles in één simpel HR platform, op maat gemaakt voor jouw organisatie.",
         },
         {
           link: { text: "Freelance platform", url: "/freelance-product" },
           content:
-            "Find freelance vacancies worldwide, with our online job-search platform that uses blockchain technology to match the right candidate with the right job.",
+            "Vind wereldwijd freelance vacatures met onze online marktplaats dat gebruikt maakt van blockchain technologie om de juiste kandidaat met de juiste opdracht te koppelen.",
         },
       ],
     },

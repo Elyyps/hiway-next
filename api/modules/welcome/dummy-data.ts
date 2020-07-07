@@ -7,7 +7,7 @@ export const welcomeEnglishData = (): ISection[] => [
     title: "HR platform",
     subTitle: "i want to go to ",
     content:
-      "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic payments.",
+      "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic salary payments.",
     postion: "center",
     variant: "primary",
     button: { text: "Go to HR platform" },
@@ -18,7 +18,7 @@ export const welcomeEnglishData = (): ISection[] => [
     title: "Freelance platform",
     subTitle: "i want to go to ",
     content:
-      "Our online marketplace for freelancers. Create an account, find a suitable job, and get paid instantly from anywhere in the world.",
+      "Our online marketplace for freelancers. Create an account, find a suitable job and get paid instantly from anywhere in the world.",
     postion: "left",
     variant: "secondary",
     button: { text: "Go to Freelance platform" },
@@ -29,9 +29,9 @@ export const welcomeDutchData = (): ISection[] => [
     backgroundImage: "/img/optimized/section1.jpg",
     backgroundMobileImage: "/img/optimized/mobile-hr.jpg",
     title: "HR platform",
-    subTitle: "dutch version",
+    subTitle: "i want to go to",
     content:
-      "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic payments.",
+      "De perfecte human resource oplossing voor het managen van flexibel personeel, wereldwijd.Alle benodigdheden voor contractovereenkomsten, urenadministratie en automatische salaris betalingen.",
     postion: "center",
     variant: "primary",
     button: { text: "Go to HR platform" },
@@ -40,9 +40,9 @@ export const welcomeDutchData = (): ISection[] => [
     backgroundImage: "/img/optimized/section2.jpg",
     backgroundMobileImage: "/img/optimized/mobile-freelance.jpg",
     title: "Freelance platform",
-    subTitle: "i want to go to ",
+    subTitle: "i want to go to",
     content:
-      "Our online marketplace for freelancers. Create an account, find a suitable job, and get paid instantly from anywhere in the world.",
+      "Onze online marktplaats voor freelancers. Maak een account, vind een geschikte opdracht en krijg direct betaald waar ook ter wereld.",
     postion: "left",
     variant: "secondary",
     button: { text: "Go to Freelance platform" },
@@ -54,7 +54,7 @@ export const headerHREnglishData = (): ISection => ({
   title: "HR platform",
   subTitle: "i want to go to ",
   content:
-    "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic payments.",
+    "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic salary payments.",
   postion: "center",
   variant: "primary",
   button: { text: "Go to HR platform" },
@@ -65,7 +65,7 @@ export const headerHRDutchData = (): ISection => ({
   title: "HR platform",
   subTitle: "i want to go to ",
   content:
-    "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic payments.",
+    "De perfecte human resource oplossing voor het managen van flexibel personeel, wereldwijd. Alle benodigdheden voor contractovereenkomsten, urenadministratie en automatische salaris betalingen.",
   postion: "center",
   variant: "primary",
   button: { text: "Go to HR platform" },
@@ -76,7 +76,7 @@ export const headerFreelanceEnglishData = (): ISection => ({
   title: "Freelance platform",
   subTitle: "i want to go to ",
   content:
-    "Our online marketplace for freelancers. Create an account, find a suitable job, and get paid instantly from anywhere in the world.",
+    "Our online marketplace for freelancers. Create an account, find a suitable job and get paid instantly from anywhere in the world.",
   postion: "left",
   variant: "secondary",
   button: { text: "Go to Freelance platform" },
@@ -105,9 +105,9 @@ export const headerAboutEnglishData = (): ISection => ({
 export const headerAboutDutchData = (): ISection => ({
   backgroundImage: "/img/optimized/about.jpg",
   backgroundMobileImage: "/img/optimized/about-mobile.jpg",
-  title: "Simplifying Work",
+  title: "Maakt werk makkelijk",
   content:
-    "Creating the employment environment of the future by leveraging technological advancements",
+    "De werkomgeving van de toekomst mogelijk gemaakt door technologische innovaties",
   postion: "center",
   variant: "primary",
   button: { text: "Discover more" },
@@ -125,9 +125,9 @@ export const headerContactEnglishData = (): ISection => ({
 export const headerContactDutchData = (): ISection => ({
   backgroundImage: "/img/optimized/contact.jpg",
   backgroundMobileImage: "/img/optimized/contact-mobile.jpg",
-  title: "Get in touch",
+  title: "Neem contact met ons op",
   content:
-    "Are you looking for a demo of one of our products? Or have anything else to ask us? Reach out, and we’ll get back to you shortly",
+    "Wil je een demo van een van onze producten? Of wil je iets anders vragen? Neem contact met ons op, dan komen we snel bij je terug",
   postion: "center",
   variant: "primary",
   button: { text: "Contact" },

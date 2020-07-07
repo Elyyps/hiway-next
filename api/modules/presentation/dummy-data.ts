@@ -12,9 +12,9 @@ export const presentationHrEnglishData = (): IPresentation => ({
   icon: "/icons/play.svg",
 });
 export const presentationHrDutchData = (): IPresentation => ({
-  title: "Discover Hiway in 90 seconds",
+  title: "Ontdek Hiway in 90 secondes",
   content:
-    "Would you like to further understand how the platform could help your company? Check out this video that dives deeper on the platform and its functionality. Alternatively, contact us for a live demo.",
+    "Benieuwd hoe het platform jouw bedrijf kan helpen? Bekijk deze video die dieper ingaat op het platform en de functionaliteiten, of neem contact met ons op voor een live demo.",
   video: "/img/optimized/video.jpg",
   videoTitle: {
     text: "Introduction to the HR platform",
@@ -35,9 +35,9 @@ export const presentationFreelanceEnglishData = (): IPresentation => ({
   beta: "This software is a proof of concept and not yet a first version.",
 });
 export const presentationFreelanceDutchData = (): IPresentation => ({
-  title: "Discover Hiway in 90 seconds",
+  title: "Ontdek Hiway in 90 secondes",
   content:
-    "Learn more about why this project was started and where we see this solution being relevant.",
+    "Ontdek waarom we met dit project zijn begonnen en waar wij vinden dat deze oplossing relevant is.",
   video: "/img/optimized/video.jpg",
   videoTitle: {
     text: "Introduction to the Freelance platform",

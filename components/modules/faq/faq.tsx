@@ -26,8 +26,13 @@ const FAQComponent = (props: IFAQComponentProps) => {
       </ul>
       <span className={style["faq-description"]}>
         {props.faq.description}
-        <LinkComponent to="" underlined>
-          here
+        <LinkComponent
+          to={
+            props.faq.descriptionLink.url ? props.faq.descriptionLink.url : ""
+          }
+          underlined
+        >
+          {props.faq.descriptionLink.text}
         </LinkComponent>
       </span>
     </div>

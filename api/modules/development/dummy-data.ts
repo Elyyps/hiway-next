@@ -26,26 +26,26 @@ export const developmentHrEnglishData = (): IDevelopment => ({
   ],
 });
 export const developmentHrDutchData = (): IDevelopment => ({
-  title: "Development",
+  title: "Ontwikkeling",
   moreInfo:
-    "Looking for more information? Get in touch. As always, the Hiway team can help you with any module related question or showcase those that are still in development. Reach out and we'll arrange a video call.",
+    "Wil je meer informatie? Het Hiway team beantwoord je vragen graag. Neem contact met ons op, dan maken we een afspraak voor een videogesprek of een fysieke afspraak.",
   items: [
     {
-      title: "Advanced matching: AI & filtering",
+      title: "Geavanceerde Matching: AI & filters",
       content:
-        "This module helps HR managers and recruiters leverage artificial intelligence and machine learning to find the perfect fit for an open position",
+        "Deze module stelt HR managers en recruiters in staat om artificial intelligence (AI) en machine learning (ML) in te zetten om de perfecte match te vinden bij een open positie",
       percentage: 75,
     },
     {
-      title: "Vacancy distribution",
+      title: "Vacature distributie",
       content:
-        "Simply create, place and edit vacancies on numerous different channels from this new module, minimising time spent on repetitive and time-consuming processes",
+        "Creëer, plaats en bewerk vacatures op verschillende kanalen. Bespaar tijd met deze module door tijdrovende en repetitieve taken te automatiseren",
       percentage: 40,
     },
     {
-      title: "Reporting",
+      title: "Verslaggeving",
       content:
-        "Get a clear overview of candidates matched, hours worked, loans paid. This module enables any level of user to get a better insight into their data",
+        "Een duidelijk overzicht van alle gematchte kandidaten, gewerkte uren en betaalde salarissen. Deze module geeft gebruikers op ieder niveau een beter inzicht in hun gegevens",
       percentage: 91,
     },
   ],
@@ -62,36 +62,36 @@ export const developmentFreelanceEnglishData = (): IDevelopment => ({
     {
       title: "Fiat payments",
       content:
-        "With the proof of concept focusing on blockchain currency payments, the goal for the next version will be integrating Fiat to support speedy payments and fee transactions",
+        "With the proof of concept focusing on blockchain currency payments, the goal for the next version will be integrating Fiat to support speedy wage payments and fee transactions",
       percentage: 40,
     },
     {
       title: "Invoicing and tax automatisation",
       content:
-        "Functionality that makes administration for freelance workers easier, from tracking invoices to sourcing tax reports and much more",
+        "Functionality that makes HR administration for freelance workers easier, from tracking invoices to sourcing tax reports and much more",
       percentage: 91,
     },
   ],
 });
 export const developmentFreelanceDutchData = (): IDevelopment => ({
-  title: "Development",
+  title: "Ontwikkeling",
   items: [
     {
-      title: "UI/UX rebuilding",
+      title: "UI/UX vernieuwing",
       content:
-        "One of the most requested changes to our proof of concept was a redesign of the way it looks and feels. Updating the UX flow and design to match the Hiway HR platform will be our first priority for the next version",
+        "Een van de meest aangevraagde aanpassingen van onze proof-of-concept was een nieuwe user experience. Het bijwerken van de UX flow en het ontwerp gekoppeld aan ons HR platform is de eerste prioriteit voor de volgende versie",
       percentage: 75,
     },
     {
-      title: "Fiat payments",
+      title: "FIAT betalingen",
       content:
-        "With the proof of concept focusing on blockchain currency payments, the goal for the next version will be integrating Fiat to support speedy payments and fee transactions",
+        "Momenteel is ons proof-of-concept gefocust op blockchain valuta betalingen. Het doel voor de volgende versie is het integreren van Fiat valuta's om snelle transacties en betalingen te ondersteunen",
       percentage: 40,
     },
     {
-      title: "Invoicing and tax automatisation",
+      title: "Facturatie en belasting automatisering",
       content:
-        "Functionality that makes administration for freelance workers easier, from tracking invoices to sourcing tax reports and much more",
+        "Deze functionaliteit maakt de administratie voor freelancers makkelijker; van het bijhouden van facturen tot het inzien van belastingaangiften en nog veel meer",
       percentage: 91,
     },
   ],
