@@ -71,18 +71,30 @@ const NavBarComponent = (props: INavBarComponentProps) => {
           ))}
         </ul>
       </div>
-      <div className={` ${style["nav-bar-language"]} ${"uk-hidden@s"} `}>
-        <DropdownComponent title={language} variant="primary">
-          <ul>
-            <li onClick={() => onLanguageSelected("EN")}>English</li>
-            <li onClick={() => onLanguageSelected("NL")}>Dutch</li>
-          </ul>
-        </DropdownComponent>
+      <div className={style["nav-bar-language"]}>
+        <div className={`  ${"uk-hidden@s"} `}>
+          <DropdownComponent title={language} variant="primary">
+            <ul>
+              <li onClick={() => onLanguageSelected("EN")}>English</li>
+              <li onClick={() => onLanguageSelected("NL")}>Dutch</li>
+            </ul>
+          </DropdownComponent>
+        </div>
+        <div className="uk-visible@s">
+          <span>Language :</span>
+          <DropdownComponent
+            title={language === "EN" ? "English" : "Dutch"}
+            variant="primary"
+          >
+            <ul>
+              <li onClick={() => onLanguageSelected("EN")}>English</li>
+              <li onClick={() => onLanguageSelected("NL")}>Dutch</li>
+            </ul>
+          </DropdownComponent>
+        </div>
       </div>
+
       <div className={` uk-hidden@s ${style["nav-bar-search"]} `}>
-        {/* <span className={"uk-visible@s"}>
-          <ReactSVG src={props.navBarModule.searchIcon} />
-        </span> */}
         <span>
           <NavBarModalComponent icon={props.navBarModule.menuIcon}>
             <HamburgerMenuComponent menuItems={props.navBarModule.items} />

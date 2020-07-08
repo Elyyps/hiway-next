@@ -51,7 +51,7 @@ const DropdownComponent = (props: IDropDownComponentProps) => {
               }
             : {
                 position: "absolute",
-                marginTop: "-1px",
+                marginTop: "5px",
                 bottom: props.position === "top" ? "100%" : "auto",
               }
         }

@@ -8,10 +8,14 @@
   > div {
     display: flex;
     align-items: center;
+
     @media (min-width: 639px) {
       &:not(:first-child) {
         &::before {
           margin: 0 28px;
+          @media (max-width: 960px) {
+            margin: 0 20px;
+          }
           color: #979797;
           opacity: 0.32;
           content: "|";
@@ -61,9 +65,18 @@
   &-language {
     z-index: 15;
     justify-content: flex-end;
-    width: 60%;
+    width: 205px;
+    @media (max-width: 960px) {
+      width: 180px;
+    }
     @media (max-width: 639px) {
       width: calc(100% - 170px);
+    }
+    > div > span {
+      padding-right: 4px;
+      @media (max-width: 960px) {
+        font-size: 14px;
+      }
     }
     ul {
       padding: 8px;
@@ -88,12 +101,14 @@
     }
   }
   &-menu {
-    width: calc(85%);
-
+    width: calc(85% - 205px);
+    @media (max-width: 960px) {
+      width: calc(85% - 180px);
+    }
     ul {
       color: black;
       height: 100%;
-      width: 45%;
+      width: 60%;
       margin: 0;
       padding: 0;
       display: flex;
@@ -102,10 +117,10 @@
       align-items: center;
       list-style: none;
       @media (max-width: 960px) {
-        width: 70%;
+        width: 100%;
       }
       @media (min-width: 1300px) {
-        width: 40%;
+        width: 45%;
       }
       .selected {
         > a,
@@ -128,10 +143,12 @@
           height: 100%;
           display: flex;
           align-items: center;
+          @media (max-width: 960px) {
+            font-size: 14px;
+          }
         }
         > div {
           height: 100%;
-
           button {
             height: 100%;
             display: flex;
@@ -183,9 +200,6 @@
       div {
         font-size: 14px;
         color: #292c30;
-        // @media (max-width: 960px) {
-        //   font-size: 13px;
-        // }
       }
     }
     .dropdown-right {
