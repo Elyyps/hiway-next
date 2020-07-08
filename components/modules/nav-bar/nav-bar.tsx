@@ -80,18 +80,6 @@ const NavBarComponent = (props: INavBarComponentProps) => {
             </ul>
           </DropdownComponent>
         </div>
-        <div className="uk-visible@s">
-          <span>Language :</span>
-          <DropdownComponent
-            title={language === "EN" ? "English" : "Dutch"}
-            variant="primary"
-          >
-            <ul>
-              <li onClick={() => onLanguageSelected("EN")}>English</li>
-              <li onClick={() => onLanguageSelected("NL")}>Dutch</li>
-            </ul>
-          </DropdownComponent>
-        </div>
       </div>
 
       <div className={` uk-hidden@s ${style["nav-bar-search"]} `}>
@@ -105,3 +93,17 @@ const NavBarComponent = (props: INavBarComponentProps) => {
   );
 };
 export default NavBarComponent;
+{
+  /* <div className="uk-visible@s">
+<span>Language :</span>
+<DropdownComponent
+  title={language === "EN" ? "English" : "Dutch"}
+  variant="primary"
+>
+  <ul>
+    <li onClick={() => onLanguageSelected("EN")}>English</li>
+    <li onClick={() => onLanguageSelected("NL")}>Dutch</li>
+  </ul>
+</DropdownComponent>
+</div> */
+}
