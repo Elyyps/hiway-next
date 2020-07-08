@@ -45,7 +45,7 @@ const HrProduct = () => {
   const executeScroll = () => scrollToRef(myRef);
 
   React.useEffect(() => {
-    selectRoute("Producten");
+    selectRoute("Products");
   }, []);
   return (
     <div>

@@ -18,7 +18,7 @@ export const welcomeEnglishData = (): ISection[] => [
     title: "Freelance platform",
     subTitle: "i want to go to ",
     content:
-      "Our online marketplace for freelancers. Create an account, find a suitable job and get paid instantly from anywhere in the world.",
+      "Our online marketplace for freelancers. Create an account, find a suitable job and get paid instantly from anywhere in the world. Build using Blockchain technology.",
     postion: "left",
     variant: "secondary",
     button: { text: "Go to Freelance platform" },
@@ -42,7 +42,7 @@ export const welcomeDutchData = (): ISection[] => [
     title: "Freelance platform",
     subTitle: "i want to go to",
     content:
-      "Onze online marktplaats voor freelancers. Maak een account, vind een geschikte opdracht en krijg direct betaald waar ook ter wereld.",
+      "Onze online marktplaats voor freelancers. Maak een account, vind een geschikte opdracht en krijg direct betaald waar ook ter wereld. Alles gebouwd op Blockchain technologie.",
     postion: "left",
     variant: "secondary",
     button: { text: "Go to Freelance platform" },
@@ -76,7 +76,7 @@ export const headerFreelanceEnglishData = (): ISection => ({
   title: "Freelance platform",
   subTitle: "i want to go to ",
   content:
-    "Our online marketplace for freelancers. Create an account, find a suitable job and get paid instantly from anywhere in the world.",
+    "Our online marketplace for freelancers. Create an account, find a suitable job and get paid instantly from anywhere in the world. Build using Blockchain technology.",
   postion: "left",
   variant: "secondary",
   button: { text: "Go to Freelance platform" },
@@ -87,7 +87,7 @@ export const headerFreelanceDutchData = (): ISection => ({
   title: "Freelance platform",
   subTitle: "i want to go to ",
   content:
-    "Our online marketplace for freelancers. Create an account, find a suitable job, and get paid instantly from anywhere in the world.",
+    "Onze online marktplaats voor freelancers. Maak een account, vind een geschikte opdracht en krijg direct betaald waar ook ter wereld. Alles gebouwd op Blockchain technologie.",
   postion: "left",
   variant: "secondary",
   button: { text: "Go to Freelance platform" },
