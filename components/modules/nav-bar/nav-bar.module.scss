@@ -231,6 +231,13 @@
     right: 64px;
     top: 0px;
     height: 40px;
+    button {
+      font-size: 12px;
+      svg {
+        height: 14px;
+        width: 10px;
+      }
+    }
   }
   .large {
     @media (min-width: 1300px) {
