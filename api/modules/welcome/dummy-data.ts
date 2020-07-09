@@ -125,7 +125,7 @@ export const headerContactEnglishData = (): ISection => ({
 export const headerContactDutchData = (): ISection => ({
   backgroundImage: "/img/optimized/contact.jpg",
   backgroundMobileImage: "/img/optimized/contact-mobile.jpg",
-  title: "Neem contact met ons op",
+  title: "Kom in contact",
   content:
     "Wil je een demo van een van onze producten? Of wil je iets anders vragen? Neem contact met ons op, dan komen we snel bij je terug",
   postion: "center",

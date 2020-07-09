@@ -1,7 +1,7 @@
 import { IVacancies } from "./vacancies";
 
 export const vacanciesEnglishData = (): IVacancies => ({
-  title: "Huidige vacatures",
+  title: "Vacancies",
   jobs: [
     {
       name: "Front-end developer",
@@ -21,7 +21,7 @@ export const vacanciesEnglishData = (): IVacancies => ({
 });
 
 export const vacanciesDutchData = (): IVacancies => ({
-  title: "Vacancies",
+  title: "Huidige vacatures",
   jobs: [
     {
       name: "Front-end developer",

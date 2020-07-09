@@ -77,8 +77,8 @@ export const ourFocusDutchData = (): IOurFocus => ({
     },
   ],
   links: [
-    { text: "Go to HR Platform ", variant: "primary" },
-    { text: "Go to Freelance Platform ", variant: "secondary" },
+    { text: "Ga naar HR platform", variant: "primary" },
+    { text: "Ga naar Freelance platform", variant: "secondary" },
   ],
   images: [
     "/img/optimized/focus1.jpg",

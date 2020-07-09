@@ -12,7 +12,10 @@ import {
   ourFocusDutchData,
 } from "../../api/modules/our-focus/dummy-data";
 import OurTeamComponent from "../../components/modules/our-team/our-team";
-import { ourTeamData } from "../../api/modules/our-team/dummy-data";
+import {
+  ourTeamEnglishData,
+  ourTeamDutchData,
+} from "../../api/modules/our-team/dummy-data";
 import VacanciesComponent from "../../components/modules/vacancies/vacancies";
 import {
   vacanciesEnglishData,
@@ -64,7 +67,11 @@ const AboutPage = () => {
         </div>
 
         <div className="overlay">
-          <OurTeamComponent ourTeam={ourTeamData()} />
+          <OurTeamComponent
+            ourTeam={
+              language === "EN" ? ourTeamEnglishData() : ourTeamDutchData()
+            }
+          />
           <ReactSVG
             src={"/icons/oval-3.svg"}
             className={`${"our-team-overlay"} ${"overlay-icon"} uk-visible@xl`}

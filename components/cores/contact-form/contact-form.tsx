@@ -4,6 +4,7 @@ import { withFormik, FormikProps, FormikErrors, Form } from "formik";
 import { InputComponent } from "../input/input";
 import { validateEmail } from "../../../utils/validate-email";
 import ButtonComponent from "../button/button";
+import { LanguageContext } from "../../../context/language";
 
 interface IContactFormErrorMessages {
   firstName: string;
@@ -24,6 +25,7 @@ const formOnChange = () => {
 };
 const InnerForm = (props: FormikProps<IContactFormValues>) => {
   const { touched, errors } = props;
+  const { language } = React.useContext(LanguageContext);
 
   return (
     <Form
@@ -34,7 +36,7 @@ const InnerForm = (props: FormikProps<IContactFormValues>) => {
       <div>
         <InputComponent
           name="firstName"
-          placeholder="First name"
+          placeholder={language === "EN" ? "First name" : "Naam"}
           errorMessage={touched.firstName ? errors.firstName : ""}
           onChange={(e: any) => {
             props.handleChange(e);
@@ -47,7 +49,7 @@ const InnerForm = (props: FormikProps<IContactFormValues>) => {
 
         <InputComponent
           name="lastName"
-          placeholder="Last name"
+          placeholder={language === "EN" ? "Last name" : "Achternaam"}
           errorMessage={touched.lastName ? errors.lastName : ""}
           onChange={(e: any) => {
             props.handleChange(e);
@@ -61,7 +63,7 @@ const InnerForm = (props: FormikProps<IContactFormValues>) => {
 
       <div>
         <InputComponent
-          placeholder="E-mail adress"
+          placeholder={language === "EN" ? "E-mail adress" : "E-Mailadrese"}
           name="email"
           errorMessage={touched.email ? errors.email : ""}
           onChange={(e: any) => {
@@ -74,7 +76,7 @@ const InnerForm = (props: FormikProps<IContactFormValues>) => {
         />
 
         <InputComponent
-          placeholder="Subject"
+          placeholder={language === "EN" ? "Subject" : "Onderwerpen"}
           name="subject"
           errorMessage={touched.subject ? errors.subject : ""}
           onChange={(e: any) => {
@@ -88,7 +90,11 @@ const InnerForm = (props: FormikProps<IContactFormValues>) => {
       </div>
 
       <textarea
-        placeholder={"Type your message here"}
+        placeholder={
+          language === "EN"
+            ? "Type your message here"
+            : "Schrijf je bericht hier"
+        }
         name={"message"}
         onChange={(e: any) => {
           props.handleChange(e);
@@ -101,7 +107,7 @@ const InnerForm = (props: FormikProps<IContactFormValues>) => {
       />
       <div className={style["contact-form-bottom"]}>
         <ButtonComponent
-          title={"Send message"}
+          title={language === "EN" ? "Send message" : "Bericht versturen"}
           variant={"primary"}
           icon={"/icons/chevron-right.svg"}
           type={"submit"}
