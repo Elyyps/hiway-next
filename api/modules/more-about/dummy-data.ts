@@ -43,7 +43,7 @@ export const moreAboutDutchData = (): IMoreAbout => ({
     {
       image: "/img/optimized/medium1.jpg",
       link: {
-        text: "Full article on Medium",
+        text: "Meer via Medium",
         url: "https://medium.com/hiway-official/",
       },
       title:
@@ -52,7 +52,7 @@ export const moreAboutDutchData = (): IMoreAbout => ({
     {
       image: "/img/optimized/medium2.jpg",
       link: {
-        text: "Full article on Medium",
+        text: "Meer via Medium",
         url: "https://medium.com/hiway-official/",
       },
       title: "Remote Collaboration and the Intellectual Property",
@@ -60,7 +60,7 @@ export const moreAboutDutchData = (): IMoreAbout => ({
     {
       image: "/img/optimized/medium3.jpg",
       link: {
-        text: "Full article on Medium",
+        text: "Meer via Medium",
         url: "https://medium.com/hiway-official/",
       },
       title:
