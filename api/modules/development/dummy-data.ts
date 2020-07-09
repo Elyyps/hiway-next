@@ -74,7 +74,7 @@ export const developmentFreelanceEnglishData = (): IDevelopment => ({
   ],
 });
 export const developmentFreelanceDutchData = (): IDevelopment => ({
-  title: "Ontwikkeling",
+  title: "In ontwikkeling",
   items: [
     {
       title: "UI/UX vernieuwing",
