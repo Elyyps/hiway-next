@@ -19,7 +19,7 @@ export const presentationHrDutchData = (): IPresentation => ({
     "Benieuwd hoe het platform jouw bedrijf kan helpen? Bekijk deze video die dieper ingaat op het platform en de functionaliteiten, of neem contact met ons op voor een live demo.",
   video: "/img/optimized/video.jpg",
   videoTitle: {
-    text: "Introduction to the HR platform",
+    text: "Inleiding tot de HR platform",
     url: "https://www.youtube.com/watch?v=73IUC7dxtR0&feature=youtu.be",
   },
   icon: "/icons/play.svg",
@@ -46,7 +46,7 @@ export const presentationFreelanceDutchData = (): IPresentation => ({
     "Ontdek waarom we met dit project zijn begonnen en waar wij vinden dat deze oplossing relevant is.",
   video: "/img/optimized/video.jpg",
   videoTitle: {
-    text: "Introduction to the Freelance platform",
+    text: "Inleiding tot de Freelance platform",
     url: "https://www.youtube.com/watch?v=qsVlGXfeOog&feature=youtu.be",
   },
   icon: "/icons/play.svg",
