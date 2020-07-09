@@ -1,7 +1,7 @@
 import { IVacancies } from "./vacancies";
 
 export const vacanciesEnglishData = (): IVacancies => ({
-  title: "Vacancies",
+  title: "Huidige vacatures",
   jobs: [
     {
       name: "Front-end developer",

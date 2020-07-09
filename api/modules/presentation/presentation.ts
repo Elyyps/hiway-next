@@ -7,4 +7,6 @@ export type IPresentation = {
   content: string;
   icon: string;
   beta?: string;
+  buttonName: string;
+  emailSubject: string;
 };

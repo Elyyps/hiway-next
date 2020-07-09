@@ -56,7 +56,7 @@ export const descriptionSliderDutchData = (): IDescriptionSlider[] => [
   {
     content:
       "Op maat gemaakte software voor uitzend- en recruitmentbureaus. Van het werven van flexibel personeel tot en met wereldwijd verlonen. Met dit alles-in-1 HR platform kunnen werkgevers en werknemers digitaal contracten ondertekenen, uren en uitgaven bijhouden en salarisbetalingen (automatisch) laten verwerken.",
-    link: { text: "More information" },
+    link: { text: "Meer informatie" },
     pictures: [
       "/img/optimized/hr1.jpg",
       "/img/optimized/hr2.jpg",
@@ -81,7 +81,7 @@ export const descriptionSliderDutchData = (): IDescriptionSlider[] => [
   {
     content:
       "Waar je ook bent in de wereld, met het Hiway HR platform vind je freelance werk en krijg je betaald. Promote je vaardigheden en diensten wereldwijd en werk aan opdrachten op afstand. Is het contract voldaan? Dan word je razendsnel uitbetaald via Hiway. Ben je werkgever, dan is Hiway jouw HR platform; zoek, vind en neem freelancers in dienst, waar ook ter wereld.",
-    link: { text: "More information" },
+    link: { text: "Meer informatie" },
     pictures: [
       "/img/optimized/freelance1.png",
       "/img/optimized/freelance2.png",

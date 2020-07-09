@@ -6,4 +6,5 @@ export type IMoreAbout = {
   title: string;
   link: ILink;
   icon: string;
+  info: string;
 };

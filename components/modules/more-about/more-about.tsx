@@ -13,7 +13,7 @@ const MoreAboutComponent = ({ moreAbout }: IMoreAboutComponent) => {
   const displayMediumLink = () => {
     return (
       <span className={style["medium-link"]}>
-        More on
+        {moreAbout.info}
         <LinkComponent
           to={moreAbout.link.url ? moreAbout.link.url : ""}
           target="_blank"

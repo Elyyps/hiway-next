@@ -24,7 +24,7 @@ const NewsletterComponent = (props: INewsletterComponentProps) => {
               href={"/contact"}
             />
             <span>
-              or check out our{" "}
+              {props.newsletter.info}{" "}
               <LinkComponent
                 underlined
                 to={props.newsletter.link.url ? props.newsletter.link.url : ""}

@@ -6,4 +6,5 @@ export type INewsletter = {
   button: ILink;
   link: ILink;
   card: INewletterCard;
+  info: string;
 };

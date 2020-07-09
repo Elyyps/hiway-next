@@ -1,7 +1,7 @@
 import { IOurTeam } from "./our-team";
 
 export const ourTeamData = (): IOurTeam => ({
-  title: "Our team",
+  title: "Ons team",
   members: [
     { name: "Simon Rikmenspoel", position: "Ceo" },
     { name: "Thale Sonnemans", position: "Creative Director" },

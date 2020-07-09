@@ -45,8 +45,8 @@ const PresentationComponent = (props: IPresentationComponentProps) => {
             <div>
               <ShareSocialComponent
                 title=""
-                nameSocialShare="Request a demo"
-                subject="I would like to request an HR platform Demo"
+                nameSocialShare={props.presentation.buttonName}
+                subject={props.presentation.emailSubject}
                 url=""
               />
             </div>

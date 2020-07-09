@@ -2,6 +2,7 @@ import { INewsletter } from "./newsletter";
 
 export const newsletterEnglishData = (): INewsletter => ({
   title: "Want more information about Hiway?",
+  info: "or check out our",
   link: { text: "about page", url: "/about" },
   button: { text: "Get in touch" },
   card: {
@@ -12,9 +13,10 @@ export const newsletterEnglishData = (): INewsletter => ({
   },
 });
 export const newsletterDutchData = (): INewsletter => ({
-  title: "Want more information about Hiway?",
-  link: { text: "about page", url: "/about" },
-  button: { text: "Get in touch" },
+  title: "Zou je meer willen weten over Hiway?",
+  link: { text: "about pagina", url: "/about" },
+  info: "Of bezoek onze",
+  button: { text: "Neem contact op" },
   card: {
     title: "Newsletter",
     description:

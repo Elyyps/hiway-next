@@ -60,7 +60,7 @@ export const footerDutchData = (): IFooter => ({
         "https://www.notion.so/f4502027d8d34d8593d81bc93f81dab4?v=88c214e525d24462b7b260e360aef3d2",
     },
   ],
-  mediaTitle: "Follow us on social media",
+  mediaTitle: "Volg ons op social media",
   mediaTitleMobile: "Social media",
   medias: [
     {
