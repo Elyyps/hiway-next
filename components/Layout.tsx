@@ -29,7 +29,7 @@ const Layout = ({ children, title = "Hiway" }: Props) => {
     <div>
       <Head>
         <title>{title}</title>
-        <link rel="shortcut icon" href="/img/title-icon.png" />
+        <link rel="shortcut icon" href="/img/favicon.ico" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
