@@ -29,7 +29,7 @@ export const welcomeDutchData = (): ISection[] => [
     backgroundImage: "/img/optimized/section1.jpg",
     backgroundMobileImage: "/img/optimized/mobile-hr.jpg",
     title: "HR platform",
-    subTitle: "Ga naar het",
+    subTitle: "ga naar het",
     content:
       "De perfecte human resource oplossing voor het managen van flexibel personeel, wereldwijd.Alle benodigdheden voor contractovereenkomsten, urenadministratie en automatische salaris betalingen.",
     postion: "center",
@@ -40,7 +40,7 @@ export const welcomeDutchData = (): ISection[] => [
     backgroundImage: "/img/optimized/section2.jpg",
     backgroundMobileImage: "/img/optimized/mobile-freelance.jpg",
     title: "Freelance platform",
-    subTitle: "Ga naar het",
+    subTitle: "ga naar het",
     content:
       "Onze online marktplaats voor freelancers. Maak een account, vind een geschikte opdracht en krijg direct betaald waar ook ter wereld. Alles gebouwd op Blockchain technologie.",
     postion: "left",
@@ -63,7 +63,7 @@ export const headerHRDutchData = (): ISection => ({
   backgroundImage: "/img/optimized/hr-header.jpg",
   backgroundMobileImage: "/img/optimized/mobile-hr.jpg",
   title: "HR platform",
-  subTitle: "Ga naar het",
+  subTitle: "ga naar het",
   content:
     "De perfecte human resource oplossing voor het managen van flexibel personeel, wereldwijd. Alle benodigdheden voor contractovereenkomsten, urenadministratie en automatische salaris betalingen.",
   postion: "center",
@@ -85,7 +85,7 @@ export const headerFreelanceDutchData = (): ISection => ({
   backgroundImage: "/img/optimized/freelance-header.jpg",
   backgroundMobileImage: "/img/optimized/mobile-freelance.jpg",
   title: "Freelance platform",
-  subTitle: "Ga naar het ",
+  subTitle: "ga naar het ",
   content:
     "Onze online marktplaats voor freelancers. Maak een account, vind een geschikte opdracht en krijg direct betaald waar ook ter wereld. Alles gebouwd op Blockchain technologie.",
   postion: "left",
