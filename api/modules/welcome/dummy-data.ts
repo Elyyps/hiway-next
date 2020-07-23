@@ -10,7 +10,7 @@ export const welcomeEnglishData = (): ISection[] => [
       "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic salary payments.",
     postion: "center",
     variant: "primary",
-    button: { text: "Go to HR platform", url: "https://hr.hiway.io" },
+    button: { text: "Go to HR platform" },
   },
   {
     backgroundImage: "/img/optimized/section2.jpg",
@@ -23,7 +23,6 @@ export const welcomeEnglishData = (): ISection[] => [
     variant: "secondary",
     button: {
       text: "Go to Freelance platform",
-      url: "https://freelance.hiway.io",
     },
   },
 ];
@@ -37,7 +36,7 @@ export const welcomeDutchData = (): ISection[] => [
       "De perfecte human resource oplossing voor het managen van flexibel personeel, wereldwijd.Alle benodigdheden voor contractovereenkomsten, urenadministratie en automatische salaris betalingen.",
     postion: "center",
     variant: "primary",
-    button: { text: "Ga naar HR platform", url: "https://hr.hiway.io" },
+    button: { text: "Ga naar HR platform" },
   },
   {
     backgroundImage: "/img/optimized/section2.jpg",
@@ -50,7 +49,6 @@ export const welcomeDutchData = (): ISection[] => [
     variant: "secondary",
     button: {
       text: "Ga naar Freelance platform",
-      url: "https://freelance.hiway.io",
     },
   },
 ];
@@ -63,7 +61,7 @@ export const headerHREnglishData = (): ISection => ({
     "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic salary payments.",
   postion: "center",
   variant: "primary",
-  button: { text: "Go to HR platform", url: "https://hr.hiway.io" },
+  button: { text: "Go to HR platform" },
 });
 export const headerHRDutchData = (): ISection => ({
   backgroundImage: "/img/optimized/hr-header.jpg",
@@ -74,7 +72,7 @@ export const headerHRDutchData = (): ISection => ({
     "De perfecte human resource oplossing voor het managen van flexibel personeel, wereldwijd. Alle benodigdheden voor contractovereenkomsten, urenadministratie en automatische salaris betalingen.",
   postion: "center",
   variant: "primary",
-  button: { text: "Ga naar HR platform", url: "https://hr.hiway.io" },
+  button: { text: "Ga naar HR platform" },
 });
 export const headerFreelanceEnglishData = (): ISection => ({
   backgroundImage: "/img/optimized/freelance-header.jpg",
@@ -87,7 +85,6 @@ export const headerFreelanceEnglishData = (): ISection => ({
   variant: "secondary",
   button: {
     text: "Go to Freelance platform",
-    url: "https://freelance.hiway.io",
   },
 });
 export const headerFreelanceDutchData = (): ISection => ({
@@ -101,7 +98,6 @@ export const headerFreelanceDutchData = (): ISection => ({
   variant: "secondary",
   button: {
     text: "Ga naar Freelance platform",
-    url: "https://freelance.hiway.io",
   },
 });
 export const headerAboutEnglishData = (): ISection => ({
