@@ -10,6 +10,9 @@
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
+  > a {
+    width: fit-content;
+  }
   @media (max-width: 960px) {
     padding: 8px 15px;
   }
@@ -54,6 +57,7 @@
     &:hover {
       background-color: white;
       color: var(--primary-color);
+
       border: 2px solid var(--primary-color);
       svg {
         fill: var(--primary-color);

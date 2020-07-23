@@ -69,7 +69,7 @@ const SectionComponent = (props: ISectionComponentProps) => {
               {props.subTitle}
             </span>
           )}
-          <h2 className={style["section-title"]}>{props.title}</h2>
+          <h1 className={style["section-title"]}>{props.title}</h1>
           <p className={` ${style["section-content"]} ${"uk-visible@m"}`}>
             {props.content}
           </p>
@@ -82,6 +82,8 @@ const SectionComponent = (props: ISectionComponentProps) => {
             {props.button && (
               <ButtonComponent
                 title={props.button.text}
+                href={props.button.url ? props.button.url : ""}
+                target="_blank"
                 variant={props.variant}
                 icon={"/icons/chevron-right.svg"}
                 onClick={

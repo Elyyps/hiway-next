@@ -34,7 +34,7 @@ const ButtonComponent = (props: IButtonProps) => {
   return (
     <React.Fragment>
       {href ? (
-        <Link href={href}>
+        <Link href={href} passHref prefetch={false}>
           <a
             className={`${style[`button-${variant}`]} ${style["button"]}`}
             target={target}
