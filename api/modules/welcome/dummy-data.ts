@@ -10,7 +10,7 @@ export const welcomeEnglishData = (): ISection[] => [
       "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic salary payments.",
     postion: "center",
     variant: "primary",
-    button: { text: "Go to HR platform" },
+    button: { text: "Go to HR platform", url: "https://hr.hiway.io" },
   },
   {
     backgroundImage: "/img/optimized/section2.jpg",
@@ -21,7 +21,10 @@ export const welcomeEnglishData = (): ISection[] => [
       "Our online marketplace for freelancers. Create an account, find a suitable job and get paid instantly from anywhere in the world. Build using Blockchain technology.",
     postion: "left",
     variant: "secondary",
-    button: { text: "Go to Freelance platform" },
+    button: {
+      text: "Go to Freelance platform",
+      url: "https://freelance.hiway.io",
+    },
   },
 ];
 export const welcomeDutchData = (): ISection[] => [
@@ -34,7 +37,7 @@ export const welcomeDutchData = (): ISection[] => [
       "De perfecte human resource oplossing voor het managen van flexibel personeel, wereldwijd.Alle benodigdheden voor contractovereenkomsten, urenadministratie en automatische salaris betalingen.",
     postion: "center",
     variant: "primary",
-    button: { text: "Ga naar HR platform" },
+    button: { text: "Ga naar HR platform", url: "https://hr.hiway.io" },
   },
   {
     backgroundImage: "/img/optimized/section2.jpg",
@@ -45,7 +48,10 @@ export const welcomeDutchData = (): ISection[] => [
       "Onze online marktplaats voor freelancers. Maak een account, vind een geschikte opdracht en krijg direct betaald waar ook ter wereld. Alles gebouwd op Blockchain technologie.",
     postion: "left",
     variant: "secondary",
-    button: { text: "Ga naar Freelance platform" },
+    button: {
+      text: "Ga naar Freelance platform",
+      url: "https://freelance.hiway.io",
+    },
   },
 ];
 export const headerHREnglishData = (): ISection => ({
@@ -57,7 +63,7 @@ export const headerHREnglishData = (): ISection => ({
     "The perfect human resourcing solution for managing flexible workforces. Providing the tools for contract agreements, employee timekeeping and automatic salary payments.",
   postion: "center",
   variant: "primary",
-  button: { text: "Go to HR platform" },
+  button: { text: "Go to HR platform", url: "https://hr.hiway.io" },
 });
 export const headerHRDutchData = (): ISection => ({
   backgroundImage: "/img/optimized/hr-header.jpg",
@@ -68,7 +74,7 @@ export const headerHRDutchData = (): ISection => ({
     "De perfecte human resource oplossing voor het managen van flexibel personeel, wereldwijd. Alle benodigdheden voor contractovereenkomsten, urenadministratie en automatische salaris betalingen.",
   postion: "center",
   variant: "primary",
-  button: { text: "Ga naar HR platform" },
+  button: { text: "Ga naar HR platform", url: "https://hr.hiway.io" },
 });
 export const headerFreelanceEnglishData = (): ISection => ({
   backgroundImage: "/img/optimized/freelance-header.jpg",
@@ -79,7 +85,10 @@ export const headerFreelanceEnglishData = (): ISection => ({
     "Our online marketplace for freelancers. Create an account, find a suitable job and get paid instantly from anywhere in the world. Build using Blockchain technology.",
   postion: "left",
   variant: "secondary",
-  button: { text: "Go to Freelance platform" },
+  button: {
+    text: "Go to Freelance platform",
+    url: "https://freelance.hiway.io",
+  },
 });
 export const headerFreelanceDutchData = (): ISection => ({
   backgroundImage: "/img/optimized/freelance-header.jpg",
@@ -90,7 +99,10 @@ export const headerFreelanceDutchData = (): ISection => ({
     "Onze online marktplaats voor freelancers. Maak een account, vind een geschikte opdracht en krijg direct betaald waar ook ter wereld. Alles gebouwd op Blockchain technologie.",
   postion: "left",
   variant: "secondary",
-  button: { text: "Ga naar Freelance platform" },
+  button: {
+    text: "Ga naar Freelance platform",
+    url: "https://freelance.hiway.io",
+  },
 });
 export const headerAboutEnglishData = (): ISection => ({
   backgroundImage: "/img/optimized/about.jpg",
