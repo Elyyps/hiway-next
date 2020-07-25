@@ -72,11 +72,11 @@ const FreelanceProduct = () => {
             onLinkClick={executeScroll}
           />
           <ReactSVG
-            src={"/icons/oval-1.svg"}
+            src={"/svg/oval-1.svg"}
             className={`${"welcome-overlay"} ${"overlay-icon"} uk-visible@xl`}
           />
           <ReactSVG
-            src={"/icons/oval-2.svg"}
+            src={"/svg/oval-2.svg"}
             className={`${"welcome-overlay-2"} ${"overlay-icon"} uk-visible@xl`}
           />
         </div>
@@ -100,7 +100,7 @@ const FreelanceProduct = () => {
             }
           />
           <ReactSVG
-            src={"/icons/oval-3.svg"}
+            src={"/svg/oval-3.svg"}
             className={`${"more-about-overlay"} ${"overlay-icon"} uk-visible@xl`}
           />
         </div>

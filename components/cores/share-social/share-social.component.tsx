@@ -21,7 +21,7 @@ const ShareSocialComponent = (props: IShareSocialComponentProps) => {
       <ButtonComponent
         title={prop.nameSocialShare ? prop.nameSocialShare : ""}
         variant="primary"
-        icon={"/icons/chevron-right.svg"}
+        icon={"/svg/chevron-right.svg"}
       />
     </EmailShareButton>
   );

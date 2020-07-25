@@ -87,7 +87,7 @@ const DescriptionSliderComponent = ({
             <LinkComponent
               to={"#"}
               animated
-              icon={"/icons/chevron-right.svg"}
+              icon={"/svg/chevron-right.svg"}
               variant={descriptionSlider[selectedTab].variant}
             >
               {descriptionSlider[selectedTab].link.text}
@@ -113,14 +113,14 @@ const DescriptionSliderComponent = ({
               onClick={() => setSelectedTab(0)}
               style={{ opacity: selectedTab === 0 ? "0.2" : "" }}
             >
-              <ReactSVG src={"/icons/chevron-right.svg"} />
+              <ReactSVG src={"/svg/chevron-right.svg"} />
             </span>
             <span
               className="button"
               onClick={() => setSelectedTab(1)}
               style={{ opacity: selectedTab === 1 ? "0.2" : "" }}
             >
-              <ReactSVG src={"/icons/chevron-right.svg"} />
+              <ReactSVG src={"/svg/chevron-right.svg"} />
             </span>
           </div>
         )}

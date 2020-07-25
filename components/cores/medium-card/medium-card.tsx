@@ -17,7 +17,7 @@ export const MediumCardComponent = (props: IMediumCardComponent) => {
         <span>{props.title}</span>
         <LinkComponent
           animated
-          icon={"/icons/chevron-right.svg"}
+          icon={"/svg/chevron-right.svg"}
           to={props.link.url ? props.link.url : ""}
           variant={"primary"}
           target="_blank"

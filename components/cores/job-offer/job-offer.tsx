@@ -26,7 +26,7 @@ const JobOfferComponent = (props: IJobOfferComponentProps) => {
           className="button"
           //   onClick={() => setSelectedTab(0)}
         >
-          <ReactSVG src={"/icons/chevron-right.svg"} />
+          <ReactSVG src={"/svg/chevron-right.svg"} />
         </span>
       </div>
     </div>

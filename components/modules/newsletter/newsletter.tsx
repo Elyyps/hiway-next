@@ -20,7 +20,7 @@ const NewsletterComponent = (props: INewsletterComponentProps) => {
             <ButtonComponent
               title={props.newsletter.button.text}
               variant="tertiary"
-              icon={"/icons/chevron-right.svg"}
+              icon={"/svg/chevron-right.svg"}
               href={"/contact"}
             />
             <span>

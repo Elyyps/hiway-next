@@ -38,7 +38,7 @@ const NavBarModalComponent = (props: INavBarModalComponentProps) => {
       >
         {isOpen ? (
           <div className={style["nav-bar-modal__button__close"]}>
-            <ReactSVG src={"/icons/cross.svg"} />
+            <ReactSVG src={"/svg/cross.svg"} />
           </div>
         ) : (
           <div className={style["nav-bar-modal__button__open"]}>

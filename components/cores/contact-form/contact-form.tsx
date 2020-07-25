@@ -109,7 +109,7 @@ const InnerForm = (props: FormikProps<IContactFormValues>) => {
         <ButtonComponent
           title={language === "EN" ? "Send message" : "Bericht versturen"}
           variant={"primary"}
-          icon={"/icons/chevron-right.svg"}
+          icon={"/svg/chevron-right.svg"}
           type={"submit"}
         />
       </div>

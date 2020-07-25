@@ -17,7 +17,7 @@ const DropdownLinkComponent = (props: IDropdownLinkComponentProps) => {
           to={props.link.url ? props.link.url : ""}
           variant="secondary"
           animated
-          icon={"/icons/chevron-right.svg"}
+          icon={"/svg/chevron-right.svg"}
           iconIsLeft={props.linkIconLeft}
         >
           {props.link.text}

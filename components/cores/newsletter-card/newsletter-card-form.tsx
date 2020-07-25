@@ -57,7 +57,7 @@ const InnerForm = (props: FormikProps<INewsletterCardFormValues>) => {
         <ButtonComponent
           title={"Send message"}
           variant={"primary"}
-          icon={"/icons/chevron-right.svg"}
+          icon={"/svg/chevron-right.svg"}
         />
       </div>
     </Form>

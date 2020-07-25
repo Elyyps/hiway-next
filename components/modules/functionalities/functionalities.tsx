@@ -19,7 +19,7 @@ const FunctionalitiesComponent = (props: IFunctionalitiesComponentProps) => {
           {props.functionalities.items.map((item, key) => (
             <li key={key}>
               <div>
-                <ReactSVG src={"/icons/check.svg"} />
+                <ReactSVG src={"/svg/check.svg"} />
               </div>
               {item}
             </li>

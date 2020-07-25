@@ -36,15 +36,15 @@ const ContactComponent = (props: IContactComponentProps) => {
           <div>
             <h4>{props.contact.subTitle}</h4>
             <span>
-              <ReactSVG src="/icons/location.svg" />
+              <ReactSVG src="/svg/location.svg" />
               {props.contact.address}
             </span>
             <span>
-              <ReactSVG src="/icons/phone.svg" />
+              <ReactSVG src="/svg/phone.svg" />
               {props.contact.phoneNumber}
             </span>
             <span>
-              <ReactSVG src="/icons/message.svg" />
+              <ReactSVG src="/svg/message.svg" />
               {props.contact.email}
             </span>
           </div>
@@ -58,7 +58,7 @@ const ContactComponent = (props: IContactComponentProps) => {
                 left: `${windowSize / 31}%`,
               }}
             >
-              <ReactSVG src="/icons/location.svg" />
+              <ReactSVG src="/svg/location.svg" />
             </span> */}
           </div>
         </div>

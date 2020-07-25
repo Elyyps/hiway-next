@@ -40,11 +40,11 @@ const AboutPage = () => {
       <Layout title="Hiway | About">
         <div className="overlay header-button">
           <ReactSVG
-            src={"/icons/oval-1.svg"}
+            src={"/svg/oval-1.svg"}
             className={`${"header-overlay"} ${"overlay-icon"} uk-visible@xl`}
           />
           <ReactSVG
-            src={"/icons/oval-2.svg"}
+            src={"/svg/oval-2.svg"}
             className={`${"header-overlay-2"} ${"overlay-icon"} uk-visible@xl`}
           />
           <SectionComponent
@@ -73,7 +73,7 @@ const AboutPage = () => {
             }
           />
           <ReactSVG
-            src={"/icons/oval-3.svg"}
+            src={"/svg/oval-3.svg"}
             className={`${"our-team-overlay"} ${"overlay-icon"} uk-visible@xl`}
           />
         </div>

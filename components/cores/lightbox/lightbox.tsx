@@ -55,7 +55,7 @@ export const LightBoxComponent = (props: ILightBoxComponentProps) => {
             className={style["lightbox-close"]}
             onClick={() => props.setLightBoxOpen(false)}
           >
-            <ReactSVG src={"/icons/cross.svg"} />
+            <ReactSVG src={"/svg/cross.svg"} />
           </span>
 
           <div className={style["lightbox-container"]}>

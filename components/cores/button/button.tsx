@@ -53,7 +53,7 @@ const ButtonComponent = (props: IButtonProps) => {
           {returnIconPosition}
           {variant === "dropdown" && (
             <span className={style[`icon-${position ? position : "right"}`]}>
-              <ReactSVG src={"/icons/chevron-down.svg"} />
+              <ReactSVG src={"/svg/chevron-down.svg"} />
             </span>
           )}
         </button>

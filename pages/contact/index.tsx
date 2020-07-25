@@ -48,11 +48,11 @@ const ContactPage = () => {
             }
           />
           <ReactSVG
-            src={"/icons/oval-1.svg"}
+            src={"/svg/oval-1.svg"}
             className={`${"contact-overlay"} ${"overlay-icon"} uk-visible@xl`}
           />
           <ReactSVG
-            src={"/icons/oval-2.svg"}
+            src={"/svg/oval-2.svg"}
             className={`${"contact-overlay"} ${"overlay-icon"} uk-visible@xl`}
           />
         </div>

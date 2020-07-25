@@ -85,7 +85,7 @@ const SectionComponent = (props: ISectionComponentProps) => {
                 href={props.button.url ? props.button.url : ""}
                 target="_blank"
                 variant={props.variant}
-                icon={"/icons/chevron-right.svg"}
+                icon={"/svg/chevron-right.svg"}
                 onClick={
                   props.onButtonClick ? props.onButtonClick : console.log
                 }
@@ -93,7 +93,7 @@ const SectionComponent = (props: ISectionComponentProps) => {
             )}
             {props.link && (
               <LinkComponent
-                icon={"/icons/chevron-right.svg"}
+                icon={"/svg/chevron-right.svg"}
                 to={props.link.url ? props.link.url : ""}
                 variant={props.variant}
                 target={"_blank"}

@@ -25,7 +25,7 @@ const OurFocusComponent = (props: IOurFocusComponentProps) => {
                 key={key}
                 variant={link.variant}
                 animated
-                icon={"/icons/chevron-right.svg"}
+                icon={"/svg/chevron-right.svg"}
               >
                 {link.text}
               </LinkComponent>
