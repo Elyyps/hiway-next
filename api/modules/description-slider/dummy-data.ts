@@ -13,13 +13,13 @@ export const descriptionSliderEnglishData = (): IDescriptionSlider[] => [
     variant: "primary",
     descriptionCards: [
       {
-        icon: "/icons/modular-design.svg",
+        icon: "/svg/modular-design.svg",
         title: "Modular Design",
         content:
           "Select the tools you need for your company and disable the rest. Can’t find what you’re looking for? We are happy to build new modules tailored to your requirements.",
       },
       {
-        icon: "/icons/browser-friendly.svg",
+        icon: "/svg/browser-friendly.svg",
         title: "Browser Friendly",
         content:
           "Available to use through any web-browser - on mobile and desktop, with no installation time required and suitable across any operating system.",
@@ -38,13 +38,13 @@ export const descriptionSliderEnglishData = (): IDescriptionSlider[] => [
     variant: "secondary",
     descriptionCards: [
       {
-        icon: "/icons/well-protected.svg",
+        icon: "/svg/well-protected.svg",
         title: "Safe and secure",
         content:
           "The platform is secured using blockchain technology while complying with all the latest GDPR privacy regulations.",
       },
       {
-        icon: "/icons/easy-use.svg",
+        icon: "/svg/easy-use.svg",
         title: "Easy to use",
         content:
           "Built with the user in mind, the platform offers a seamless experience for the global freelance industry’s needs.",
@@ -65,13 +65,13 @@ export const descriptionSliderDutchData = (): IDescriptionSlider[] => [
     variant: "primary",
     descriptionCards: [
       {
-        icon: "/icons/modular-design.svg",
+        icon: "/svg/modular-design.svg",
         title: "Modulair design",
         content:
           "Kies alleen de gewenste modules voor jouw bedrijf en schakel de rest uit. Kun je niet vinden wat je zoekt? Neem contact met ons op en we bouwen je eigen module.",
       },
       {
-        icon: "/icons/browser-friendly.svg",
+        icon: "/svg/browser-friendly.svg",
         title: "Overal beschikbaar",
         content:
           "Beschikbaar via iedere web-browser - op mobiel en desktop, geen installatie vereist en geschikt voor ieder besturingssysteem.",
@@ -90,13 +90,13 @@ export const descriptionSliderDutchData = (): IDescriptionSlider[] => [
     variant: "secondary",
     descriptionCards: [
       {
-        icon: "/icons/well-protected.svg",
+        icon: "/svg/well-protected.svg",
         title: "Veilig en betrouwbaar",
         content:
           "Het platform is optimaal beveiligd met blockchain technologie en voldoet aan de meest actuele AVG privacy wetgeving.",
       },
       {
-        icon: "/icons/easy-use.svg",
+        icon: "/svg/easy-use.svg",
         title: "Makkelijk te gebruiken",
         content:
           "Intuïtieve software die iedereen snel oppakt. Gebouwd en constant aangepast op basis van gebruikerservaringen.",

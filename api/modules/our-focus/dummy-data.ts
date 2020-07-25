@@ -18,19 +18,19 @@ export const ourFocusEnglishData = (): IOurFocus => ({
       title: "Recruitment & HR specialists",
       content:
         "More than 15 years of industry experience, contributing to a robust understanding of every aspect of the recruitment process",
-      icon: "/icons/recruitment-specialists.svg",
+      icon: "/svg/recruitment-specialists.svg",
     },
     {
       title: "Data-driven innovators",
       content:
         "Blockchain, artificial intelligence and machine learning enthusiasts, harnessing the latest developments to inform new solutions",
-      icon: "/icons/data-driven.svg",
+      icon: "/svg/data-driven.svg",
     },
     {
       title: "Creative entrepreneurs",
       content:
         "Ongoing experimentation and collaboration fuelled by an entrepreneurial spirit",
-      icon: "/icons/creative-entrepreneurs.svg",
+      icon: "/svg/creative-entrepreneurs.svg",
     },
   ],
   links: [
@@ -61,19 +61,19 @@ export const ourFocusDutchData = (): IOurFocus => ({
       title: "Recruitment & HR specialisten",
       content:
         "Meer dan 20 jaar ervaring in de uitzendsector, alle kennis in huis rondom het recruitmentproces",
-      icon: "/icons/recruitment-specialists.svg",
+      icon: "/svg/recruitment-specialists.svg",
     },
     {
       title: "Data-driven uitvinders",
       content:
         "Blockchain, artificial intelligence en machine learning liefhebbers, inzet van de laatste ontwikkelingen om nieuwe toepassingen te realiseren",
-      icon: "/icons/data-driven.svg",
+      icon: "/svg/data-driven.svg",
     },
     {
       title: "Creatieve ondernemers",
       content:
         "Constant experimenteren en samenwerken, gevoed door een ondernemende geest",
-      icon: "/icons/creative-entrepreneurs.svg",
+      icon: "/svg/creative-entrepreneurs.svg",
     },
   ],
   links: [

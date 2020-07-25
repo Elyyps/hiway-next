@@ -2,8 +2,8 @@ import { INavBar } from "./nav-bar";
 
 export const navBarEnglishData = (): INavBar => ({
   logo: "/img/logo.png",
-  searchIcon: "/icons/search.svg",
-  menuIcon: "/icons/menu.svg",
+  searchIcon: "/svg/search.svg",
+  menuIcon: "/svg/menu.svg",
   items: [
     { title: { text: "Home", url: "/" } },
     {
@@ -30,8 +30,8 @@ export const navBarEnglishData = (): INavBar => ({
 });
 export const navBarDutchData = (): INavBar => ({
   logo: "/img/logo.png",
-  searchIcon: "/icons/search.svg",
-  menuIcon: "/icons/menu.svg",
+  searchIcon: "/svg/search.svg",
+  menuIcon: "/svg/menu.svg",
   items: [
     { title: { text: "Home", url: "/" } },
     {

@@ -4,7 +4,7 @@ export const moreAboutEnglishData = (): IMoreAbout => ({
   title: "More about what we do",
   link: { text: "Medium", url: "https://medium.com/hiway-official/" },
   info: "More on",
-  icon: "/icons/medium.svg",
+  icon: "/svg/medium.svg",
   cards: [
     {
       image: "/img/optimized/medium1.jpg",
@@ -38,7 +38,7 @@ export const moreAboutDutchData = (): IMoreAbout => ({
   title: "Lees meer over Hiway",
   link: { text: "Medium", url: "https://medium.com/hiway-official/" },
   info: "Meer op",
-  icon: "/icons/medium.svg",
+  icon: "/svg/medium.svg",
   cards: [
     {
       image: "/img/optimized/medium1.jpg",

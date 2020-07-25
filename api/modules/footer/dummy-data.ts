@@ -26,19 +26,19 @@ export const footerEnglishData = (): IFooter => ({
         text: "Facebook",
         url: "https://www.facebook.com/hiwayofficial/",
       },
-      icon: "/icons/facebook.svg",
+      icon: "/svg/facebook.svg",
     },
-    { link: { text: "Twitter" }, icon: "/icons/twitter.svg" },
+    { link: { text: "Twitter" }, icon: "/svg/twitter.svg" },
     {
       link: {
         text: "Linkedin",
         url: "https://www.linkedin.com/company/hiwayofficial/",
       },
-      icon: "/icons/linkedin.svg",
+      icon: "/svg/linkedin.svg",
     },
     {
       link: { text: "Medium", url: "https://medium.com/hiway-official" },
-      icon: "/icons/medium2.svg",
+      icon: "/svg/medium2.svg",
     },
   ],
 });
@@ -68,19 +68,19 @@ export const footerDutchData = (): IFooter => ({
         text: "Facebook",
         url: "https://www.facebook.com/hiwayofficial/",
       },
-      icon: "/icons/facebook.svg",
+      icon: "/svg/facebook.svg",
     },
-    { link: { text: "Twitter" }, icon: "/icons/twitter.svg" },
+    { link: { text: "Twitter" }, icon: "/svg/twitter.svg" },
     {
       link: {
         text: "Linkedin",
         url: "https://www.linkedin.com/company/hiwayofficial/",
       },
-      icon: "/icons/linkedin.svg",
+      icon: "/svg/linkedin.svg",
     },
     {
       link: { text: "Medium", url: "https://medium.com/hiway-official" },
-      icon: "/icons/medium2.svg",
+      icon: "/svg/medium2.svg",
     },
   ],
 });
