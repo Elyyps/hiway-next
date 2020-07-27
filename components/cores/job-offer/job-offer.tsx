@@ -24,7 +24,7 @@ const JobOfferComponent = (props: IJobOfferComponentProps) => {
       </div>
       <div className={style["job-offer-button"]}>
         <ShareSocialComponent
-          body="contact@hiway.io"
+          body=""
           subject={`I would like to know more about the ${props.name} position`}
           url=""
         >
