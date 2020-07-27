@@ -4,7 +4,7 @@ import { EmailShareButton } from "react-share";
 import ButtonComponent from "../button/button";
 
 export interface IShareSocialComponentProps {
-  nameSocialShare: string;
+  children: any;
   subject: string;
   title: string;
   url: string;
@@ -15,20 +15,16 @@ const ShareSocialComponent = (props: IShareSocialComponentProps) => {
     subject: string;
     title: string;
     url: string;
-    nameSocialShare: string;
+    children: any;
   }) => (
     <EmailShareButton subject={prop.subject} body={prop.title} url={prop.url}>
-      <ButtonComponent
-        title={prop.nameSocialShare ? prop.nameSocialShare : ""}
-        variant="primary"
-        icon={"/svg/chevron-right.svg"}
-      />
+      {props.children}
     </EmailShareButton>
   );
   return (
     <div className={styles["share"]}>
       <MailShareButtonComponent
-        nameSocialShare={props.nameSocialShare}
+        children={props.children}
         title={props.title}
         subject={props.subject}
         url={props.url}

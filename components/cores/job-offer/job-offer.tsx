@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./job-offer.module.scss";
 import ReactSVG from "react-svg";
+import { ShareSocialComponent } from "../share-social/share-social.component";
 
 interface IJobOfferComponentProps {
   name: string;
@@ -22,12 +23,15 @@ const JobOfferComponent = (props: IJobOfferComponentProps) => {
         </div>
       </div>
       <div className={style["job-offer-button"]}>
-        <span
-          className="button"
-          //   onClick={() => setSelectedTab(0)}
+        <ShareSocialComponent
+          title=""
+          subject={`I would like to know more about the ${props.name} position`}
+          url=""
         >
-          <ReactSVG src={"/svg/chevron-right.svg"} />
-        </span>
+          <span className="button">
+            <ReactSVG src={"/svg/chevron-right.svg"} />
+          </span>
+        </ShareSocialComponent>
       </div>
     </div>
   );

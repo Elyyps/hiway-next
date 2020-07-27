@@ -4,6 +4,7 @@ import { IPresentation } from "../../../api/modules/presentation/presentation";
 import ReactSVG from "react-svg";
 import ScreenWidthContext from "../../../context/screen-width";
 import { ShareSocialComponent } from "../../cores/share-social/share-social.component";
+import ButtonComponent from "../../cores/button/button";
 
 interface IPresentationComponentProps {
   presentation: IPresentation;
@@ -45,10 +46,15 @@ const PresentationComponent = (props: IPresentationComponentProps) => {
             <div>
               <ShareSocialComponent
                 title=""
-                nameSocialShare={props.presentation.buttonName}
                 subject={props.presentation.emailSubject}
                 url=""
-              />
+              >
+                <ButtonComponent
+                  title={props.presentation.buttonName}
+                  variant="primary"
+                  icon={"/svg/chevron-right.svg"}
+                />
+              </ShareSocialComponent>
             </div>
           </div>
         </div>
