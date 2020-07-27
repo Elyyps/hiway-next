@@ -89,7 +89,7 @@ const DescriptionSliderComponent = ({
                 to={
                   descriptionSlider[selectedTab].link.url
                     ? descriptionSlider[selectedTab].link.url
-                    : "#"
+                    : "/"
                 }
                 animated
                 icon={"/svg/chevron-right.svg"}

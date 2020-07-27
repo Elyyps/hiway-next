@@ -24,6 +24,7 @@ const LinkComponent = (props: ILinkComponentProps) => {
       <a
         href={props.to ? props.to : ""}
         target={props.target}
+        rel={props.target ? "nofollow" : ""}
         className={`${style["link"]} ${
           props.variant && style[`link-${props.variant}`]
         }  ${style[props.animated ? "link-animated" : ""]} ${
