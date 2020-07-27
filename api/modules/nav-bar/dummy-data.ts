@@ -29,7 +29,7 @@ export const navBarEnglishData = (): INavBar => ({
   ],
 });
 export const navBarDutchData = (): INavBar => ({
-  logo: "/img/logo.png",
+  logo: "/img/optimized/logo.png",
   searchIcon: "/svg/search.svg",
   menuIcon: "/svg/menu.svg",
   items: [
