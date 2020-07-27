@@ -1,7 +1,7 @@
 import { INavBar } from "./nav-bar";
 
 export const navBarEnglishData = (): INavBar => ({
-  logo: "/img/logo.png",
+  logo: "/img/optimized/logo.png",
   searchIcon: "/svg/search.svg",
   menuIcon: "/svg/menu.svg",
   items: [

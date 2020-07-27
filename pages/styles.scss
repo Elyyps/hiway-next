@@ -13,6 +13,7 @@ $tablet-size: 960px;
   font-family: "Apercu";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local("Apercu-Regular"), local("Apercu-Regular"),
     url(/fonts/Apercu-Regular.otf) format("opentype");
 }
