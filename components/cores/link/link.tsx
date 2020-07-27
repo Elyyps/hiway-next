@@ -12,6 +12,7 @@ interface ILinkComponentProps {
   to?: string;
   variant?: "primary" | "secondary";
   iconIsLeft?: boolean;
+  noFollow?: boolean;
 }
 
 const LinkComponent = (props: ILinkComponentProps) => {
@@ -24,7 +25,7 @@ const LinkComponent = (props: ILinkComponentProps) => {
       <a
         href={props.to ? props.to : ""}
         target={props.target}
-        rel={props.target ? "nofollow" : ""}
+        rel={props.target || props.noFollow ? "nofollow" : ""}
         className={`${style["link"]} ${
           props.variant && style[`link-${props.variant}`]
         }  ${style[props.animated ? "link-animated" : ""]} ${

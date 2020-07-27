@@ -91,6 +91,7 @@ const DescriptionSliderComponent = ({
                     ? descriptionSlider[selectedTab].link.url
                     : "/"
                 }
+                noFollow
                 animated
                 icon={"/svg/chevron-right.svg"}
                 variant={descriptionSlider[selectedTab].variant}

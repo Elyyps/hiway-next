@@ -31,6 +31,7 @@ const FAQComponent = (props: IFAQComponentProps) => {
             props.faq.descriptionLink.url ? props.faq.descriptionLink.url : ""
           }
           underlined
+          noFollow
         >
           {props.faq.descriptionLink.text}
         </LinkComponent>
