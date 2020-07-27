@@ -22,6 +22,7 @@ const OurFocusComponent = (props: IOurFocusComponentProps) => {
             {props.ourFocus.links.map((link, key) => (
               <LinkComponent
                 to={link.url ? link.url : ""}
+                target="_blank"
                 key={key}
                 variant={link.variant}
                 animated

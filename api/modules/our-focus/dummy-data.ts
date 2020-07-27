@@ -34,8 +34,16 @@ export const ourFocusEnglishData = (): IOurFocus => ({
     },
   ],
   links: [
-    { text: "Go to HR Platform ", variant: "primary" },
-    { text: "Go to Freelance Platform ", variant: "secondary" },
+    {
+      text: "Go to HR Platform ",
+      variant: "primary",
+      url: "https://hr.hiway.io",
+    },
+    {
+      text: "Go to Freelance Platform ",
+      variant: "secondary",
+      url: "https://freelance.hiway.io",
+    },
   ],
   images: [
     "/img/optimized/focus1.jpg",
@@ -77,8 +85,16 @@ export const ourFocusDutchData = (): IOurFocus => ({
     },
   ],
   links: [
-    { text: "Ga naar HR platform", variant: "primary" },
-    { text: "Ga naar Freelance platform", variant: "secondary" },
+    {
+      text: "Ga naar HR platform",
+      variant: "primary",
+      url: "https://hr.hiway.io",
+    },
+    {
+      text: "Ga naar Freelance platform",
+      variant: "secondary",
+      url: "https://freelance.hiway.io",
+    },
   ],
   images: [
     "/img/optimized/focus1.jpg",

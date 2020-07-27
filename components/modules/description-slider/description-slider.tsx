@@ -83,16 +83,22 @@ const DescriptionSliderComponent = ({
 
         <div className={style["description-slider-content"]}>
           {descriptionSlider[selectedTab].content}
-          <span onClick={onLinkClick}>
-            <LinkComponent
-              to={"#"}
-              animated
-              icon={"/svg/chevron-right.svg"}
-              variant={descriptionSlider[selectedTab].variant}
-            >
-              {descriptionSlider[selectedTab].link.text}
-            </LinkComponent>
-          </span>
+          {!isFreelance && !isHr && (
+            <span onClick={onLinkClick}>
+              <LinkComponent
+                to={
+                  descriptionSlider[selectedTab].link.url
+                    ? descriptionSlider[selectedTab].link.url
+                    : "#"
+                }
+                animated
+                icon={"/svg/chevron-right.svg"}
+                variant={descriptionSlider[selectedTab].variant}
+              >
+                {descriptionSlider[selectedTab].link.text}
+              </LinkComponent>
+            </span>
+          )}
         </div>
         <div className={"uk-visible@m"}>{displayCards()}</div>
       </div>

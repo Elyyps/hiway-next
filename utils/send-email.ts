@@ -18,12 +18,12 @@ const sendEmail = async (name: string, email: string) => {
               email,
             },
           ],
-          subject: "Demo success :)",
+          subject: "sub",
         },
       ],
       from: {
-        email: "noreply@demo.com",
-        name: "Test SendGrid",
+        email: "ahmed.ely.mabrouk@gmail.com",
+        name: "Ahmed",
       },
       content: [
         {

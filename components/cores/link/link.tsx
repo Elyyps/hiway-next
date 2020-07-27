@@ -9,7 +9,7 @@ interface ILinkComponentProps {
   icon?: string;
   target?: string;
   underlined?: boolean;
-  to: string;
+  to?: string;
   variant?: "primary" | "secondary";
   iconIsLeft?: boolean;
 }
@@ -19,6 +19,7 @@ const LinkComponent = (props: ILinkComponentProps) => {
     <Link
       href={props.to ? props.to : "#"}
       prefetch={props.target ? false : true}
+      passHref={props.target ? true : false}
     >
       <a
         href={props.to ? props.to : ""}

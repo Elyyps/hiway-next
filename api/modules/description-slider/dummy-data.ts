@@ -4,7 +4,7 @@ export const descriptionSliderEnglishData = (): IDescriptionSlider[] => [
   {
     content:
       "Tailored towards small business and recruitment agencies, this software suite facilitates search and contracting needs for flexible vacancies. The all-encompassing platform enables both employer and employee with digital contract signing, tracking of hours and expenses, and automatic payments.",
-    link: { text: "More information" },
+    link: { text: "More information", url: "/hr-product" },
     pictures: [
       "/img/optimized/hr1.jpg",
       "/img/optimized/hr2.jpg",
@@ -29,7 +29,7 @@ export const descriptionSliderEnglishData = (): IDescriptionSlider[] => [
   {
     content:
       "Built for a global workforce, this platform empowers freelance workers to find jobs from wherever they are in the world. Market your skills and services, secure jobs remotely and, once the contract is complete, settle payments using secure blockchain technology to facilitate instant worldwide transactions. For employers, this platform centralises the search and hiring of freelancers.",
-    link: { text: "More information" },
+    link: { text: "More information", url: "/freelance-product" },
     pictures: [
       "/img/optimized/freelance1.png",
       "/img/optimized/freelance2.png",
@@ -56,7 +56,7 @@ export const descriptionSliderDutchData = (): IDescriptionSlider[] => [
   {
     content:
       "Op maat gemaakte software voor uitzend- en recruitmentbureaus. Van het werven van flexibel personeel tot en met wereldwijd verlonen. Met dit alles-in-1 HR platform kunnen werkgevers en werknemers digitaal contracten ondertekenen, uren en uitgaven bijhouden en salarisbetalingen (automatisch) laten verwerken.",
-    link: { text: "Meer informatie" },
+    link: { text: "Meer informatie", url: "/hr-product" },
     pictures: [
       "/img/optimized/hr1.jpg",
       "/img/optimized/hr2.jpg",
@@ -81,7 +81,7 @@ export const descriptionSliderDutchData = (): IDescriptionSlider[] => [
   {
     content:
       "Waar je ook bent in de wereld, met het Hiway HR platform vind je freelance werk en krijg je betaald. Promote je vaardigheden en diensten wereldwijd en werk aan opdrachten op afstand. Is het contract voldaan? Dan word je razendsnel uitbetaald via Hiway. Ben je werkgever, dan is Hiway jouw HR platform; zoek, vind en neem freelancers in dienst, waar ook ter wereld.",
-    link: { text: "Meer informatie" },
+    link: { text: "Meer informatie", url: "/freelance-product" },
     pictures: [
       "/img/optimized/freelance1.png",
       "/img/optimized/freelance2.png",

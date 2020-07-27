@@ -12,12 +12,16 @@ interface IContactComponentProps {
 }
 const ContactComponent = (props: IContactComponentProps) => {
   const handlePress = (name: string, email: string) => {
-    // alert("sent " + email);
-    fetch("/api/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name: name, email: email }),
-    });
+    alert("not working yet");
+    console.log(`name: ${name} /n email: ${email}`);
+    // fetch("/api/send-email", {
+    //   method: "post",
+    //   headers: {
+    //     Accept: "application/json, text/plain, */*",
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ name: name, email: email }),
+    // });
   };
 
   return (
