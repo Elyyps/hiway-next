@@ -45,7 +45,7 @@ const PresentationComponent = (props: IPresentationComponentProps) => {
             <p>{props.presentation.content}</p>
             <div>
               <ShareSocialComponent
-                title=""
+                body=""
                 subject={props.presentation.emailSubject}
                 url=""
               >

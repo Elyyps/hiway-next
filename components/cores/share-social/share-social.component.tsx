@@ -1,23 +1,22 @@
 import * as React from "react";
 import styles from "./share-social-component.module.scss";
 import { EmailShareButton } from "react-share";
-import ButtonComponent from "../button/button";
 
 export interface IShareSocialComponentProps {
   children: any;
   subject: string;
-  title: string;
+  body: string;
   url: string;
 }
 
 const ShareSocialComponent = (props: IShareSocialComponentProps) => {
   const MailShareButtonComponent = (prop: {
     subject: string;
-    title: string;
+    body: string;
     url: string;
     children: any;
   }) => (
-    <EmailShareButton subject={prop.subject} body={prop.title} url={prop.url}>
+    <EmailShareButton subject={prop.subject} body={prop.body} url={prop.url}>
       {props.children}
     </EmailShareButton>
   );
@@ -25,7 +24,7 @@ const ShareSocialComponent = (props: IShareSocialComponentProps) => {
     <div className={styles["share"]}>
       <MailShareButtonComponent
         children={props.children}
-        title={props.title}
+        body={props.body}
         subject={props.subject}
         url={props.url}
       />
