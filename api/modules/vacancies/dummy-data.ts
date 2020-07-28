@@ -4,7 +4,7 @@ export const vacanciesEnglishData = (): IVacancies => ({
   title: "Vacancies",
   jobs: [
     {
-      name: "Front-end developer",
+      name: "Front-end Developer",
       time: "Full time",
       level: "Medior",
       experience: "3 years experience",
@@ -38,7 +38,7 @@ export const vacanciesDutchData = (): IVacancies => ({
   title: "Huidige vacatures",
   jobs: [
     {
-      name: "Front-end developer",
+      name: "Front-end Developer",
       time: "Full time",
       level: "Medior",
       experience: "3 years experience",
