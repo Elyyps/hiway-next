@@ -18,7 +18,7 @@ export const vacanciesEnglishData = (): IVacancies => ({
       url: "/",
     },
     {
-      name: "Ux Designer",
+      name: "UX Designer",
       time: "Part time",
       level: "Senior",
       experience: "4-6 years experience",
@@ -52,7 +52,7 @@ export const vacanciesDutchData = (): IVacancies => ({
       url: "/",
     },
     {
-      name: "Ux Designer",
+      name: "UX Designer",
       time: "Part time",
       level: "Senior",
       experience: "4-6 years experience",
