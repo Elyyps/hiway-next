@@ -4,7 +4,7 @@ export const newsletterEnglishData = (): INewsletter => ({
   title: "Want more information about Hiway?",
   info: "or check out our",
   link: { text: "about page", url: "/about" },
-  button: { text: "Get in touch" },
+  button: { text: "Request a demo" },
   card: {
     title: "Newsletter",
     description:
@@ -16,7 +16,7 @@ export const newsletterDutchData = (): INewsletter => ({
   title: "Zou je meer willen weten over Hiway?",
   link: { text: "about pagina", url: "/about" },
   info: "Of bezoek onze",
-  button: { text: "Neem contact op" },
+  button: { text: "Demo aanvragen" },
   card: {
     title: "Newsletter",
     description:
