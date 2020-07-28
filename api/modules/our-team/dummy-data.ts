@@ -6,9 +6,9 @@ export const ourTeamEnglishData = (): IOurTeam => ({
     { name: "Simon Rikmenspoel", position: "Ceo" },
     { name: "Thale Sonnemans", position: "Creative Director" },
     { name: "Jakko Bloemena", position: "Head of Product" },
-    { name: "Wout Brink", position: "Head of Sales" },
-    { name: "Tijs Gietman", position: "Developer" },
-    { name: "Albert Li", position: "Developer" },
+    { name: "Albert Li", position: "Lead Developer" },
+    { name: "Aslan Lin", position: "Full Stack Developer" },
+    { name: "Ahmed Mabrouk", position: "Front End Developer" },
   ],
 });
 export const ourTeamDutchData = (): IOurTeam => ({
@@ -17,8 +17,8 @@ export const ourTeamDutchData = (): IOurTeam => ({
     { name: "Simon Rikmenspoel", position: "Ceo" },
     { name: "Thale Sonnemans", position: "Creative Director" },
     { name: "Jakko Bloemena", position: "Head of Product" },
-    { name: "Wout Brink", position: "Head of Sales" },
-    { name: "Tijs Gietman", position: "Developer" },
-    { name: "Albert Li", position: "Developer" },
+    { name: "Albert Li", position: "Lead Developer" },
+    { name: "Aslan Lin", position: "Full Stack Developer" },
+    { name: "Ahmed Mabrouk", position: "Front End Developer" },
   ],
 });
